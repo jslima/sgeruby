@@ -1,0 +1,32 @@
+<p>
+<h1>Administração de Cursos</h1>  
+</p>
+<p>
+  <%= link_to 'Novo curso', novo_curso_path %>
+</p>
+<fieldset style="width: 250px">
+  <legend>Pesquisa de cursos</legend>
+  <p style="color: red"><%= notice %></p>
+  <% form_tag '/cursos/pesquisar' do %>
+  <table>
+    <tr>
+      <td align="right">Nome:</td>
+      <td align="left"><%= text_field_tag :nome %></td>
+    </tr>
+    <tr>
+      <td align="right">Descri&ccedil;&atilde;o:</td>
+      <td align="left"><%= text_field_tag :descricao %></td>
+    </tr>
+    <tr>
+      <td align="right">Ementa:</td>
+      <td align="left"><%= text_field_tag :ementa %></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">
+        <%= token_tag %>
+        <%= submit_tag "Pesquisar" %>
+      </td>
+    </tr>
+  </table>
+  <% end %>
+</fieldset>

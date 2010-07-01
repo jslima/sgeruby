@@ -1,0 +1,29 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+
+  operacoes: "Operações"
+  descricao: "Descrição"
+  duracao: "Duração"
+  total_horas: "Total de Horas"
+  matricula: "Matrícula"
+
+  activerecord:
+    errors:
+      messages:
+        blank: "O campo {{attribute}} é obrigatório"
+        not_a_number: "O campo {{attribute}} deve ser numérico"
+    attributes:
+      curso:
+        descricao: "Descrição"
+        duracao: "Duração"
+        total_horas: "Total de Horas"
+      aluno:
+        curso_id: "Curso"
+        matricula: "Matrícula"
+        historico_escolar: "Histórico Escolar"
+        historico_medico: "Histórico Médico"
+        profissao: "Profissão"
+        cert_militar: "Certificado de Conclusão/Dispansa do Serviço Militar"

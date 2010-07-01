@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  descricao: MyString
+  ementa: MyString
+  coordenador: MyString
+  turno: MyString
+  duracao: 1
+  total_horas: 1
+  tipo: MyString
+
+two:
+  nome: MyString
+  descricao: MyString
+  ementa: MyString
+  coordenador: MyString
+  turno: MyString
+  duracao: 1
+  total_horas: 1
+  tipo: MyString
