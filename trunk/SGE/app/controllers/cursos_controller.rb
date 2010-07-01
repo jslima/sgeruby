@@ -2,6 +2,7 @@ class CursosController < ApplicationController
   before_filter :limpar_sessao, :only => [:index]
   before_filter :guarda_pesquisa_curso, :only => [:pesquisar]
   before_filter :guarda_consulta_curso, :only => [:consultar]
+  
   # GET /cursos
   # GET /cursos.xml
   def index
