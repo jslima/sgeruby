@@ -1,0 +1,24 @@
+<p>
+<h1>Resultado da Pesquisa</h1>
+</p>
+
+<p>
+<table cellpadding="0" cellspacing="0" border="1">
+  <tr>
+    <th align="center">Nome</th>
+    <th align="center"><%=t :matricula %></th>
+    <th colspan="2" align="center"><%=t :operacoes %></th>
+  </tr>
+  <% @alunos.each do |aluno| %>
+    <tr>
+      <td style="width: 300px" align="center"><%=h aluno.nome %> </td>
+      <td style="width: 150px" align="center"><%=h aluno.matricula %></td>
+      <td style="width: 90px" align="center"><%= link_to "Consultar", consultar_aluno_path(aluno) %></td>
+      <td style="width: 70px" align="center"><%= link_to "Editar", editar_aluno_path(aluno) %></td>
+    </tr>
+  <% end %>
+</table>
+</p>
+<p>
+  <%= link_to "Voltar", alunos_path %>
+</p>
