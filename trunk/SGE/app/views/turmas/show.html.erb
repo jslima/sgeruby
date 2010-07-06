@@ -1,0 +1,23 @@
+<p>
+  <b>Nome:</b>
+  <%=h @turma.nome %>
+</p>
+
+<p>
+  <b>Ano:</b>
+  <%=h @turma.ano %>
+</p>
+
+<p>
+  <b>Max alunos:</b>
+  <%=h @turma.max_alunos %>
+</p>
+
+<p>
+  <b>Curso:</b>
+  <%=h @turma.curso_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_turma_path(@turma) %> |
+<%= link_to 'Back', turmas_path %>
