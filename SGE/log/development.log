@@ -10570,3 +10570,85 @@ Processing AlunosController#code_image (for 127.0.0.1 at 2010-06-28 20:42:31) [G
   [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
 Sending data Emblem-ghillie.jpg
 Completed in 17ms (View: 1, DB: 2) | 200 OK [http://localhost/alunos/code_image/2]
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2010-07-01 20:05:05) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 22ms (View: 20, DB: 35) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#index (for 127.0.0.1 at 2010-07-01 20:05:08) [GET]
+  [4;36;1mAluno Load (32.0ms)[0m   [0;1mSELECT * FROM `alunos` [0m
+Rendering template within layouts/application
+Rendering alunos/index
+  [4;35;1mCurso Load (22.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Completed in 599ms (View: 72, DB: 58) | 200 OK [http://localhost/alunos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#index (for 127.0.0.1 at 2010-07-01 20:17:31) [GET]
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` [0m
+Rendering template within layouts/application
+Rendering alunos/index
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 26ms (View: 16, DB: 2) | 200 OK [http://localhost/alunos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#index (for 127.0.0.1 at 2010-07-01 20:17:34) [GET]
+Rendering template within layouts/application
+Rendering cursos/index
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/cursos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#index (for 127.0.0.1 at 2010-07-01 20:17:35) [GET]
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` [0m
+Rendering template within layouts/application
+Rendering alunos/index
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Completed in 27ms (View: 15, DB: 5) | 200 OK [http://localhost/alunos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#index (for 127.0.0.1 at 2010-07-01 20:17:35) [GET]
+Rendering template within layouts/application
+Rendering cursos/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/cursos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#index (for 127.0.0.1 at 2010-07-01 20:17:36) [GET]
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` [0m
+Rendering template within layouts/application
+Rendering alunos/index
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 26ms (View: 16, DB: 2) | 200 OK [http://localhost/alunos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#pesquisar (for 127.0.0.1 at 2010-07-01 20:17:38) [POST]
+  Parameters: {"matricula"=>"", "curso_id"=>"4", "commit"=>"Pesquisar", "nome"=>"", "authenticity_token"=>"lFQubHDt7q0CYl/R6B8EV+MM/Z9k2+GGS4Plg6ZibYI="}
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'curso_id' in 'where clause': SELECT id, nome, matricula FROM `alunos` WHERE (curso_id = '4' ) [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'curso_id' in 'where clause': SELECT id, nome, matricula FROM `alunos` WHERE (curso_id = '4' ) ):
+  app/controllers/alunos_controller.rb:105:in `pesquisar'
+
+Rendered rescues/_trace (142.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
