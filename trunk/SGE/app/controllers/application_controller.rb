@@ -37,5 +37,4 @@ class ApplicationController < ActionController::Base
       session[:retorno] = request.request_uri
     end
   end
-
 end

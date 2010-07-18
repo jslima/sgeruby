@@ -5,12 +5,25 @@ module ApplicationHelper
       ["Graduação", "Graduação"],
       ["Pós-Graduação", "Pós-Graduação"]]
   end
+
   def lista_cursos
     lista_cursos = Curso.find(:all)
   end
+
+  def lista_turmas
+    lsita_turmas = Turma.find(:all)
+  end
+  
   def lista_estados
     tipo_cursos = [["---------", ""],
       ["AC", "AC"],
       ["MG", "MG"]]
+  end
+
+  def lista_turnos
+    lista_turnos = [["---------", ""],
+      ["Manhã", "Manhã"],
+      ["Tarde", "Tarde"],
+      ["Noite", "Noite"]]
   end
 end

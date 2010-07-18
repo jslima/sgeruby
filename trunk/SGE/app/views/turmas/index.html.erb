@@ -13,7 +13,7 @@
     <td><%=h turma.nome %></td>
     <td><%=h turma.ano %></td>
     <td><%=h turma.max_alunos %></td>
-    <td><%=h turma.curso_id %></td>
+    <td><%=h turma.curso.nome %></td>
     <td><%= link_to 'Show', turma %></td>
     <td><%= link_to 'Edit', edit_turma_path(turma) %></td>
     <td><%= link_to 'Destroy', turma, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -10652,3 +10652,2206 @@ ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'curso_id' in 'wher
 Rendered rescues/_trace (142.0ms)
 Rendered rescues/_request_and_response (2.0ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (231.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2010-07-06 18:05:45) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 71ms (View: 68, DB: 251) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (86.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (128.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAlunos (20100618000241)
+Migrating to CreateMatriculas (20100705225215)
+  [4;36;1mSQL (174.0ms)[0m   [0;1mCREATE TABLE `matriculas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `matricula` varchar(255), `aluno_id` int(11), `turma_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (58.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100705225215')[0m
+Migrating to CreateTurmas (20100705233705)
+  [4;36;1mSQL (152.0ms)[0m   [0;1mCREATE TABLE `turmas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome` varchar(255), `ano` varchar(255), `max_alunos` int(11), `curso_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (33.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100705233705')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (54.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `alunos`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mSHOW KEYS FROM `alunos`[0m
+  [4;36;1mSQL (35.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `cursos`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `matriculas`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `matriculas`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `turmas`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `turmas`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2010-07-08 19:25:05) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 48ms (View: 46, DB: 41) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (26.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (53.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAlunos (20100618000241)
+Migrating to CreateMatriculas (20100705225215)
+Migrating to CreateTurmas (20100705233705)
+Migrating to RemoveMatriculaAluno (20100708222714)
+  [4;36;1mSQL (336.0ms)[0m   [0;1mALTER TABLE `alunos` DROP `matricula`[0m
+  [4;35;1mSQL (28.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100708222714')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `alunos`[0m
+  [4;36;1mSQL (25.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `cursos`[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `matriculas`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `matriculas`[0m
+  [4;36;1mSQL (17.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `turmas`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `turmas`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 19:29:39) [GET]
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+
+ActionView::TemplateError (undefined local variable or method `new_turma_path' for #<ActionView::Base:0x60250ac>) on line #26 of app/views/turmas/index.html.erb:
+23: 
+24: <br />
+25: 
+26: <%= link_to 'New turma', new_turma_path %>
+
+    app/views/turmas/index.html.erb:26
+    app/controllers/turmas_controller.rb:7:in `index'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 19:31:17) [GET]
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+
+ActionView::TemplateError (undefined local variable or method `new_turma_path' for #<ActionView::Base:0x5f2c754>) on line #26 of app/views/turmas/index.html.erb:
+23: 
+24: <br />
+25: 
+26: <%= link_to 'New turma', new_turma_path %>
+
+    app/views/turmas/index.html.erb:26
+    app/controllers/turmas_controller.rb:7:in `index'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 19:31:56) [GET]
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+
+ActionView::TemplateError (undefined local variable or method `new_turma_path' for #<ActionView::Base:0x6062d58>) on line #26 of app/views/turmas/index.html.erb:
+23: 
+24: <br />
+25: 
+26: <%= link_to 'New turma', new_turma_path %>
+
+    app/views/turmas/index.html.erb:26
+    app/controllers/turmas_controller.rb:7:in `index'
+
+Rendered rescues/_trace (121.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 19:32:26) [GET]
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/turmas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#new (for 127.0.0.1 at 2010-07-08 19:32:43) [GET]
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Rendering template within layouts/turmas
+Rendering turmas/new
+Completed in 26ms (View: 17, DB: 2) | 200 OK [http://localhost/turmas/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#new (for 127.0.0.1 at 2010-07-08 19:34:48) [GET]
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Rendering template within layouts/turmas
+Rendering turmas/new
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 146ms (View: 134, DB: 4) | 200 OK [http://localhost/turmas/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#index (for 127.0.0.1 at 2010-07-08 19:34:59) [GET]
+Rendering template within layouts/application
+Rendering cursos/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/cursos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#pesquisar (for 127.0.0.1 at 2010-07-08 19:35:04) [POST]
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"teste", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E=", "ementa"=>"", "descricao"=>""}
+  [4;36;1mCurso Load (31.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE ((UPPER(nome) LIKE UPPER('%teste%')) ) [0m
+Rendering template within layouts/application
+Rendering cursos/pesquisar
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 58ms (View: 18, DB: 33) | 200 OK [http://localhost/cursos/pesquisar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#editar (for 127.0.0.1 at 2010-07-08 19:35:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering cursos/editar
+Rendered cursos/_curso_form (11.0ms)
+Completed in 35ms (View: 25, DB: 3) | 200 OK [http://localhost/cursos/editar/2]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#editar (for 127.0.0.1 at 2010-07-08 19:37:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering cursos/editar
+
+ActionView::TemplateError (undefined method `uf' for #<Curso:0x61920ac>) on line #22 of app/views/cursos/_curso_form.erb:
+19:   </tr>
+20:   <tr>
+21:     <td height="50" align="right">Turno:</td>
+22:     <td align="left"><%= f.select(:uf, options_for_select(lista_turnos, @curso.turno)) %></td>
+23:   </tr>
+24:   <tr>
+25:     <td height="50" align="right"><%=t :duracao %>:</td>
+
+    app/views/cursos/_curso_form.erb:22
+    app/views/cursos/editar.html.erb:6
+    app/views/cursos/editar.html.erb:5
+
+Rendered rescues/_trace (72.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#editar (for 127.0.0.1 at 2010-07-08 19:37:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering cursos/editar
+Rendered cursos/_curso_form (10.0ms)
+Completed in 91ms (View: 20, DB: 2) | 200 OK [http://localhost/cursos/editar/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#update (for 127.0.0.1 at 2010-07-08 19:38:15) [PUT]
+  Parameters: {"commit"=>"Editar", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E=", "id"=>"2", "curso"=>{"total_horas"=>"10", "nome"=>"Teste 1", "coordenador"=>"Teste", "turno"=>"Noite", "ementa"=>"Ementa 1", "tipo"=>"Graduação", "descricao"=>"Descricao 1", "duracao"=>"1"}}
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCurso Update (28.0ms)[0m   [0mUPDATE `cursos` SET `tipo` = 'Graduação', `turno` = 'Noite', `coordenador` = 'Teste', `duracao` = 1, `total_horas` = 10, `updated_at` = '2010-07-08 22:38:15' WHERE `id` = 2[0m
+  [4;36;1mSQL (59.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/cursos/consultar/2
+Completed in 102ms (DB: 89) | 302 Found [http://localhost/cursos/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#consultar (for 127.0.0.1 at 2010-07-08 19:38:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering cursos/consultar
+Completed in 26ms (View: 15, DB: 2) | 200 OK [http://localhost/cursos/consultar/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#editar (for 127.0.0.1 at 2010-07-08 19:38:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering cursos/editar
+Rendered cursos/_curso_form (7.0ms)
+Completed in 22ms (View: 12, DB: 2) | 200 OK [http://localhost/cursos/editar/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#pesquisar (for 127.0.0.1 at 2010-07-08 19:38:22) [GET]
+Rendering template within layouts/application
+Rendering cursos/pesquisar
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 20ms (View: 12, DB: 2) | 200 OK [http://localhost/cursos/pesquisar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#consultar (for 127.0.0.1 at 2010-07-08 19:38:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering cursos/consultar
+Completed in 18ms (View: 7, DB: 2) | 200 OK [http://localhost/cursos/consultar/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#editar (for 127.0.0.1 at 2010-07-08 19:38:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering cursos/editar
+Rendered cursos/_curso_form (7.0ms)
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://localhost/cursos/editar/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#update (for 127.0.0.1 at 2010-07-08 19:39:01) [PUT]
+  Parameters: {"commit"=>"Editar", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E=", "id"=>"2", "curso"=>{"total_horas"=>"10", "nome"=>"Sistemas de Informação", "coordenador"=>"Teste", "turno"=>"Noite", "ementa"=>"Ementa 1", "tipo"=>"Graduação", "descricao"=>"Descricao 1", "duracao"=>"1"}}
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCurso Update (1.0ms)[0m   [0mUPDATE `cursos` SET `nome` = 'Sistemas de Informação', `updated_at` = '2010-07-08 22:39:01' WHERE `id` = 2[0m
+  [4;36;1mSQL (41.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/cursos/consultar/2
+Completed in 57ms (DB: 44) | 302 Found [http://localhost/cursos/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#consultar (for 127.0.0.1 at 2010-07-08 19:39:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering cursos/consultar
+Completed in 18ms (View: 8, DB: 2) | 200 OK [http://localhost/cursos/consultar/2]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#editar (for 127.0.0.1 at 2010-07-08 19:39:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mCurso Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering cursos/editar
+Rendered cursos/_curso_form (8.0ms)
+Completed in 22ms (View: 12, DB: 5) | 200 OK [http://localhost/cursos/editar/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#pesquisar (for 127.0.0.1 at 2010-07-08 19:39:11) [GET]
+Rendering template within layouts/application
+Rendering cursos/pesquisar
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 19ms (View: 11, DB: 2) | 200 OK [http://localhost/cursos/pesquisar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#pesquisar (for 127.0.0.1 at 2010-07-08 19:39:15) [GET]
+Rendering template within layouts/application
+Rendering cursos/pesquisar
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Completed in 20ms (View: 12, DB: 2) | 200 OK [http://localhost/cursos/pesquisar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#index (for 127.0.0.1 at 2010-07-08 19:40:17) [GET]
+Rendering template within layouts/application
+Rendering cursos/index
+Completed in 72ms (View: 66, DB: 0) | 200 OK [http://localhost/cursos]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#pesquisar (for 127.0.0.1 at 2010-07-08 19:40:19) [POST]
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"sis", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E=", "ementa"=>"", "descricao"=>""}
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE ((UPPER(nome) LIKE UPPER('%sis%')) ) [0m
+Rendering template within layouts/application
+Rendering cursos/pesquisar
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/cursos/pesquisar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 19:40:35) [GET]
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/turmas]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#new (for 127.0.0.1 at 2010-07-08 19:40:36) [GET]
+  [4;36;1mTurma Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Rendering template within layouts/turmas
+Rendering turmas/new
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Completed in 28ms (View: 17, DB: 3) | 200 OK [http://localhost/turmas/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#create (for 127.0.0.1 at 2010-07-08 19:45:12) [POST]
+  Parameters: {"#<Turma:0x601628c>"=>{"curso_id"=>"2"}, "commit"=>"Create", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E=", "turma"=>{"ano"=>"2010", "nome"=>"1SI1", "max_alunos"=>"30"}}
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTurma Create (8.0ms)[0m   [0mINSERT INTO `turmas` (`curso_id`, `updated_at`, `ano`, `nome`, `max_alunos`, `created_at`) VALUES(NULL, '2010-07-08 22:45:12', '2010', '1SI1', 30, '2010-07-08 22:45:12')[0m
+  [4;36;1mSQL (34.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/turmas/1
+Completed in 59ms (DB: 43) | 302 Found [http://localhost/turmas]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 19:45:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+Completed in 22ms (View: 12, DB: 2) | 200 OK [http://localhost/turmas/1]
+  [4;36;1mCurso Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 19:45:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+
+ActionView::TemplateError (undefined method `curso' for #<Turma:0x5ed99f0>) on line #18 of app/views/turmas/show.html.erb:
+15: 
+16: <p>
+17:   <b>Curso:</b>
+18:   <%=h @turma.curso.nome %>
+19: </p>
+20: 
+21: 
+
+    app/views/turmas/show.html.erb:18
+    app/controllers/turmas_controller.rb:18:in `show'
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 19:46:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+
+ActionView::TemplateError (undefined method `nome' for nil:NilClass) on line #18 of app/views/turmas/show.html.erb:
+15: 
+16: <p>
+17:   <b>Curso:</b>
+18:   <%=h @turma.curso.nome %>
+19: </p>
+20: 
+21: 
+
+    app/views/turmas/show.html.erb:18
+    app/controllers/turmas_controller.rb:18:in `show'
+
+Rendered rescues/_trace (117.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 19:47:45) [GET]
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 20ms (View: 11, DB: 3) | 200 OK [http://localhost/turmas]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 19:47:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+
+ActionView::TemplateError (undefined method `nome' for nil:NilClass) on line #18 of app/views/turmas/show.html.erb:
+15: 
+16: <p>
+17:   <b>Curso:</b>
+18:   <%=h @turma.curso.nome %>
+19: </p>
+20: 
+21: 
+
+    app/views/turmas/show.html.erb:18
+    app/controllers/turmas_controller.rb:18:in `show'
+
+Rendered rescues/_trace (122.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 19:52:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+
+ActionView::TemplateError (undefined method `nome' for nil:NilClass) on line #18 of app/views/turmas/show.html.erb:
+15: 
+16: <p>
+17:   <b>Curso:</b>
+18:   <%=h @turma.curso.nome %>
+19: </p>
+20: 
+21: 
+
+    app/views/turmas/show.html.erb:18
+    app/controllers/turmas_controller.rb:18:in `show'
+
+Rendered rescues/_trace (123.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 19:52:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+Completed in 23ms (View: 13, DB: 2) | 200 OK [http://localhost/turmas/1]
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 19:53:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+Completed in 72ms (View: 25, DB: 3) | 200 OK [http://localhost/turmas/1]
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 19:53:29) [GET]
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 83ms (View: 74, DB: 3) | 200 OK [http://localhost/turmas]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 19:53:39) [GET]
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 19ms (View: 10, DB: 3) | 200 OK [http://localhost/turmas]
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 19:53:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+Completed in 31ms (View: 21, DB: 2) | 200 OK [http://localhost/turmas/1/edit]
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 19:55:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+
+ActionView::TemplateError (Missing template turmas/_turms_form.erb in view path app/views) on line #4 of app/views/turmas/edit.html.erb:
+1: <h1>Editing turma</h1>
+2: 
+3: <% form_for(@turma) do |f| %>
+4:   <%= render :partial => 'turms_form', :locals => {:f => f} %>
+5:   <p>
+6:     <%= f.submit 'Update' %>
+7:   </p>
+
+    app/views/turmas/edit.html.erb:4
+    app/views/turmas/edit.html.erb:3
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 19:56:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Rendered turmas/_turma_form (15.0ms)
+Completed in 43ms (View: 31, DB: 4) | 200 OK [http://localhost/turmas/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#update (for 127.0.0.1 at 2010-07-08 19:56:07) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E=", "id"=>"1", "turma"=>{"ano"=>"2010", "nome"=>"1SI1", "max_alunos"=>"30"}, "#<Turma:0x6019540>"=>{"curso_id"=>"2"}}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/turmas/1
+Completed in 18ms (DB: 2) | 302 Found [http://localhost/turmas/1]
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 19:56:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+
+ActionView::TemplateError (undefined method `nome' for nil:NilClass) on line #18 of app/views/turmas/show.html.erb:
+15: 
+16: <p>
+17:   <b>Curso:</b>
+18:   <%=h @turma.curso.nome %>
+19: </p>
+20: 
+21: 
+
+    app/views/turmas/show.html.erb:18
+    app/controllers/turmas_controller.rb:18:in `show'
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 19:57:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+
+ActionView::TemplateError (undefined method `nome' for nil:NilClass) on line #18 of app/views/turmas/show.html.erb:
+15: 
+16: <p>
+17:   <b>Curso:</b>
+18:   <%=h @turma.curso.nome %>
+19: </p>
+20: 
+21: 
+
+    app/views/turmas/show.html.erb:18
+    app/controllers/turmas_controller.rb:18:in `show'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 19:57:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Rendered turmas/_turma_form (14.0ms)
+Completed in 36ms (View: 25, DB: 5) | 200 OK [http://localhost/turmas/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#update (for 127.0.0.1 at 2010-07-08 19:57:08) [PUT]
+  Parameters: {"curso_id"=>"2", "commit"=>"Update", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E=", "id"=>"1", "turma"=>{"ano"=>"2010", "nome"=>"1SI1", "max_alunos"=>"30"}}
+  [4;36;1mTurma Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/turmas/1
+Completed in 17ms (DB: 2) | 302 Found [http://localhost/turmas/1]
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 19:57:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+
+ActionView::TemplateError (undefined method `nome' for nil:NilClass) on line #18 of app/views/turmas/show.html.erb:
+15: 
+16: <p>
+17:   <b>Curso:</b>
+18:   <%=h @turma.curso.nome %>
+19: </p>
+20: 
+21: 
+
+    app/views/turmas/show.html.erb:18
+    app/controllers/turmas_controller.rb:18:in `show'
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 19:59:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+
+ActionView::TemplateError (undefined method `merge' for :nome:Symbol) on line #17 of app/views/turmas/_turma_form.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :curso_id %><br />
+17:     <%= f.collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") %>
+18:   </p>
+
+    app/views/turmas/_turma_form.erb:17
+    app/views/turmas/edit.html.erb:4
+    app/views/turmas/edit.html.erb:3
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:01:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+
+ActionView::TemplateError (undefined method `merge' for :nome:Symbol) on line #17 of app/views/turmas/_turma_form.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :curso_id %><br />
+17:     <%= f.collection_select :turma, :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione" %>
+18:   </p>
+
+    app/views/turmas/_turma_form.erb:17
+    app/views/turmas/edit.html.erb:4
+    app/views/turmas/edit.html.erb:3
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:02:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+
+ActionView::TemplateError (undefined method `merge' for :nome:Symbol) on line #17 of app/views/turmas/_turma_form.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :curso_id %><br />
+17:     <%= f.collection_select :turma, :curso_id, lista_cursos, :id, :nome %>
+18:   </p>
+
+    app/views/turmas/_turma_form.erb:17
+    app/views/turmas/edit.html.erb:4
+    app/views/turmas/edit.html.erb:3
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:02:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+
+ActionView::TemplateError (undefined method `merge' for :nome:Symbol) on line #17 of app/views/turmas/_turma_form.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :curso_id %><br />
+17:     <%= f.collection_select :turma, :curso_id, lista_cursos, :id, :nome %>
+18:   </p>
+
+    app/views/turmas/_turma_form.erb:17
+    app/views/turmas/edit.html.erb:4
+    app/views/turmas/edit.html.erb:3
+
+Rendered rescues/_trace (132.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:02:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+
+ActionView::TemplateError (wrong number of arguments (6 for 4)) on line #17 of app/views/turmas/_turma_form.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :curso_id %><br />
+17:     <%= f.select :turma, :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione" %>
+18:   </p>
+
+    app/views/turmas/_turma_form.erb:17:in `select'
+    app/views/turmas/_turma_form.erb:17
+    app/views/turmas/edit.html.erb:4
+    app/views/turmas/edit.html.erb:3
+
+Rendered rescues/_trace (128.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:05:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+
+ActionView::TemplateError (undefined method `merge' for :nome:Symbol) on line #17 of app/views/turmas/_turma_form.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :curso_id %><br />
+17:     <%= f.collection_select :turma, :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione" %>
+18:   </p>
+
+    app/views/turmas/_turma_form.erb:17
+    app/views/turmas/edit.html.erb:4
+    app/views/turmas/edit.html.erb:3
+
+Rendered rescues/_trace (131.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:05:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+
+ActionView::TemplateError (undefined method `merge' for :nome:Symbol) on line #17 of app/views/turmas/_turma_form.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :curso_id %><br />
+17:     <%= f.collection_select :turma, :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione" %>
+18:   </p>
+
+    app/views/turmas/_turma_form.erb:17
+    app/views/turmas/edit.html.erb:4
+    app/views/turmas/edit.html.erb:3
+
+Rendered rescues/_trace (135.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:05:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+
+ActionView::TemplateError (undefined method `merge' for :nome:Symbol) on line #17 of app/views/turmas/_turma_form.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :curso_id %><br />
+17:     <%= f.collection_select :turma, :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione" %>
+18:   </p>
+
+    app/views/turmas/_turma_form.erb:17
+    app/views/turmas/edit.html.erb:4
+    app/views/turmas/edit.html.erb:3
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:05:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+
+ActionView::TemplateError (undefined method `merge' for :nome:Symbol) on line #17 of app/views/turmas/_turma_form.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :curso_id %><br />
+17:     <%= f.collection_select :turma, :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione" %>
+18:   </p>
+
+    app/views/turmas/_turma_form.erb:17
+    app/views/turmas/edit.html.erb:4
+    app/views/turmas/edit.html.erb:3
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:07:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+
+ActionView::TemplateError (undefined method `name' for #<Curso:0x61617b8>) on line #17 of app/views/turmas/_turma_form.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :curso_id %><br />
+17:     <%= f.select :curso_id, lista_cursos.map {|r| [r.name,r.id] } %>
+18:   </p>
+
+    app/views/turmas/_turma_form.erb:17
+    app/views/turmas/_turma_form.erb:17:in `map'
+    app/views/turmas/_turma_form.erb:17
+    app/views/turmas/edit.html.erb:4
+    app/views/turmas/edit.html.erb:3
+
+Rendered rescues/_trace (70.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:07:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Rendered turmas/_turma_form (14.0ms)
+Completed in 100ms (View: 88, DB: 6) | 200 OK [http://localhost/turmas/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#update (for 127.0.0.1 at 2010-07-08 20:07:43) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E=", "id"=>"1", "turma"=>{"curso_id"=>"2", "ano"=>"2010", "nome"=>"1SI1", "max_alunos"=>"30"}}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTurma Update (0.0ms)[0m   [0;1mUPDATE `turmas` SET `curso_id` = 2, `updated_at` = '2010-07-08 23:07:43' WHERE `id` = 1[0m
+  [4;35;1mSQL (55.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/turmas/1
+Completed in 74ms (DB: 58) | 302 Found [http://localhost/turmas/1]
+  [4;36;1mCurso Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 20:07:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Completed in 23ms (View: 11, DB: 4) | 200 OK [http://localhost/turmas/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:07:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Rendered turmas/_turma_form (12.0ms)
+Completed in 31ms (View: 18, DB: 5) | 200 OK [http://localhost/turmas/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:08:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Rendered turmas/_turma_form (14.0ms)
+Completed in 36ms (View: 24, DB: 3) | 200 OK [http://localhost/turmas/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 20:08:40) [GET]
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 19ms (View: 9, DB: 2) | 200 OK [http://localhost/turmas]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#show (for 127.0.0.1 at 2010-07-08 20:08:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/show
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Completed in 24ms (View: 12, DB: 5) | 200 OK [http://localhost/turmas/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 20:08:44) [GET]
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/turmas]
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#new (for 127.0.0.1 at 2010-07-08 20:08:46) [GET]
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Rendering template within layouts/turmas
+Rendering turmas/new
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Rendered turmas/_turma_form (13.0ms)
+Completed in 34ms (View: 23, DB: 4) | 200 OK [http://localhost/turmas/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 20:08:51) [GET]
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 19ms (View: 10, DB: 4) | 200 OK [http://localhost/turmas]
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#edit (for 127.0.0.1 at 2010-07-08 20:08:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/turmas
+Rendering turmas/edit
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Rendered turmas/_turma_form (14.0ms)
+Completed in 93ms (View: 81, DB: 6) | 200 OK [http://localhost/turmas/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 20:08:59) [GET]
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 20ms (View: 9, DB: 3) | 200 OK [http://localhost/turmas]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-07-08 20:09:26) [GET]
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+Rendering template within layouts/turmas
+Rendering turmas/index
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Completed in 30ms (View: 19, DB: 4) | 200 OK [http://localhost/turmas]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#index (for 127.0.0.1 at 2010-07-08 20:15:01) [GET]
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` [0m
+Rendering template within layouts/application
+Rendering alunos/index
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Completed in 38ms (View: 23, DB: 5) | 200 OK [http://localhost/alunos]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#pesquisar (for 127.0.0.1 at 2010-07-08 20:15:05) [POST]
+  Parameters: {"matricula"=>"", "curso_id"=>"", "commit"=>"Pesquisar", "nome"=>"e", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;35;1mAluno Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'matricula' in 'field list': SELECT id, nome, matricula FROM `alunos` WHERE ((UPPER(nome) LIKE UPPER('%e%')) ) [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'matricula' in 'field list': SELECT id, nome, matricula FROM `alunos` WHERE ((UPPER(nome) LIKE UPPER('%e%')) ) ):
+  app/controllers/alunos_controller.rb:105:in `pesquisar'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#index (for 127.0.0.1 at 2010-07-08 20:15:59) [GET]
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` [0m
+Rendering template within layouts/application
+Rendering alunos/index
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 24ms (View: 12, DB: 1) | 200 OK [http://localhost/alunos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#pesquisar (for 127.0.0.1 at 2010-07-08 20:16:02) [POST]
+  Parameters: {"matricula"=>"", "curso_id"=>"", "commit"=>"Pesquisar", "nome"=>"e", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'matricula' in 'field list': SELECT id, nome, matricula FROM `alunos` WHERE ((UPPER(nome) LIKE UPPER('%e%')) ) [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'matricula' in 'field list': SELECT id, nome, matricula FROM `alunos` WHERE ((UPPER(nome) LIKE UPPER('%e%')) ) ):
+  app/controllers/alunos_controller.rb:105:in `pesquisar'
+
+Rendered rescues/_trace (115.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#index (for 127.0.0.1 at 2010-07-08 20:16:24) [GET]
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` [0m
+Rendering template within layouts/application
+Rendering alunos/index
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Completed in 23ms (View: 10, DB: 3) | 200 OK [http://localhost/alunos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#pesquisar (for 127.0.0.1 at 2010-07-08 20:16:27) [POST]
+  Parameters: {"matricula"=>"", "curso_id"=>"", "commit"=>"Pesquisar", "nome"=>"e", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;35;1mAluno Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'matricula' in 'field list': SELECT id, nome, matricula FROM `alunos` WHERE ((UPPER(nome) LIKE UPPER('%e%')) ) [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'matricula' in 'field list': SELECT id, nome, matricula FROM `alunos` WHERE ((UPPER(nome) LIKE UPPER('%e%')) ) ):
+  app/controllers/alunos_controller.rb:97:in `pesquisar'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#pesquisar (for 127.0.0.1 at 2010-07-08 20:16:49) [POST]
+  Parameters: {"matricula"=>"", "curso_id"=>"", "commit"=>"Pesquisar", "nome"=>"e", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT id, nome FROM `alunos` WHERE ((UPPER(nome) LIKE UPPER('%e%')) ) [0m
+Rendering template within layouts/application
+Rendering alunos/pesquisar
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+Completed in 94ms (View: 80, DB: 3) | 200 OK [http://localhost/alunos/pesquisar]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:16:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+
+ActionView::TemplateError (undefined method `matricula' for #<Aluno:0x60c61b4>) on line #8 of app/views/alunos/consultar.html.erb:
+5:   <tr>
+6:     <td colspan="2" align="center" style="color: green"><%= notice %></td>
+7:   </tr>
+8:   <% if !@aluno.matricula.nil?  %>
+9:     <tr>
+10:       <td height="20" align="right"><b><%=t :matricula %>:</b></td>
+11:       <td align="left"><%=h @aluno.matricula %></td>
+
+    app/views/alunos/consultar.html.erb:8
+    app/controllers/alunos_controller.rb:22:in `consultar'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:17:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+
+ActionView::TemplateError (undefined method `matricula' for #<Aluno:0x615ef54>) on line #8 of app/views/alunos/consultar.html.erb:
+5:   <tr>
+6:     <td colspan="2" align="center" style="color: green"><%= notice %></td>
+7:   </tr>
+8:   <% if !@aluno.matricula.nil?  %>
+9:     <tr>
+10:       <td height="20" align="right"><b><%=t :matricula %>:</b></td>
+11:       <td align="left"><%=h @aluno.matricula %></td>
+
+    app/views/alunos/consultar.html.erb:8
+    app/controllers/alunos_controller.rb:22:in `consultar'
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:17:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+
+ActionView::TemplateError (undefined method `matricula' for #<Aluno:0x5f767c8>) on line #8 of app/views/alunos/consultar.html.erb:
+5:   <tr>
+6:     <td colspan="2" align="center" style="color: green"><%= notice %></td>
+7:   </tr>
+8:   <% if !@aluno.matricula.nil?  %>
+9:     <tr>
+10:       <td height="20" align="right"><b><%=t :matricula %>:</b></td>
+11:       <td align="left"><%=h @aluno.matricula %></td>
+
+    app/views/alunos/consultar.html.erb:8
+    app/controllers/alunos_controller.rb:22:in `consultar'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:17:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+
+ActionView::TemplateError (undefined method `matricula' for #<Aluno:0x5ffa280>) on line #8 of app/views/alunos/consultar.html.erb:
+5:   <tr>
+6:     <td colspan="2" align="center" style="color: green"><%= notice %></td>
+7:   </tr>
+8:   <% if !@aluno.matricula.nil?  %>
+9:     <tr>
+10:       <td height="20" align="right"><b><%=t :matricula %>:</b></td>
+11:       <td align="left"><%=h @aluno.matricula %></td>
+
+    app/views/alunos/consultar.html.erb:8
+    app/controllers/alunos_controller.rb:22:in `consultar'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:17:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+
+ActionView::TemplateError (undefined method `matricula' for #<Aluno:0x6092ecc>) on line #8 of app/views/alunos/consultar.html.erb:
+5:   <tr>
+6:     <td colspan="2" align="center" style="color: green"><%= notice %></td>
+7:   </tr>
+8:   <% if !@aluno.matricula.nil?  %>
+9:     <tr>
+10:       <td height="20" align="right"><b><%=t :matricula %>:</b></td>
+11:       <td align="left"><%=h @aluno.matricula %></td>
+
+    app/views/alunos/consultar.html.erb:8
+    app/controllers/alunos_controller.rb:22:in `consultar'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:18:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+Rendered shared/_pessoa_consulta_form (11.0ms)
+Completed in 40ms (View: 25, DB: 3) | 200 OK [http://localhost/aluno/consultar/1]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#code_image (for 127.0.0.1 at 2010-07-08 20:18:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Sending data Emblem-ghillie.jpg
+Completed in 19ms (View: 2, DB: 4) | 200 OK [http://localhost/alunos/code_image/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index to #<aluno:0x61642d8> (for 127.0.0.1 at 2010-07-08 20:18:16) [GET]
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/matriculas_controller.rb:5:in `index'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index to #<aluno:0x61642d8> (for 127.0.0.1 at 2010-07-08 20:19:18) [GET]
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/matriculas_controller.rb:5:in `index'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index to #<aluno:0x61642d8> (for 127.0.0.1 at 2010-07-08 20:21:27) [GET]
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aluno without an ID):
+  app/controllers/matriculas_controller.rb:5:in `index'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:21:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+Rendered shared/_pessoa_consulta_form (5.0ms)
+Completed in 24ms (View: 8, DB: 3) | 200 OK [http://localhost/aluno/consultar/1]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#code_image (for 127.0.0.1 at 2010-07-08 20:21:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Sending data Emblem-ghillie.jpg
+Completed in 17ms (View: 1, DB: 2) | 200 OK [http://localhost/alunos/code_image/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index to #<aluno:0x5f42360> (for 127.0.0.1 at 2010-07-08 20:21:35) [GET]
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aluno without an ID):
+  app/controllers/matriculas_controller.rb:5:in `index'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:21:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+Rendered shared/_pessoa_consulta_form (6.0ms)
+Completed in 29ms (View: 15, DB: 2) | 200 OK [http://localhost/aluno/consultar/1]
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#code_image (for 127.0.0.1 at 2010-07-08 20:21:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Sending data Emblem-ghillie.jpg
+Completed in 19ms (View: 2, DB: 3) | 200 OK [http://localhost/alunos/code_image/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:23:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+Rendered shared/_pessoa_consulta_form (5.0ms)
+Completed in 22ms (View: 8, DB: 2) | 200 OK [http://localhost/aluno/consultar/1]
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#code_image (for 127.0.0.1 at 2010-07-08 20:23:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Sending data Emblem-ghillie.jpg
+Completed in 17ms (View: 2, DB: 2) | 200 OK [http://localhost/alunos/code_image/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:23:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+Rendered shared/_pessoa_consulta_form (5.0ms)
+Completed in 29ms (View: 15, DB: 2) | 200 OK [http://localhost/aluno/consultar/1]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#code_image (for 127.0.0.1 at 2010-07-08 20:23:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Sending data Emblem-ghillie.jpg
+Completed in 17ms (View: 2, DB: 4) | 200 OK [http://localhost/alunos/code_image/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#1 (for 127.0.0.1 at 2010-07-08 20:23:55) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: consultar, create, editar, index, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:24:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `turno' for #<Matricula:0x5ff92cc>) on line #16 of app/views/matriculas/index.html.erb:
+13:     </tr>
+14:     <tr>
+15:       <td height="50" align="right"><strong>Turno:</strong></td>
+16:       <td align="left"><%= f.select(:turno, options_for_select(lista_turnos, @matricula.turno)) %></td>
+17:     </tr>
+18:     <tr>
+19:       <td height="50" align="right"><strong>Curso:</strong></td>
+
+    app/views/matriculas/index.html.erb:16
+    app/views/matriculas/index.html.erb:5
+
+Rendered rescues/_trace (116.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:24:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `turno' for #<Matricula:0x60d9f70>) on line #16 of app/views/matriculas/index.html.erb:
+13:     </tr>
+14:     <tr>
+15:       <td height="50" align="right"><strong>Turno:</strong></td>
+16:       <td align="left"><%= f.select('', options_for_select(lista_turnos, @matricula.turno)) %></td>
+17:     </tr>
+18:     <tr>
+19:       <td height="50" align="right"><strong>Curso:</strong></td>
+
+    app/views/matriculas/index.html.erb:16
+    app/views/matriculas/index.html.erb:5
+
+Rendered rescues/_trace (124.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:24:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+
+ActionView::TemplateError (interning empty string) on line #16 of app/views/matriculas/index.html.erb:
+13:     </tr>
+14:     <tr>
+15:       <td height="50" align="right"><strong>Turno:</strong></td>
+16:       <td align="left"><%= f.select('', options_for_select(lista_turnos, '@matricula.turno')) %></td>
+17:     </tr>
+18:     <tr>
+19:       <td height="50" align="right"><strong>Curso:</strong></td>
+
+    app/views/matriculas/index.html.erb:16
+    app/views/matriculas/index.html.erb:5
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:25:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+
+ActionView::TemplateError (undefined method `curso_id' for #<Matricula:0x61b7604>) on line #20 of app/views/matriculas/index.html.erb:
+17:     </tr>
+18:     <tr>
+19:       <td height="50" align="right"><strong>Curso:</strong></td>
+20:       <td align="left"><%= f.select :curso_id, lista_cursos.map {|r| [r.nome,r.id] }, :include_blank => 'Selecione' %></td>
+21:     </tr>
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+
+    app/views/matriculas/index.html.erb:20
+    app/views/matriculas/index.html.erb:5
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:25:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMatricula Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+
+ActionView::TemplateError (undefined method `curso_id' for #<Matricula:0x5f563ec>) on line #20 of app/views/matriculas/index.html.erb:
+17:     </tr>
+18:     <tr>
+19:       <td height="50" align="right"><strong>Curso:</strong></td>
+20:       <td align="left"><%= f.select :curso_id, lista_cursos.map {|r| [r.nome,r.id] }, :include_blank => 'Selecione' %></td>
+21:     </tr>
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+
+    app/views/matriculas/index.html.erb:20
+    app/views/matriculas/index.html.erb:5
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:25:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+
+ActionView::TemplateError (undefined method `curso_id' for #<Matricula:0x5fa139c>) on line #20 of app/views/matriculas/index.html.erb:
+17:     </tr>
+18:     <tr>
+19:       <td height="50" align="right"><strong>Curso:</strong></td>
+20:       <td align="left"><%= f.select :curso_id, lista_cursos.map {|r| [r.nome,r.id] }, :include_blank => 'Selecione' %></td>
+21:     </tr>
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+
+    app/views/matriculas/index.html.erb:20
+    app/views/matriculas/index.html.erb:5
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:26:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 47ms (View: 26, DB: 8) | 200 OK [http://localhost/matriculas/1]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:28:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 119ms (View: 96, DB: 9) | 200 OK [http://localhost/matriculas/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:28:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 54ms (View: 31, DB: 7) | 200 OK [http://localhost/matriculas/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:28:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 53ms (View: 30, DB: 8) | 200 OK [http://localhost/matriculas/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:28:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 111ms (View: 87, DB: 8) | 200 OK [http://localhost/matriculas/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:36:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 47ms (View: 23, DB: 11) | 200 OK [http://localhost/matriculas/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:37:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 53ms (View: 29, DB: 10) | 200 OK [http://localhost/matriculas/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:39:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 109ms (View: 86, DB: 10) | 200 OK [http://localhost/matriculas/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:39:54) [POST]
+  Parameters: {"curso_id"=>"2", "matricula"=>{"turma_id"=>"1"}, "commit"=>"Matricular", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aluno without an ID):
+  app/controllers/matriculas_controller.rb:5:in `index'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:43:39) [POST]
+  Parameters: {"curso_id"=>"2", "matricula"=>{"turma_id"=>"1"}, "commit"=>"Matricular", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aluno without an ID):
+  app/controllers/matriculas_controller.rb:5:in `index'
+
+Rendered rescues/_trace (111.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-08 20:45:10) [GET]
+
+ActionController::RoutingError (No route matches "/aluno/consultar/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-08 20:45:31) [GET]
+
+ActionController::RoutingError (No route matches "/aluno/consultar/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:45:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+Rendered shared/_pessoa_consulta_form (6.0ms)
+Completed in 89ms (View: 74, DB: 2) | 200 OK [http://localhost/aluno/consultar/1]
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#code_image (for 127.0.0.1 at 2010-07-08 20:45:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Sending data Emblem-ghillie.jpg
+Completed in 17ms (View: 2, DB: 2) | 200 OK [http://localhost/alunos/code_image/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-08 20:46:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+Rendered shared/_pessoa_consulta_form (6.0ms)
+Completed in 22ms (View: 8, DB: 4) | 200 OK [http://localhost/aluno/consultar/1]
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#code_image (for 127.0.0.1 at 2010-07-08 20:46:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Sending data Emblem-ghillie.jpg
+Completed in 18ms (View: 2, DB: 2) | 200 OK [http://localhost/alunos/code_image/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#index (for 127.0.0.1 at 2010-07-08 20:46:12) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionView::MissingTemplate (Missing template matriculas/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-08 20:46:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 53ms (View: 31, DB: 8) | 200 OK [http://localhost/matriculas/matricular/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-08 20:46:29) [POST]
+  Parameters: {"curso_id"=>"2", "matricula"=>{"turma_id"=>"1"}, "commit"=>"Matricular", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+
+NameError (uninitialized constant MatriculasController::Calendar):
+  app/controllers/matriculas_controller.rb:25:in `create'
+  app/controllers/matriculas_controller.rb:24:in `create'
+
+Rendered rescues/_trace (102.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-08 20:47:02) [POST]
+  Parameters: {"curso_id"=>"2", "matricula"=>{"turma_id"=>"1"}, "commit"=>"Matricular", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+
+TypeError (nil can't be coerced into Fixnum):
+  app/controllers/matriculas_controller.rb:21:in `create'
+  app/controllers/matriculas_controller.rb:20:in `create'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-08 20:47:17) [POST]
+  Parameters: {"curso_id"=>"2", "matricula"=>{"turma_id"=>"1"}, "commit"=>"Matricular", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+
+NoMethodError (private method `now' called for Date:Class):
+  app/controllers/matriculas_controller.rb:21:in `create'
+  app/controllers/matriculas_controller.rb:20:in `create'
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-08 20:47:29) [POST]
+  Parameters: {"curso_id"=>"2", "matricula"=>{"turma_id"=>"1"}, "commit"=>"Matricular", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+
+TypeError (nil can't be coerced into Fixnum):
+  app/controllers/matriculas_controller.rb:21:in `create'
+  app/controllers/matriculas_controller.rb:20:in `create'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-08 20:48:05) [POST]
+  Parameters: {"curso_id"=>"2", "matricula"=>{"turma_id"=>"1"}, "commit"=>"Matricular", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+
+TypeError (nil can't be coerced into Fixnum):
+  app/controllers/matriculas_controller.rb:22:in `create'
+  app/controllers/matriculas_controller.rb:20:in `create'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-08 20:49:00) [POST]
+  Parameters: {"curso_id"=>"2", "matricula"=>{"turma_id"=>"1"}, "commit"=>"Matricular", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMatricula Create (1.0ms)[0m   [0mINSERT INTO `matriculas` (`matricula`, `updated_at`, `aluno_id`, `turma_id`, `created_at`) VALUES('-47122', '2010-07-08 23:49:00', NULL, 1, '2010-07-08 23:49:00')[0m
+  [4;36;1mSQL (44.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/matriculas/consultar/1
+Completed in 73ms (DB: 50) | 302 Found [http://localhost/matriculas]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#consultar (for 127.0.0.1 at 2010-07-08 20:49:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mMatricula Load (0.0ms)[0m   [0;1mSELECT * FROM `matriculas` WHERE (`matriculas`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/consultar
+
+ActionView::TemplateError (undefined method `nome' for nil:NilClass) on line #2 of app/views/matriculas/consultar.erb:
+1: <p><%=h @matricula.matricula %></p>
+2: <p><%=h @matricula.aluno.nome %></p>
+3: <p><%=h @matricula.turma.curso.nome %></p>
+4: <p><%=h @matricula.turma.nome %></p>
+
+    app/views/matriculas/consultar.erb:2
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#consultar (for 127.0.0.1 at 2010-07-08 20:50:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mMatricula Load (0.0ms)[0m   [0;1mSELECT * FROM `matriculas` WHERE (`matriculas`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/consultar
+
+ActionView::TemplateError (undefined method `nome' for nil:NilClass) on line #2 of app/views/matriculas/consultar.erb:
+1: <p><%=h @matricula.matricula %></p>
+2: <p><%=h @matricula.aluno.nome %></p>
+3: <p><%=h @matricula.turma.curso.nome %></p>
+4: <p><%=h @matricula.turma.nome %></p>
+
+    app/views/matriculas/consultar.erb:2
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-08 20:50:25) [POST]
+  Parameters: {"curso_id"=>"2", "matricula"=>{"turma_id"=>"1"}, "commit"=>"Matricular", "authenticity_token"=>"LXiGGg1QgYYQhxjN8rYR3/4z4GMUcpMSiKD7ew84B4E="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+
+TypeError (String can't be coerced into Fixnum):
+  app/controllers/matriculas_controller.rb:22:in `+'
+  app/controllers/matriculas_controller.rb:22:in `create'
+  app/controllers/matriculas_controller.rb:20:in `create'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2010-07-10 01:59:07) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 66ms (View: 63, DB: 42) | 200 OK [http://localhost/]

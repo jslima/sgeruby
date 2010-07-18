@@ -1,3 +1,4 @@
 class Turma < ActiveRecord::Base
-  belongs_to :matricula
+  has_many :matriculas
+  belongs_to :curso
 end

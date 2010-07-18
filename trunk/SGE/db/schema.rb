@@ -9,11 +9,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100624234225) do
+ActiveRecord::Schema.define(:version => 20100708222714) do
 
   create_table "alunos", :force => true do |t|
     t.string   "nome"
-    t.string   "matricula"
     t.integer  "cpf"
     t.string   "identidade"
     t.string   "cert_nascimento"
@@ -52,6 +51,23 @@ ActiveRecord::Schema.define(:version => 20100624234225) do
     t.integer  "duracao"
     t.integer  "total_horas"
     t.string   "tipo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "matriculas", :force => true do |t|
+    t.string   "matricula"
+    t.integer  "aluno_id"
+    t.integer  "turma_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "turmas", :force => true do |t|
+    t.string   "nome"
+    t.string   "ano"
+    t.integer  "max_alunos"
+    t.integer  "curso_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,4 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
+  map.consultar_matricula '/matriculas/consultar/:id', :controller => 'matriculas', :action => 'consultar'
+  map.editar_aluno '/matriculas/editar/:id', :controller => 'matriculas', :action => 'editar'
+  map.matricular_aluno '/matriculas/matricular/:id', :controller => 'matriculas', :action => 'matricular'
+
+  map.resources :matriculas, :only => [:create, :update]
+
+  map.resources :turmas
+
   map.pesquisar_aluno '/aluno/pesquisar', :controller => 'alunos', :action => 'pesquisar'
   map.consultar_aluno '/aluno/consultar/:id', :controller => 'alunos', :action => 'consultar'
   map.editar_aluno '/aluno/editar/:id', :controller => 'alunos', :action => 'editar'

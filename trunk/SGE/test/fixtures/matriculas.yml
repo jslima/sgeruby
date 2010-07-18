@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  matricula: MyString
+  aluno_id: 1
+  curso_id: 1
+  turma_id: 1
+
+two:
+  matricula: MyString
+  aluno_id: 1
+  curso_id: 1
+  turma_id: 1

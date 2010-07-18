@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  ano: MyString
+  max_alunos: 1
+  curso_id: 1
+
+two:
+  nome: MyString
+  ano: MyString
+  max_alunos: 1
+  curso_id: 1
