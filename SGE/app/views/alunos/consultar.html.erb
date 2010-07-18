@@ -5,12 +5,6 @@
   <tr>
     <td colspan="2" align="center" style="color: green"><%= notice %></td>
   </tr>
-  <% if !@aluno.matricula.nil?  %>
-    <tr>
-      <td height="20" align="right"><b><%=t :matricula %>:</b></td>
-      <td align="left"><%=h @aluno.matricula %></td>
-    </tr>
-  <% end %>
   <%= render :partial => 'shared/pessoa_consulta_form' %>
   <tr>
     <td height="30" align="right"><b>Hist&oacute;rico Escolar:</b></td>
@@ -25,7 +19,8 @@
     <td align="left"><%=h @aluno.cert_militar %></td>
   </tr>
   <tr>
-    <td colspan="2" align="center" height="50"><%= link_to "Editar", editar_aluno_path(@aluno) %> | <%= link_to "Voltar", :back %>
+    <td colspan="2" align="center" height="50"><%= link_to "Matricular Aluno", matricular_aluno_path(@aluno.id) %> |
+<%= link_to "Editar", editar_aluno_path(@aluno) %> | <%= link_to "Voltar", :back %>
     </td>
   </tr>
 </table>

@@ -1,24 +1,7 @@
 <h1>New turma</h1>
 
 <% form_for(@turma) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
-  </p>
-  <p>
-    <%= f.label :ano %><br />
-    <%= f.text_field :ano %>
-  </p>
-  <p>
-    <%= f.label :max_alunos %><br />
-    <%= f.text_field :max_alunos %>
-  </p>
-  <p>
-    <%= f.label :curso_id %><br />
-    <%= f.text_field :curso_id %>
-  </p>
+  <%= render :partial => 'turma_form', :locals => {:f => f} %>
   <p>
     <%= f.submit 'Create' %>
   </p>

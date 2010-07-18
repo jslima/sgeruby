@@ -1,5 +1,5 @@
 class Aluno < ActiveRecord::Base
-  belongs_to :matricula
+  has_many :matriculas
 
   def image_file=(input_data)
     self.foto_nome = input_data.original_filename

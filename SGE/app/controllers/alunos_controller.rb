@@ -93,16 +93,8 @@ class AlunosController < ApplicationController
         sql = sql + "(UPPER(nome) LIKE UPPER(?)) AND "
         conditions <<  "%#{params[:nome]}%"
       end
-      if !params[:matricula].empty?
-        sql = sql + "(UPPER(matricula) LIKE UPPER(?)) AND "
-        conditions << "%#{params[:matricula]}%"
-      end
-      if !params[:curso_id].empty?
-        sql = sql + "curso_id = ? AND "
-        conditions << "#{params[:curso_id]}"
-      end
       conditions[0] = sql[0..sql.length-5]
-      @alunos = Aluno.find(:all, :select => ('id, nome, matricula'), :conditions => conditions)
+      @alunos = Aluno.find(:all, :select => ('id, nome'), :conditions => conditions)
       if @alunos.empty?
         redirect_to(alunos_path, :notice => 'Nenhum resultado encontrado.')
       else

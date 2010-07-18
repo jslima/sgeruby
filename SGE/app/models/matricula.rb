@@ -1,4 +1,4 @@
 class Matricula < ActiveRecord::Base
-  has_many :alunos
-  has_many :turmas
+  belongs_to :aluno
+  belongs_to :turma
 end
