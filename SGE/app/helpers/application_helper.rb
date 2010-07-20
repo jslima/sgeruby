@@ -26,4 +26,5 @@ module ApplicationHelper
       ["Tarde", "Tarde"],
       ["Noite", "Noite"]]
   end
+
 end

@@ -1,23 +1,21 @@
-<p>
-  <b>Nome:</b>
-  <%=h @turma.nome %>
-</p>
-
-<p>
-  <b>Ano:</b>
-  <%=h @turma.ano %>
-</p>
-
-<p>
-  <b>Max alunos:</b>
-  <%=h @turma.max_alunos %>
-</p>
-
-<p>
-  <b>Curso:</b>
-  <%=h @turma.curso.nome %>
-</p>
-
+<table cellspacing="2" cellpadding="0" border="0">
+  <tr>
+    <td align="right" height="30">Nome:</td>
+    <td align="left"><%=h @turma.nome %></td>
+  </tr>
+  <tr>
+    <td align="right" height="30">Ano:</td>
+    <td align="left"><%=h @turma.ano %></td>
+  </tr>
+  <tr>
+    <td align="right" height="30">Max alunos:</td>
+    <td align="left"><%=h @turma.max_alunos %></td>
+  </tr>
+  <tr>
+    <td align="right" height="30">Curso:</td>
+    <td align="left"><%=h @turma.curso.nome %></td>
+  </tr>
+</table>
 
 <%= link_to 'Edit', edit_turma_path(@turma) %> |
 <%= link_to 'Back', turmas_path %>

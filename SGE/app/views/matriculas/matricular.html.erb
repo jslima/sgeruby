@@ -9,7 +9,8 @@
     </tr>
     <tr>
       <td height="50" align="right"><strong>Aluno:</strong></td>
-      <td align="left"><%=h @matricula.aluno.nome %></td>
+      <td align="left"><%=h @aluno.nome %>
+        <%= f.hidden_field :aluno_id, :value => session[:aluno_id] %> </td>
     </tr>
     <tr>
       <td height="50" align="right"><strong>Curso:</strong></td>
