@@ -21,7 +21,7 @@ development:
   database: SGE_development
   pool: 5
   username: root
-  password: 123456
+  password: real0824
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -34,7 +34,7 @@ test:
   database: SGE_test
   pool: 5
   username: root
-  password: 123456
+  password: real0824
   host: localhost
 
 production:
@@ -44,6 +44,6 @@ production:
   database: SGE_production
   pool: 5
   username: root
-  password: 123456
+  password: real0824
   host: localhost
 

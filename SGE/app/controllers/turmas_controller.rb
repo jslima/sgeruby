@@ -48,10 +48,10 @@ class TurmasController < ApplicationController
 
     respond_to do |format|
       if @turma.save
-        format.html { redirect_to(@turma, :notice => 'Turma was successfully created.') }
+        format.html { redirect_to(consultar_turma_path(@turma), :notice => 'Turma was successfully created.') }
         format.xml  { render :xml => @turma, :status => :created, :location => @turma }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "novo" }
         format.xml  { render :xml => @turma.errors, :status => :unprocessable_entity }
       end
     end
@@ -64,10 +64,10 @@ class TurmasController < ApplicationController
 
     respond_to do |format|
       if @turma.update_attributes(params[:turma])
-        format.html { redirect_to(@turma, :notice => 'Turma was successfully updated.') }
+        format.html { redirect_to(consultar_turma_path(@turma), :notice => 'Turma was successfully updated.') }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
+        format.html { render :action => "editar" }
         format.xml  { render :xml => @turma.errors, :status => :unprocessable_entity }
       end
     end
@@ -86,19 +86,23 @@ class TurmasController < ApplicationController
   end
 
   def pesquisar
-    if !params[:nome].nil? or !params[:curso_id].nil?
+    if !params[:nome].nil? or !params[:ano].nil? or !params[:curso_id].nil?
       conditions = [""]
       sql = ""
       if !params[:nome].empty?
         sql = sql + "(UPPER(nome) LIKE UPPER(?)) AND "
         conditions <<  "%#{params[:nome]}%"
       end
+      if !params[:ano].empty?
+        sql = sql + "ano = ? AND "
+        conditions <<  "#{params[:ano]}"
+      end
       if !params[:curso_id].empty?
         sql = sql + "curso_id = ? AND "
-        conditions <<  "%#{params[:curso_id]}%"
+        conditions <<  "#{params[:curso_id]}"
       end
       conditions[0] = sql[0..sql.length-5]
-      @turmas = Turma.find(:all, :select => ('id, nome'), :conditions => conditions)
+      @turmas = Turma.find(:all, :select => ('id, nome, ano, curso_id'), :conditions => conditions)
       if @turmas.empty?
         redirect_to(turmas_path, :notice => 'Nenhum resultado encontrado.')
       else
