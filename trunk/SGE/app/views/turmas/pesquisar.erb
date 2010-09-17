@@ -6,12 +6,14 @@
 <table cellpadding="0" cellspacing="0" border="1">
   <tr>
     <th align="center">Nome</th>
+    <th align="center">Ano</th>
     <th align="center">Curso</th>
     <th colspan="2" align="center"><%=t :operacoes %></th>
   </tr>
   <% @turmas.each do |turma| %>
     <tr>
       <td style="width: 300px" align="center"><%=h turma.nome %> </td>
+      <td style="width: 100px" align="center"><%=h turma.ano %> </td>
       <td style="width: 300px" align="center"><%=h turma.curso.nome %> </td>
       <td style="width: 90px" align="center"><%= link_to "Consultar", consultar_turma_path(turma) %></td>
       <td style="width: 70px" align="center"><%= link_to "Editar", editar_turma_path(turma) %></td>

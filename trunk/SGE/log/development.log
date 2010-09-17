@@ -16835,3 +16835,668 @@ Rendering rescues/layout (not_found)
     c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
     c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
     script/server:3
+/!\ FAILSAFE /!\  Fri Sep 17 17:43:18 -0300 2010
+  Status: 500 Internal Server Error
+  193: %1 n�o � um aplicativo Win32 v�lido.   - c:/ruby/lib/ruby/gems/1.8/gems/mysql-2.8.1-x86-mswin32/lib/1.8/mysql_api.so
+    c:/ruby/lib/ruby/gems/1.8/gems/mysql-2.8.1-x86-mswin32/lib/1.8/mysql_api.so
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/mysql-2.8.1-x86-mswin32/lib/mysql.rb:7
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    c:/ruby/lib/ruby/1.8/monitor.rb:238:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Sep 17 17:45:25 -0300 2010
+  Status: 500 Internal Server Error
+  Can't connect to MySQL server on 'localhost' (10061)
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    c:/ruby/lib/ruby/1.8/monitor.rb:238:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Sep 17 17:45:59 -0300 2010
+  Status: 500 Internal Server Error
+  Can't connect to MySQL server on 'localhost' (10061)
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    c:/ruby/lib/ruby/1.8/monitor.rb:238:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Sep 17 17:46:16 -0300 2010
+  Status: 500 Internal Server Error
+  Can't connect to MySQL server on 'localhost' (10061)
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    c:/ruby/lib/ruby/1.8/monitor.rb:238:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Sep 17 17:46:18 -0300 2010
+  Status: 500 Internal Server Error
+  Can't connect to MySQL server on 'localhost' (10061)
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    c:/ruby/lib/ruby/1.8/monitor.rb:238:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (107.0ms)[0m   [0mCREATE TABLE `alunos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome` varchar(255), `cpf` int(11), `identidade` varchar(255), `cert_nascimento` varchar(255), `sexo` varchar(255), `estado_civil` varchar(255), `nacionalidade` varchar(255), `nome_pai` varchar(255), `nome_mae` varchar(255), `nome_responsavel` varchar(255), `cep` int(11), `endereco` varchar(255), `complemento` varchar(255), `bairro` varchar(255), `cidade` varchar(255), `uf` varchar(2), `tel_residencial` varchar(255), `tel_celular` varchar(255), `email` varchar(255), `historico_medico` text, `historico_escolar` varchar(255), `profissao` varchar(255), `cert_militar` varchar(255), `foto_nome` varchar(255), `foto_content_type` varchar(255), `foto_bin_data` blob, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (71.0ms)[0m   [0mCREATE TABLE `cursos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome` varchar(255), `descricao` varchar(255), `ementa` varchar(255), `coordenador` varchar(255), `turno` varchar(255), `duracao` int(11), `total_horas` int(11), `tipo` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (88.0ms)[0m   [0mCREATE TABLE `matriculas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `matricula` varchar(255), `aluno_id` int(11), `turma_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (103.0ms)[0m   [0mCREATE TABLE `turmas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome` varchar(255), `ano` varchar(255), `max_alunos` int(11), `curso_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (120.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (182.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (153.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100708222714')[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100618000241')[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100705225215')[0m
+  [4;35;1mSQL (61.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100705233705')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2010-09-17 17:53:10) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 50ms (View: 48, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-09-17 17:53:17) [GET]
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+Rendering template within layouts/application
+Rendering turmas/index
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+Completed in 561ms (View: 69, DB: 1) | 200 OK [http://localhost/turmas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#pesquisar (for 127.0.0.1 at 2010-09-17 17:53:19) [POST]
+  Parameters: {"curso_id"=>"", "commit"=>"Pesquisar", "nome"=>"s", "authenticity_token"=>"dNu4oyRgRLdcKSSCOcP0EM+cNLfL8dWwsC4PI0wrf/o="}
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT id, nome FROM `turmas` WHERE ((UPPER(nome) LIKE UPPER('%s%')) ) [0m
+Redirected to http://localhost:3000/turmas
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/turmas/pesquisar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-09-17 17:53:21) [GET]
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+Rendering template within layouts/application
+Rendering turmas/index
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/turmas]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#novo (for 127.0.0.1 at 2010-09-17 17:53:26) [GET]
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Rendering template within layouts/application
+Rendering turmas/novo
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+Rendered turmas/_turma_form (16.0ms)
+Completed in 40ms (View: 30, DB: 4) | 200 OK [http://localhost/turmas/novo]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#index (for 127.0.0.1 at 2010-09-17 17:53:33) [GET]
+Rendering template within layouts/application
+Rendering cursos/index
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/cursos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#novo (for 127.0.0.1 at 2010-09-17 17:53:36) [GET]
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Rendering template within layouts/application
+Rendering cursos/novo
+Rendered cursos/_curso_form (10.0ms)
+Completed in 36ms (View: 26, DB: 2) | 200 OK [http://localhost/cursos/novo]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#create (for 127.0.0.1 at 2010-09-17 17:53:41) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"dNu4oyRgRLdcKSSCOcP0EM+cNLfL8dWwsC4PI0wrf/o=", "curso"=>{"total_horas"=>"", "nome"=>"Sistemas de Informação", "coordenador"=>"", "turno"=>"", "ementa"=>"", "tipo"=>"", "descricao"=>"", "duracao"=>""}}
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering cursos/novo
+Rendered cursos/_curso_form (21.0ms)
+Completed in 40ms (View: 26, DB: 3) | 200 OK [http://localhost/cursos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#create (for 127.0.0.1 at 2010-09-17 17:53:52) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"dNu4oyRgRLdcKSSCOcP0EM+cNLfL8dWwsC4PI0wrf/o=", "curso"=>{"total_horas"=>"1", "nome"=>"Sistemas de Informação", "coordenador"=>"a", "turno"=>"Noite", "ementa"=>"a", "tipo"=>"Graduação", "descricao"=>"a", "duracao"=>"1"}}
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCurso Create (0.0ms)[0m   [0mINSERT INTO `cursos` (`updated_at`, `total_horas`, `nome`, `coordenador`, `turno`, `ementa`, `descricao`, `tipo`, `duracao`, `created_at`) VALUES('2010-09-17 20:53:52', 1, 'Sistemas de Informação', 'a', 'Noite', 'a', 'a', 'Graduação', 1, '2010-09-17 20:53:52')[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/cursos/consultar/1
+Completed in 78ms (DB: 64) | 302 Found [http://localhost/cursos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#consultar (for 127.0.0.1 at 2010-09-17 17:53:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering cursos/consultar
+Completed in 28ms (View: 18, DB: 4) | 200 OK [http://localhost/cursos/consultar/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CursosController#index (for 127.0.0.1 at 2010-09-17 17:53:57) [GET]
+Rendering template within layouts/application
+Rendering cursos/index
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/cursos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-09-17 17:53:59) [GET]
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+Rendering template within layouts/application
+Rendering turmas/index
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://localhost/turmas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#novo (for 127.0.0.1 at 2010-09-17 17:54:01) [GET]
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Rendering template within layouts/application
+Rendering turmas/novo
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Rendered turmas/_turma_form (17.0ms)
+Completed in 31ms (View: 20, DB: 5) | 200 OK [http://localhost/turmas/novo]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#create (for 127.0.0.1 at 2010-09-17 17:54:09) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"dNu4oyRgRLdcKSSCOcP0EM+cNLfL8dWwsC4PI0wrf/o=", "turma"=>{"curso_id"=>"1", "ano"=>"2010", "nome"=>"1SI1", "max_alunos"=>"30"}}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTurma Create (0.0ms)[0m   [0mINSERT INTO `turmas` (`curso_id`, `updated_at`, `ano`, `nome`, `max_alunos`, `created_at`) VALUES(1, '2010-09-17 20:54:09', '2010', '1SI1', 30, '2010-09-17 20:54:09')[0m
+  [4;36;1mSQL (96.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/turmas/1
+Completed in 110ms (DB: 98) | 302 Found [http://localhost/turmas]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#1 (for 127.0.0.1 at 2010-09-17 17:54:10) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: consultar, create, destroy, editar, index, novo, pesquisar, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#consultar (for 127.0.0.1 at 2010-09-17 17:54:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering turmas/consultar
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 1) [0m
+Completed in 30ms (View: 18, DB: 4) | 200 OK [http://localhost/turmas/consultar/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-09-17 17:54:56) [GET]
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+Rendering template within layouts/application
+Rendering turmas/index
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 23ms (View: 11, DB: 5) | 200 OK [http://localhost/turmas]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#novo (for 127.0.0.1 at 2010-09-17 17:54:57) [GET]
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Rendering template within layouts/application
+Rendering turmas/novo
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Rendered turmas/_turma_form (17.0ms)
+Completed in 33ms (View: 21, DB: 5) | 200 OK [http://localhost/turmas/novo]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#create (for 127.0.0.1 at 2010-09-17 17:55:10) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"dNu4oyRgRLdcKSSCOcP0EM+cNLfL8dWwsC4PI0wrf/o=", "turma"=>{"curso_id"=>"1", "ano"=>"2010", "nome"=>"2SI1", "max_alunos"=>"30"}}
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTurma Create (0.0ms)[0m   [0mINSERT INTO `turmas` (`curso_id`, `updated_at`, `ano`, `nome`, `max_alunos`, `created_at`) VALUES(1, '2010-09-17 20:55:10', '2010', '2SI1', 30, '2010-09-17 20:55:10')[0m
+  [4;36;1mSQL (72.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/turmas/consultar/2
+Completed in 86ms (DB: 74) | 302 Found [http://localhost/turmas]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#consultar (for 127.0.0.1 at 2010-09-17 17:55:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTurma Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering turmas/consultar
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 1) [0m
+Completed in 29ms (View: 14, DB: 5) | 200 OK [http://localhost/turmas/consultar/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-09-17 17:55:20) [GET]
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+Rendering template within layouts/application
+Rendering turmas/index
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 23ms (View: 12, DB: 3) | 200 OK [http://localhost/turmas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#pesquisar (for 127.0.0.1 at 2010-09-17 17:55:22) [POST]
+  Parameters: {"curso_id"=>"", "commit"=>"Pesquisar", "nome"=>"s", "authenticity_token"=>"dNu4oyRgRLdcKSSCOcP0EM+cNLfL8dWwsC4PI0wrf/o="}
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT id, nome FROM `turmas` WHERE ((UPPER(nome) LIKE UPPER('%s%')) ) [0m
+Rendering template within layouts/application
+Rendering turmas/pesquisar
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+
+ActionView::TemplateError (undefined method `nome' for nil:NilClass) on line #15 of app/views/turmas/pesquisar.erb:
+12:   <% @turmas.each do |turma| %>
+13:     <tr>
+14:       <td style="width: 300px" align="center"><%=h turma.nome %> </td>
+15:       <td style="width: 300px" align="center"><%=h turma.curso.nome %> </td>
+16:       <td style="width: 90px" align="center"><%= link_to "Consultar", consultar_turma_path(turma) %></td>
+17:       <td style="width: 70px" align="center"><%= link_to "Editar", editar_turma_path(turma) %></td>
+18:     </tr>
+
+    app/views/turmas/pesquisar.erb:15
+    app/views/turmas/pesquisar.erb:12:in `each'
+    app/views/turmas/pesquisar.erb:12
+
+Rendered rescues/_trace (70.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#pesquisar (for 127.0.0.1 at 2010-09-17 17:57:43) [POST]
+  Parameters: {"curso_id"=>"", "commit"=>"Pesquisar", "nome"=>"s", "authenticity_token"=>"dNu4oyRgRLdcKSSCOcP0EM+cNLfL8dWwsC4PI0wrf/o="}
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT id, nome FROM `turmas` WHERE ((UPPER(nome) LIKE UPPER('%s%')) ) [0m
+Rendering template within layouts/application
+Rendering turmas/pesquisar
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 26ms (View: 17, DB: 2) | 200 OK [http://localhost/turmas/pesquisar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#editar (for 127.0.0.1 at 2010-09-17 17:58:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering turmas/editar
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Rendered turmas/_turma_form (17.0ms)
+Completed in 38ms (View: 26, DB: 4) | 200 OK [http://localhost/turmas/editar/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-09-17 17:58:27) [GET]
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+Rendering template within layouts/application
+Rendering turmas/index
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://localhost/turmas]
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#index (for 127.0.0.1 at 2010-09-17 18:00:25) [GET]
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+Rendering template within layouts/application
+Rendering turmas/index
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Completed in 29ms (View: 20, DB: 3) | 200 OK [http://localhost/turmas]
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#pesquisar (for 127.0.0.1 at 2010-09-17 18:00:42) [POST]
+  Parameters: {"curso_id"=>"", "commit"=>"Pesquisar", "ano"=>"2010", "nome"=>"", "authenticity_token"=>"dNu4oyRgRLdcKSSCOcP0EM+cNLfL8dWwsC4PI0wrf/o="}
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT id, nome, ano, curso_id FROM `turmas` WHERE (ano = '2010' ) [0m
+Rendering template within layouts/application
+Rendering turmas/pesquisar
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 1) [0m
+Completed in 92ms (View: 81, DB: 6) | 200 OK [http://localhost/turmas/pesquisar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#pesquisar (for 127.0.0.1 at 2010-09-17 18:01:07) [POST]
+  Parameters: {"curso_id"=>"", "commit"=>"Pesquisar", "ano"=>"2010", "nome"=>"", "authenticity_token"=>"dNu4oyRgRLdcKSSCOcP0EM+cNLfL8dWwsC4PI0wrf/o="}
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT id, nome, ano, curso_id FROM `turmas` WHERE (ano = '2010' ) [0m
+Rendering template within layouts/application
+Rendering turmas/pesquisar
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 1) [0m
+Completed in 36ms (View: 22, DB: 4) | 200 OK [http://localhost/turmas/pesquisar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TurmasController#pesquisar (for 127.0.0.1 at 2010-09-17 18:01:31) [POST]
+  Parameters: {"curso_id"=>"", "commit"=>"Pesquisar", "ano"=>"2010", "nome"=>"", "authenticity_token"=>"dNu4oyRgRLdcKSSCOcP0EM+cNLfL8dWwsC4PI0wrf/o="}
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT id, nome, ano, curso_id FROM `turmas` WHERE (ano = '2010' ) [0m
+Rendering template within layouts/application
+Rendering turmas/pesquisar
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 1) [0m
+Completed in 36ms (View: 21, DB: 4) | 200 OK [http://localhost/turmas/pesquisar]

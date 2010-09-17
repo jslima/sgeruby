@@ -14,6 +14,10 @@
       <td align="left"><%= text_field_tag :nome %></td>
     </tr>
     <tr>
+      <td align="right">Ano:</td>
+      <td align="left"><%= text_field_tag :ano %></td>
+    </tr>
+    <tr>
       <td align="right">Curso:</td>
       <td align="left"><%= collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") %></td>
     </tr>
