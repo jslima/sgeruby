@@ -1,4 +1,8 @@
 class TurmasController < ApplicationController
+  before_filter :limpar_sessao, :only => [:index]
+  before_filter :guarda_pesquisa_turma, :only => [:pesquisar]
+  before_filter :guarda_consulta_turma, :only => [:consultar]
+
   # GET /turmas
   # GET /turmas.xml
   def index
@@ -12,7 +16,7 @@ class TurmasController < ApplicationController
 
   # GET /turmas/1
   # GET /turmas/1.xml
-  def show
+  def consultar
     @turma = Turma.find(params[:id])
 
     respond_to do |format|
@@ -23,7 +27,7 @@ class TurmasController < ApplicationController
 
   # GET /turmas/new
   # GET /turmas/new.xml
-  def new
+  def novo
     @turma = Turma.new
 
     respond_to do |format|
@@ -33,7 +37,7 @@ class TurmasController < ApplicationController
   end
 
   # GET /turmas/1/edit
-  def edit
+  def editar
     @turma = Turma.find(params[:id])
   end
 
@@ -78,6 +82,30 @@ class TurmasController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(turmas_url) }
       format.xml  { head :ok }
+    end
+  end
+
+  def pesquisar
+    if !params[:nome].nil? or !params[:curso_id].nil?
+      conditions = [""]
+      sql = ""
+      if !params[:nome].empty?
+        sql = sql + "(UPPER(nome) LIKE UPPER(?)) AND "
+        conditions <<  "%#{params[:nome]}%"
+      end
+      if !params[:curso_id].empty?
+        sql = sql + "curso_id = ? AND "
+        conditions <<  "%#{params[:curso_id]}%"
+      end
+      conditions[0] = sql[0..sql.length-5]
+      @turmas = Turma.find(:all, :select => ('id, nome'), :conditions => conditions)
+      if @turmas.empty?
+        redirect_to(turmas_path, :notice => 'Nenhum resultado encontrado.')
+      else
+        session[:turmas] = @turmas
+      end
+    else
+      @turmas = session[:turmas]
     end
   end
 end
