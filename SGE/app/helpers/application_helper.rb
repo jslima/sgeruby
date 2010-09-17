@@ -11,9 +11,9 @@ module ApplicationHelper
   end
 
   def lista_turmas
-    lsita_turmas = Turma.find(:all)
+    lista_turmas = Turma.find(:all)
   end
-  
+
   def lista_estados
     tipo_cursos = [["---------", ""],
       ["AC", "AC"],

@@ -5,7 +5,12 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :matriculas, :only => [:create, :update]
 
-  map.resources :turmas
+  map.pesquisar_turma '/turmas/pesquisar', :controller => 'turmas', :action => 'pesquisar'
+  map.consultar_turma '/turmas/consultar/:id', :controller => 'turmas', :action => 'consultar'
+  map.editar_turma '/turmas/editar/:id', :controller => 'turmas', :action => 'editar'
+  map.novo_turma '/turmas/novo', :controller => 'turmas', :action => 'novo'
+
+  map.resources :turmas, :only => [:index, :create, :update, :destroy]
 
   map.pesquisar_aluno '/aluno/pesquisar', :controller => 'alunos', :action => 'pesquisar'
   map.consultar_aluno '/aluno/consultar/:id', :controller => 'alunos', :action => 'consultar'

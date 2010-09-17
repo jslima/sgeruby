@@ -2,6 +2,9 @@
   <tr>
     <td colspan="2" align="center"><h2>Matr&iacute;cula de aluno</h2></td>
   </tr>
+  <tr>
+    <td colspan="2" align="center" style="color: red"><%= notice %></td>
+  </tr>
   <% form_for(@matricula, [:action => 'matricular']) do |f| %>
     <tr>
       <td height="50" align="right"><strong>Matr&iacute;ula:</strong></td>
@@ -14,11 +17,16 @@
     </tr>
     <tr>
       <td height="50" align="right"><strong>Curso:</strong></td>
-      <td align="left"><%= collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") %></td>
+      <td align="left"><%= collection_select('', :curso_id, lista_cursos, :id, :nome, 
+                          {:prompt => "Selectione"},
+                          {:onchange => "#{remote_function(:url => "recarregar_turmas",
+                                                           :with => "'curso_id='+value")}"}) %></td>
     </tr>
     <tr>
       <td height="50" align="right"><strong>Turma:</strong></td>
-      <td align="left"><%= f.select :turma_id, lista_turmas.map {|r| [r.nome,r.id] }, :include_blank => 'Selecione' %></td>
+      <td align="left">
+        <div id="lista"><%= f.collection_select(:turma_id, @lista, :id, :nome, {:prompt => "Selectione"}) %></div>
+      </td>
     </tr>
     <tr>
       <td><%= f.submit "Matricular"  %></td>

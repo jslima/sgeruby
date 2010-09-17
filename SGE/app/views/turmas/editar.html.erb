@@ -1,10 +1,11 @@
-<h1>New turma</h1>
+<h1>Editing turma</h1>
 
 <% form_for(@turma) do |f| %>
   <%= render :partial => 'turma_form', :locals => {:f => f} %>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Update' %>
   </p>
 <% end %>
 
+<%= link_to 'Show', consultar_turma_path(@turma) %> |
 <%= link_to 'Back', turmas_path %>

@@ -37,4 +37,17 @@ class ApplicationController < ActionController::Base
       session[:retorno] = request.request_uri
     end
   end
+
+  protected
+  def guarda_pesquisa_turma
+    session[:pesquisa_turma] = request.request_uri
+    session[:retorno] = session[:pesquisa_turma]
+  end
+
+  protected
+  def guarda_consulta_turma
+    if session[:pesquisa_turma].nil?
+      session[:retorno] = request.request_uri
+    end
+  end
 end

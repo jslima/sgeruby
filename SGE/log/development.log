@@ -14299,3 +14299,2539 @@ Rendered rescues/_trace (137.0ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
   [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (202.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2010-07-26 20:05:50) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 48ms (View: 46, DB: 204) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2010-07-26 20:06:03) [GET]
+Rendering template within layouts/application
+Rendering principal/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#index (for 127.0.0.1 at 2010-07-26 20:06:07) [GET]
+  [4;36;1mAluno Load (775.0ms)[0m   [0;1mSELECT * FROM `alunos` [0m
+Rendering template within layouts/application
+Rendering alunos/index
+  [4;35;1mCurso Load (46.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (89.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+Completed in 1592ms (View: 78, DB: 910) | 200 OK [http://localhost/alunos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#pesquisar (for 127.0.0.1 at 2010-07-26 20:06:14) [POST]
+  Parameters: {"matricula"=>"", "curso_id"=>"", "commit"=>"Pesquisar", "nome"=>"TESTE", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mAluno Load (29.0ms)[0m   [0mSELECT id, nome FROM `alunos` WHERE ((UPPER(nome) LIKE UPPER('%TESTE%')) ) [0m
+Rendering template within layouts/application
+Rendering alunos/pesquisar
+  [4;36;1mAluno Columns (21.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+Completed in 75ms (View: 18, DB: 50) | 200 OK [http://localhost/alunos/pesquisar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-26 20:06:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (44.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+Rendered shared/_pessoa_consulta_form (11.0ms)
+Completed in 79ms (View: 25, DB: 46) | 200 OK [http://localhost/aluno/consultar/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#code_image (for 127.0.0.1 at 2010-07-26 20:06:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (19.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Sending data Emblem-ghillie.jpg
+Completed in 33ms (View: 1, DB: 20) | 200 OK [http://localhost/alunos/code_image/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:06:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMatricula Columns (36.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (37.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 221ms (View: 87, DB: 90) | 200 OK [http://localhost/matriculas/matricular/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:06:23) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"1", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mMatricula Load (17.0ms)[0m   [0;1mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 1[0m
+Redirected to http://localhost:3000/matriculas/matricular/1
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:22:in `create'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAluno Columns (33.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:07:02) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"1", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mSQL (28.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMatricula Create (37.0ms)[0m   [0;1mINSERT INTO `matriculas` (`matricula`, `updated_at`, `aluno_id`, `turma_id`, `created_at`) VALUES('201021', '2010-07-26 23:07:02', 1, 1, '2010-07-26 23:07:02')[0m
+  [4;35;1mSQL (35.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/matriculas/consultar/2
+Completed in 126ms (DB: 104) | 302 Found [http://localhost/matriculas]
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#consultar (for 127.0.0.1 at 2010-07-26 20:07:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMatricula Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mMatricula Load (0.0ms)[0m   [0;1mSELECT * FROM `matriculas` WHERE (`matriculas`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/consultar
+  [4;35;1mAluno Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Completed in 125ms (View: 94, DB: 23) | 200 OK [http://localhost/matriculas/consultar/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:12:50) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"1", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (18.0ms)[0m   [0mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 1[0m
+Redirected to http://localhost:3000/matriculas/matricular/1
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:22:in `create'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (22.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:13:29) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"1", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (17.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (0.0ms)[0m   [0mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMatricula Create (0.0ms)[0m   [0mINSERT INTO `matriculas` (`matricula`, `updated_at`, `aluno_id`, `turma_id`, `created_at`) VALUES('201021', '2010-07-26 23:13:29', 1, 1, '2010-07-26 23:13:29')[0m
+  [4;36;1mSQL (55.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/matriculas/consultar/3
+Completed in 98ms (DB: 75) | 302 Found [http://localhost/matriculas]
+  [4;35;1mAluno Columns (14.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#consultar (for 127.0.0.1 at 2010-07-26 20:13:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mMatricula Load (0.0ms)[0m   [0mSELECT * FROM `matriculas` WHERE (`matriculas`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering matriculas/consultar
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCurso Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Completed in 115ms (View: 96, DB: 11) | 200 OK [http://localhost/matriculas/consultar/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:15:04) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"1", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mMatricula Load (0.0ms)[0m   [0;1mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 1[0m
+Redirected to http://localhost:3000/matriculas/matricular/1
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:22:in `create'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:15:16) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"1", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mMatricula Load (1.0ms)[0m   [0;1mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 1[0m
+Redirected to http://localhost:3000/matriculas/matricular/1
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:22:in `create'
+
+Rendered rescues/_trace (115.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:16:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mTurma Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 117ms (View: 45, DB: 22) | 200 OK [http://localhost/matriculas/matricular/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:16:12) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"1", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (0.0ms)[0m   [0mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 1[0m
+Redirected to http://localhost:3000/matriculas/matricular/1
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:22:in `create'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (19.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:17:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMatricula Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 53ms (View: 28, DB: 8) | 200 OK [http://localhost/matriculas/matricular/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:17:38) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"1", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mMatricula Load (1.0ms)[0m   [0;1mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 1[0m
+Redirected to http://localhost:3000/matriculas/matricular/1
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:22:in `create'
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:18:07) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"1", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mMatricula Load (1.0ms)[0m   [0;1mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 1[0m
+Redirected to http://localhost:3000/matriculas/matricular/1
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:38:in `create'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:18:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mTurma Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 50ms (View: 28, DB: 7) | 200 OK [http://localhost/matriculas/matricular/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:18:29) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"1", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (1.0ms)[0m   [0mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 1[0m
+Redirected to http://localhost:3000/matriculas/matricular/1
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:36:in `create'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-26 20:19:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+Rendered shared/_pessoa_consulta_form (11.0ms)
+Completed in 40ms (View: 27, DB: 4) | 200 OK [http://localhost/aluno/consultar/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#code_image (for 127.0.0.1 at 2010-07-26 20:19:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mAluno Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Sending data Emblem-ghillie.jpg
+Completed in 19ms (View: 1, DB: 5) | 200 OK [http://localhost/alunos/code_image/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:19:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMatricula Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 52ms (View: 27, DB: 9) | 200 OK [http://localhost/matriculas/matricular/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:19:18) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mMatricula Load (0.0ms)[0m   [0;1mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMatricula Create (1.0ms)[0m   [0;1mINSERT INTO `matriculas` (`matricula`, `updated_at`, `aluno_id`, `turma_id`, `created_at`) VALUES('201022', '2010-07-26 23:19:18', 2, 1, '2010-07-26 23:19:18')[0m
+  [4;35;1mSQL (34.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/matriculas/consultar/4
+Completed in 64ms (DB: 39) | 302 Found [http://localhost/matriculas]
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#consultar (for 127.0.0.1 at 2010-07-26 20:19:18) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mMatricula Load (0.0ms)[0m   [0;1mSELECT * FROM `matriculas` WHERE (`matriculas`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering matriculas/consultar
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` WHERE (`cursos`.`id` = 2) [0m
+Completed in 56ms (View: 40, DB: 9) | 200 OK [http://localhost/matriculas/consultar/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:19:23) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (0.0ms)[0m   [0mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+Redirected to http://localhost:3000/matriculas/matricular/2
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:36:in `create'
+
+Rendered rescues/_trace (117.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:19:58) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (0.0ms)[0m   [0mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+Redirected to http://localhost:3000/matriculas/matricular/2
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:36:in `create'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:21:03) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (1.0ms)[0m   [0mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+Redirected to http://localhost:3000/matriculas/matricular/
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:36:in `create'
+
+Rendered rescues/_trace (122.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:21:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMatricula Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 64ms (View: 28, DB: 21) | 200 OK [http://localhost/matriculas/matricular/2]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:21:20) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mMatricula Load (0.0ms)[0m   [0;1mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:36:in `create'
+
+Rendered rescues/_trace (124.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:24:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 50ms (View: 27, DB: 10) | 200 OK [http://localhost/matriculas/matricular/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:24:11) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (0.0ms)[0m   [0mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3: select a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3: select a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+          where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+          c.id = 2 AND a.id = ):
+  app/controllers/matriculas_controller.rb:8:in `nao_esta_matriculado?'
+  app/controllers/matriculas_controller.rb:38:in `create'
+  app/controllers/matriculas_controller.rb:36:in `create'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:26:06) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (0.0ms)[0m   [0mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:36:in `create'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:34:00) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (0.0ms)[0m   [0mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:36:in `create'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:37:20) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (0.0ms)[0m   [0mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+Redirected to http://localhost:3000/matriculas/matricular/
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:32:in `create'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:38:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMatricula Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 51ms (View: 28, DB: 7) | 200 OK [http://localhost/matriculas/matricular/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:38:44) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mMatricula Load (1.0ms)[0m   [0;1mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+
+ActionView::TemplateError (undefined method `nome' for nil:NilClass) on line #12 of app/views/matriculas/matricular.html.erb:
+9:     </tr>
+10:     <tr>
+11:       <td height="50" align="right"><strong>Aluno:</strong></td>
+12:       <td align="left"><%=h @aluno.nome %>
+13:         <%= f.hidden_field :aluno_id, :value => session[:aluno_id] %> </td>
+14:     </tr>
+15:     <tr>
+
+    app/views/matriculas/matricular.html.erb:12
+    app/views/matriculas/matricular.html.erb:5
+    app/controllers/matriculas_controller.rb:49:in `create'
+    app/controllers/matriculas_controller.rb:32:in `create'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:40:24) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (19.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mMatricula Load (0.0ms)[0m   [0;1mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+Redirected to http://localhost:3000/matriculas/consultar
+Completed in 44ms (DB: 20) | 302 Found [http://localhost/matriculas]
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#consultar (for 127.0.0.1 at 2010-07-26 20:40:24) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Matricula without an ID):
+  app/controllers/matriculas_controller.rb:4:in `consultar'
+
+Rendered rescues/_trace (117.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#consultar (for 127.0.0.1 at 2010-07-26 20:40:56) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Matricula without an ID):
+  app/controllers/matriculas_controller.rb:4:in `consultar'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:40:57) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mMatricula Load (0.0ms)[0m   [0;1mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+Redirected to http://localhost:3000/matriculas/matricular/2
+Completed in 29ms (DB: 6) | 302 Found [http://localhost/matriculas]
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:40:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mTurma Columns (24.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 72ms (View: 25, DB: 33) | 200 OK [http://localhost/matriculas/matricular/2]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:42:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 126ms (View: 35, DB: 9) | 200 OK [http://localhost/matriculas/matricular/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:43:39) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>""}, "curso_id"=>"", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+
+NoMethodError (undefined method `curso_id' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:28:in `create'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:46:03) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>""}, "curso_id"=>"", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+
+NoMethodError (undefined method `turma' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:28:in `create'
+
+Rendered rescues/_trace (112.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:46:24) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>""}, "curso_id"=>"", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+
+NoMethodError (undefined method `curso_id' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:28:in `create'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:46:27) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>""}, "curso_id"=>"", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+
+NoMethodError (undefined method `curso_id' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:28:in `create'
+
+Rendered rescues/_trace (114.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (17.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:48:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 49ms (View: 24, DB: 10) | 200 OK [http://localhost/matriculas/matricular/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:48:58) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mMatricula Load (0.0ms)[0m   [0;1mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+Redirected to http://localhost:3000/matriculas/matricular/2
+Completed in 27ms (DB: 4) | 302 Found [http://localhost/matriculas]
+  [4;35;1mAluno Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:48:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mTurma Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 48ms (View: 28, DB: 8) | 200 OK [http://localhost/matriculas/matricular/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:49:08) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>"1"}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `turmas` WHERE (`turmas`.`id` = 1) [0m
+  [4;35;1mMatricula Load (1.0ms)[0m   [0mselect a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+ where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+ c.id = 2 AND a.id = 2[0m
+Redirected to http://localhost:3000/matriculas/matricular/2
+Completed in 26ms (DB: 5) | 302 Found [http://localhost/matriculas]
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:49:09) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 48ms (View: 27, DB: 8) | 200 OK [http://localhost/matriculas/matricular/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:49:13) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>""}, "curso_id"=>"", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+
+NoMethodError (undefined method `curso_id' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:28:in `create'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:50:54) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>""}, "curso_id"=>"", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+
+NoMethodError (undefined method `curso_id' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:28:in `create'
+
+Rendered rescues/_trace (113.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:50:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 51ms (View: 24, DB: 12) | 200 OK [http://localhost/matriculas/matricular/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:51:02) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>""}, "curso_id"=>"", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+
+NoMethodError (undefined method `curso_id' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:28:in `create'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:51:32) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>""}, "curso_id"=>"2", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+
+NoMethodError (undefined method `curso_id' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:28:in `create'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 20:52:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;35;1mCurso Load (1.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mTurma Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 169ms (View: 103, DB: 11) | 200 OK [http://localhost/matriculas/matricular/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:52:57) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>""}, "curso_id"=>"", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+
+NoMethodError (undefined method `curso_id' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:28:in `create'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#create (for 127.0.0.1 at 2010-07-26 20:53:18) [POST]
+  Parameters: {"matricula"=>{"aluno_id"=>"2", "turma_id"=>""}, "curso_id"=>"", "commit"=>"Matricular", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+
+NoMethodError (undefined method `curso_id' for nil:NilClass):
+  app/controllers/matriculas_controller.rb:28:in `create'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#index (for 127.0.0.1 at 2010-07-26 21:37:58) [GET]
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` [0m
+Rendering template within layouts/application
+Rendering alunos/index
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+Completed in 33ms (View: 21, DB: 5) | 200 OK [http://localhost/alunos]
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#pesquisar (for 127.0.0.1 at 2010-07-26 21:38:01) [POST]
+  Parameters: {"matricula"=>"", "curso_id"=>"", "commit"=>"Pesquisar", "nome"=>"teste", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30="}
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT id, nome FROM `alunos` WHERE ((UPPER(nome) LIKE UPPER('%teste%')) ) [0m
+Rendering template within layouts/application
+Rendering alunos/pesquisar
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+Completed in 28ms (View: 19, DB: 4) | 200 OK [http://localhost/alunos/pesquisar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#consultar (for 127.0.0.1 at 2010-07-26 21:38:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering alunos/consultar
+Rendered shared/_pessoa_consulta_form (69.0ms)
+Completed in 94ms (View: 83, DB: 2) | 200 OK [http://localhost/aluno/consultar/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlunosController#code_image (for 127.0.0.1 at 2010-07-26 21:38:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Sending data Emblem-ghillie.jpg
+Completed in 16ms (View: 1, DB: 2) | 200 OK [http://localhost/alunos/code_image/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:38:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+ERROR: compiling _run_erb_app47views47matriculas47matricular46html46erb RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                     ^
+Function body:           def _run_erb_app47views47matriculas47matricular46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table cellpadding=\"0\" cellspacing=\"10\" border=\"0\">\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\"><h2>Matr&iacute;cula de aluno</h2></td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\" style=\"color: red\">"; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  ";  form_for(@matricula, [:action => 'matricular']) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Matr&iacute;ula:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\"></td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Aluno:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat((h @aluno.nome ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( f.hidden_field :aluno_id, :value => session[:aluno_id] ).to_s); @output_buffer.concat " </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Curso:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Turma:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( f.select :turma_id, lista_turmas.map {|r| [r.nome,r.id] }, 
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}'} ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>"; @output_buffer.concat(( f.submit "Matricular"  ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "</table>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:36:in `compile!'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                     ^) on line #25 of app/views/matriculas/matricular.html.erb:
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+24:       <td align="left"><%= f.select :turma_id, lista_turmas.map {|r| [r.nome,r.id] }, 
+25:           :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}'} %></td>
+26:     </tr>
+27:     <tr>
+28:       <td><%= f.submit "Matricular"  %></td>
+
+    app/views/matriculas/matricular.html.erb:36:in `compile!'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:38:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+ERROR: compiling _run_erb_app47views47matriculas47matricular46html46erb RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                      ^
+Function body:           def _run_erb_app47views47matriculas47matricular46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table cellpadding=\"0\" cellspacing=\"10\" border=\"0\">\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\"><h2>Matr&iacute;cula de aluno</h2></td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\" style=\"color: red\">"; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  ";  form_for(@matricula, [:action => 'matricular']) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Matr&iacute;ula:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\"></td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Aluno:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat((h @aluno.nome ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( f.hidden_field :aluno_id, :value => session[:aluno_id] ).to_s); @output_buffer.concat " </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Curso:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Turma:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( f.select :turma_id, lista_turmas.map {|r| [r.nome,r.id] }, 
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>"; @output_buffer.concat(( f.submit "Matricular"  ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "</table>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:36:in `compile!'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                      ^) on line #25 of app/views/matriculas/matricular.html.erb:
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+24:       <td align="left"><%= f.select :turma_id, lista_turmas.map {|r| [r.nome,r.id] }, 
+25:           :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}}'} %></td>
+26:     </tr>
+27:     <tr>
+28:       <td><%= f.submit "Matricular"  %></td>
+
+    app/views/matriculas/matricular.html.erb:36:in `compile!'
+
+Rendered rescues/_trace (53.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:38:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMatricula Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+ERROR: compiling _run_erb_app47views47matriculas47matricular46html46erb RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                      ^
+Function body:           def _run_erb_app47views47matriculas47matricular46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table cellpadding=\"0\" cellspacing=\"10\" border=\"0\">\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\"><h2>Matr&iacute;cula de aluno</h2></td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\" style=\"color: red\">"; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  ";  form_for(@matricula, [:action => 'matricular']) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Matr&iacute;ula:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\"></td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Aluno:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat((h @aluno.nome ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( f.hidden_field :aluno_id, :value => session[:aluno_id] ).to_s); @output_buffer.concat " </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Curso:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Turma:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( f.select :turma_id, lista_turmas.map {|r| [r.nome,r.id] }, 
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>"; @output_buffer.concat(( f.submit "Matricular"  ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "</table>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:36:in `compile!'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                      ^) on line #25 of app/views/matriculas/matricular.html.erb:
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+24:       <td align="left"><%= f.select :turma_id, lista_turmas.map {|r| [r.nome,r.id] }, 
+25:           :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarrega_turmas"}}'} %></td>
+26:     </tr>
+27:     <tr>
+28:       <td><%= f.submit "Matricular"  %></td>
+
+    app/views/matriculas/matricular.html.erb:36:in `compile!'
+
+Rendered rescues/_trace (116.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:42:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+ERROR: compiling _run_erb_app47views47matriculas47matricular46html46erb RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                       ^
+Function body:           def _run_erb_app47views47matriculas47matricular46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table cellpadding=\"0\" cellspacing=\"10\" border=\"0\">\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\"><h2>Matr&iacute;cula de aluno</h2></td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\" style=\"color: red\">"; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  ";  form_for(@matricula, [:action => 'matricular']) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Matr&iacute;ula:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\"></td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Aluno:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat((h @aluno.nome ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( f.hidden_field :aluno_id, :value => session[:aluno_id] ).to_s); @output_buffer.concat " </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Curso:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Turma:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( f.select :turma_id, @lista.map {|r| [r.nome,r.id] },
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>"; @output_buffer.concat(( f.submit "Matricular"  ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "</table>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:36:in `compile!'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                       ^) on line #25 of app/views/matriculas/matricular.html.erb:
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+24:       <td align="left"><%= f.select :turma_id, @lista.map {|r| [r.nome,r.id] },
+25:           :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"}}'} %></td>
+26:     </tr>
+27:     <tr>
+28:       <td><%= f.submit "Matricular"  %></td>
+
+    app/views/matriculas/matricular.html.erb:36:in `compile!'
+
+Rendered rescues/_trace (53.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:43:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+ERROR: compiling _run_erb_app47views47matriculas47matricular46html46erb RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                       ^
+Function body:           def _run_erb_app47views47matriculas47matricular46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table cellpadding=\"0\" cellspacing=\"10\" border=\"0\">\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\"><h2>Matr&iacute;cula de aluno</h2></td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\" style=\"color: red\">"; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  ";  form_for(@matricula, [:action => 'matricular']) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Matr&iacute;ula:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\"></td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Aluno:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat((h @aluno.nome ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( f.hidden_field :aluno_id, :value => session[:aluno_id] ).to_s); @output_buffer.concat " </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Curso:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Turma:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( f.collection_select :turma_id, @lista, :id, :nome,
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>"; @output_buffer.concat(( f.submit "Matricular"  ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "</table>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:36:in `compile!'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"}}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                       ^) on line #25 of app/views/matriculas/matricular.html.erb:
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+24:       <td align="left"><%= f.collection_select :turma_id, @lista, :id, :nome,
+25:           :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"}}'} %></td>
+26:     </tr>
+27:     <tr>
+28:       <td><%= f.submit "Matricular"  %></td>
+
+    app/views/matriculas/matricular.html.erb:36:in `compile!'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:44:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mMatricula Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+ERROR: compiling _run_erb_app47views47matriculas47matricular46html46erb RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"})}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                        ^
+Function body:           def _run_erb_app47views47matriculas47matricular46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table cellpadding=\"0\" cellspacing=\"10\" border=\"0\">\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\"><h2>Matr&iacute;cula de aluno</h2></td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\" style=\"color: red\">"; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  ";  form_for(@matricula, [:action => 'matricular']) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Matr&iacute;ula:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\"></td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Aluno:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat((h @aluno.nome ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( f.hidden_field :aluno_id, :value => session[:aluno_id] ).to_s); @output_buffer.concat " </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Curso:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Turma:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( f.collection_select :turma_id, @lista, :id, :nome,
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"})}'} ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>"; @output_buffer.concat(( f.submit "Matricular"  ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "</table>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:36:in `compile!'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"})}'} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                        ^) on line #25 of app/views/matriculas/matricular.html.erb:
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+24:       <td align="left"><%= f.collection_select :turma_id, @lista, :id, :nome,
+25:           :include_blank => 'Selecione', {:onchage => '#{remote_function(:url  => {:action => "recarregar_turmas"})}'} %></td>
+26:     </tr>
+27:     <tr>
+28:       <td><%= f.submit "Matricular"  %></td>
+
+    app/views/matriculas/matricular.html.erb:36:in `compile!'
+
+Rendered rescues/_trace (112.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:44:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+ERROR: compiling _run_erb_app47views47matriculas47matricular46html46erb RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => "#{remote_function(:url  => {:action => "recarregar_turmas"})}"} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                        ^
+Function body:           def _run_erb_app47views47matriculas47matricular46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table cellpadding=\"0\" cellspacing=\"10\" border=\"0\">\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\"><h2>Matr&iacute;cula de aluno</h2></td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\" style=\"color: red\">"; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  ";  form_for(@matricula, [:action => 'matricular']) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Matr&iacute;ula:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\"></td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Aluno:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat((h @aluno.nome ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( f.hidden_field :aluno_id, :value => session[:aluno_id] ).to_s); @output_buffer.concat " </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Curso:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Turma:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( f.collection_select :turma_id, @lista, :id, :nome,
+          :include_blank => 'Selecione', {:onchage => "#{remote_function(:url  => {:action => "recarregar_turmas"})}"} ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>"; @output_buffer.concat(( f.submit "Matricular"  ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "</table>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:36:in `compile!'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:25: syntax error, unexpected ')', expecting tASSOC
+          :include_blank => 'Selecione', {:onchage => "#{remote_function(:url  => {:action => "recarregar_turmas"})}"} ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                        ^) on line #25 of app/views/matriculas/matricular.html.erb:
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+24:       <td align="left"><%= f.collection_select :turma_id, @lista, :id, :nome,
+25:           :include_blank => 'Selecione', {:onchage => "#{remote_function(:url  => {:action => "recarregar_turmas"})}"} %></td>
+26:     </tr>
+27:     <tr>
+28:       <td><%= f.submit "Matricular"  %></td>
+
+    app/views/matriculas/matricular.html.erb:36:in `compile!'
+
+Rendered rescues/_trace (119.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:47:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mMatricula Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+ERROR: compiling _run_erb_app47views47matriculas47matricular46html46erb RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:24: syntax error, unexpected ')', expecting tASSOC
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( f.collection_select(:turma_id, @lista, :id, :nome, :include_blank => 'Selecione', {:onchange => ""}) ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                                               ^
+Function body:           def _run_erb_app47views47matriculas47matricular46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table cellpadding=\"0\" cellspacing=\"10\" border=\"0\">\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\"><h2>Matr&iacute;cula de aluno</h2></td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"2\" align=\"center\" style=\"color: red\">"; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  ";  form_for(@matricula, [:action => 'matricular']) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Matr&iacute;ula:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\"></td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Aluno:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat((h @aluno.nome ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( f.hidden_field :aluno_id, :value => session[:aluno_id] ).to_s); @output_buffer.concat " </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Curso:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td height=\"50\" align=\"right\"><strong>Turma:</strong></td>\n"
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( f.collection_select(:turma_id, @lista, :id, :nome, :include_blank => 'Selecione', {:onchange => ""}) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>"; @output_buffer.concat(( f.submit "Matricular"  ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "  <tr></tr>\n"
+@output_buffer.concat "</table>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:35:in `compile!'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE/app/views/matriculas/matricular.html.erb:24: syntax error, unexpected ')', expecting tASSOC
+@output_buffer.concat "      <td align=\"left\">"; @output_buffer.concat(( f.collection_select(:turma_id, @lista, :id, :nome, :include_blank => 'Selecione', {:onchange => ""}) ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                                               ^) on line #24 of app/views/matriculas/matricular.html.erb:
+21:     </tr>
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+24:       <td align="left"><%= f.collection_select(:turma_id, @lista, :id, :nome, :include_blank => 'Selecione', {:onchange => ""}) %></td>
+25:     </tr>
+26:     <tr>
+27:       <td><%= f.submit "Matricular"  %></td>
+
+    app/views/matriculas/matricular.html.erb:35:in `compile!'
+
+Rendered rescues/_trace (53.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:50:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mMatricula Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+
+ActionView::TemplateError (undefined local variable or method `value' for #<ActionView::Base:0x5f4f164>) on line #20 of app/views/matriculas/matricular.html.erb:
+17:     </tr>
+18:     <tr>
+19:       <td height="50" align="right"><strong>Curso:</strong></td>
+20:       <td align="left"><%= collection_select('', :curso_id, lista_cursos, :id, :nome, {:prompt => "Selectione"}, {:onchange => "#{remote_function(:url => "recarregar_turmas", :with => 'curso_id='+value)}"}) %></td>
+21:     </tr>
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+
+    app/views/matriculas/matricular.html.erb:20
+    app/views/matriculas/matricular.html.erb:8
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:51:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mTurma Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+
+ActionView::TemplateError (undefined local variable or method `value' for #<ActionView::Base:0x5fb8470>) on line #20 of app/views/matriculas/matricular.html.erb:
+17:     </tr>
+18:     <tr>
+19:       <td height="50" align="right"><strong>Curso:</strong></td>
+20:       <td align="left"><%= collection_select('', :curso_id, lista_cursos, :id, :nome, {:prompt => "Selectione"}, {:onchange => "#{remote_function(:url => "recarregar_turmas", :with => 'curso_id='+value)}"}) %></td>
+21:     </tr>
+22:     <tr>
+23:       <td height="50" align="right"><strong>Turma:</strong></td>
+
+    app/views/matriculas/matricular.html.erb:20
+    app/views/matriculas/matricular.html.erb:8
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:53:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (1.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (1.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 58ms (View: 32, DB: 9) | 200 OK [http://localhost/matriculas/matricular/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:53:12) [POST]
+  Parameters: {"curso_id"=>"2", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30=", "id"=>"recarregar_turmas", "_"=>""}
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aluno with ID=recarregar_turmas):
+  app/controllers/matriculas_controller.rb:31:in `matricular'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:53:14) [POST]
+  Parameters: {"curso_id"=>"4", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30=", "id"=>"recarregar_turmas", "_"=>""}
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mMatricula Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aluno with ID=recarregar_turmas):
+  app/controllers/matriculas_controller.rb:31:in `matricular'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:55:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTurma Load (1.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (1.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;35;1mCurso Load (0.0ms)[0m   [0mSELECT * FROM `cursos` [0m
+  [4;36;1mCurso Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cursos`[0m
+  [4;35;1mTurma Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `turmas`[0m
+Completed in 54ms (View: 29, DB: 9) | 200 OK [http://localhost/matriculas/matricular/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:55:40) [POST]
+  Parameters: {"curso_id"=>"2", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30=", "id"=>"recarregar_turmas", "_"=>""}
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aluno with ID=recarregar_turmas):
+  app/controllers/matriculas_controller.rb:31:in `matricular'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:55:42) [POST]
+  Parameters: {"curso_id"=>"5", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30=", "id"=>"recarregar_turmas", "_"=>""}
+  [4;36;1mTurma Load (1.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mMatricula Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aluno with ID=recarregar_turmas):
+  app/controllers/matriculas_controller.rb:31:in `matricular'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:57:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTurma Load (0.0ms)[0m   [0;1mSELECT * FROM `turmas` [0m
+  [4;35;1mMatricula Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `matriculas`[0m
+  [4;36;1mAluno Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `alunos`[0m
+  [4;35;1mAluno Load (0.0ms)[0m   [0mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering matriculas/matricular
+  [4;36;1mCurso Load (0.0ms)[0m   [0;1mSELECT * FROM `cursos` [0m
+  [4;35;1mCurso Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cursos`[0m
+  [4;36;1mTurma Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `turmas`[0m
+Completed in 55ms (View: 30, DB: 5) | 200 OK [http://localhost/matriculas/matricular/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:58:03) [POST]
+  Parameters: {"curso_id"=>"2", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30=", "id"=>"recarregar_turmas", "_"=>""}
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aluno with ID=recarregar_turmas):
+  app/controllers/matriculas_controller.rb:31:in `matricular'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MatriculasController#matricular (for 127.0.0.1 at 2010-07-26 21:58:05) [POST]
+  Parameters: {"curso_id"=>"5", "authenticity_token"=>"s4hUmvJE5uG5vIQ5OerxgAmDOJG/UKlvzh2CXBB9t30=", "id"=>"recarregar_turmas", "_"=>""}
+  [4;35;1mTurma Load (0.0ms)[0m   [0mSELECT * FROM `turmas` [0m
+  [4;36;1mMatricula Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `matriculas`[0m
+  [4;35;1mAluno Columns (14.0ms)[0m   [0mSHOW FIELDS FROM `alunos`[0m
+  [4;36;1mAluno Load (0.0ms)[0m   [0;1mSELECT * FROM `alunos` WHERE (`alunos`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Aluno with ID=recarregar_turmas):
+  app/controllers/matriculas_controller.rb:31:in `matricular'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+/!\ FAILSAFE /!\  Fri Sep 17 02:53:38 -0300 2010
+  Status: 500 Internal Server Error
+  193: %1 não é um aplicativo Win32 válido.   - c:/ruby/lib/ruby/gems/1.8/gems/mysql-2.8.1-x86-mswin32/lib/1.8/mysql_api.so
+    c:/ruby/lib/ruby/gems/1.8/gems/mysql-2.8.1-x86-mswin32/lib/1.8/mysql_api.so
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/mysql-2.8.1-x86-mswin32/lib/mysql.rb:7
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    c:/ruby/lib/ruby/1.8/monitor.rb:238:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3

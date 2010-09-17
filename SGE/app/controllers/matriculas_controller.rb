@@ -1,5 +1,22 @@
 class MatriculasController < ApplicationController
 
+  def nao_esta_matriculado?
+    @turma = Turma.find(session[:turma_id])
+      sql = "select a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
+          where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
+          c.id = #{@turma.curso_id} AND a.id = #{session[:aluno_id]}"
+    Matricula.find_by_sql(sql).empty?
+  end 
+
+  def recarregar_turmas
+    @lista = Turma.find(:all, :conditions => ["curso_id = ?", params[:curso_id]])
+
+    render :update do |page|
+      page.replace_html 'lista', :object => @lista
+    end
+  end
+  
+
   def consultar
     @matricula = Matricula.find(params[:id])
   end
@@ -9,6 +26,7 @@ class MatriculasController < ApplicationController
   end
 
   def matricular
+    @lista = Turma.find(:all)
     @matricula = Matricula.new
     @aluno = Aluno.find(params[:id])
     session[:aluno_id] = params[:id]    
@@ -20,19 +38,18 @@ class MatriculasController < ApplicationController
     matricula = String(data.year) + String(@matricula.turma.curso_id) + String(@matricula.aluno_id)
     session[:matricula] = matricula
     respond_to do |format|
-      session[:turma_id] = @matricula.turma_id
-      if esta_matriculado?
-        flash[:notice] = "O aluno ja esta amtriculado neste curso"
-        redirect_to(matricular_aluno_path(session[:aluno_id]))
-      else
+      session[:turma_id] = @matricula.turma_id      
+      if nao_esta_matriculado?
         @matricula.matricula = session[:matricula]
         if @matricula.save
           format.html { redirect_to(consultar_matricula_path(@matricula), :notice => 'A matrícula foi realizada com sucesso.') }
           format.xml  { render :xml => @matricula, :status => :created, :location => @matricula }
         else
-          format.html { render :action => "index" }
+          format.html { render :action => "matricular" }
           format.xml  { render :xml => @matricula.errors, :status => :unprocessable_entity }
         end
+      else
+        format.html { redirect_to(matricular_aluno_path(session[:aluno_id]), :notice => 'Este aluno já está matriculado.') }
       end
     end
   end
@@ -51,18 +68,6 @@ class MatriculasController < ApplicationController
     end
   end
 
-  protected
-  def esta_matriculado?
-    @turma = Turma.find(session[:turma_id])
-    sql = "select a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
-          where m.aluno_id = a.id AND m.turma_id = t.id AND t.curso_id = c.id AND
-          c.id = #{@turma.curso_id} AND a.id = #{session[:aluno_id]}"
-    @resultado = Matricula.find_by_sql(sql)
-    if @resultado.empty?
-      return false
-    else
-      return true
-    end
-  end
+  
 
 end

@@ -1,0 +1,378 @@
+[1mdiff --git a/app/controllers/.svn/text-base/alunos_controller.rb.netbeans-base b/app/controllers/.svn/text-base/alunos_controller.rb.netbeans-base[m
+[1mdeleted file mode 100644[m
+[1mindex 4d67e8b..0000000[m
+[1m--- a/app/controllers/.svn/text-base/alunos_controller.rb.netbeans-base[m
+[1m+++ /dev/null[m
+[36m@@ -1,122 +0,0 @@[m
+[31m-class AlunosController < ApplicationController[m
+[31m-  before_filter :limpar_sessao, :only => [:index][m
+[31m-  before_filter :guarda_pesquisa_aluno, :only => [:pesquisar][m
+[31m-  before_filter :guarda_consulta_aluno, :only => [:consultar][m
+[31m-  [m
+[31m-  # GET /alunos[m
+[31m-  # GET /alunos.xml[m
+[31m-  def index[m
+[31m-    @alunos = Aluno.all[m
+[31m-[m
+[31m-    respond_to do |format|[m
+[31m-      format.html # index.html.erb[m
+[31m-      format.xml  { render :xml => @alunos }[m
+[31m-    end[m
+[31m-  end[m
+[31m-[m
+[31m-  # GET /alunos/1[m
+[31m-  # GET /alunos/1.xml[m
+[31m-  def consultar[m
+[31m-    @aluno = Aluno.find(params[:id])[m
+[31m-[m
+[31m-    respond_to do |format|[m
+[31m-      format.html # show.html.erb[m
+[31m-      format.xml  { render :xml => @aluno }[m
+[31m-    end[m
+[31m-  end[m
+[31m-[m
+[31m-  # GET /alunos/new[m
+[31m-  # GET /alunos/new.xml[m
+[31m-  def novo[m
+[31m-    @aluno = Aluno.new[m
+[31m-[m
+[31m-    respond_to do |format|[m
+[31m-      format.html # new.html.erb[m
+[31m-      format.xml  { render :xml => @aluno }[m
+[31m-    end[m
+[31m-  end[m
+[31m-[m
+[31m-  # GET /alunos/1/edit[m
+[31m-  def editar[m
+[31m-    @aluno = Aluno.find(params[:id])[m
+[31m-  end[m
+[31m-[m
+[31m-  # POST /alunos[m
+[31m-  # POST /alunos.xml[m
+[31m-  def create[m
+[31m-    @aluno = Aluno.new(params[:aluno])[m
+[31m-[m
+[31m-    respond_to do |format|[m
+[31m-      if @aluno.save[m
+[31m-        format.html { redirect_to(consultar_aluno_path(@aluno), :notice => 'O aluno foi criado com sucesso.') }[m
+[31m-        format.xml  { render :xml => @aluno, :status => :created, :location => @aluno }[m
+[31m-      else[m
+[31m-        format.html { render :action => "novo" }[m
+[31m-        format.xml  { render :xml => @aluno.errors, :status => :unprocessable_entity }[m
+[31m-      end[m
+[31m-    end[m
+[31m-  end[m
+[31m-[m
+[31m-  # PUT /alunos/1[m
+[31m-  # PUT /alunos/1.xml[m
+[31m-  def update[m
+[31m-    @aluno = Aluno.find(params[:id])[m
+[31m-[m
+[31m-    respond_to do |format|[m
+[31m-      if @aluno.update_attributes(params[:aluno])[m
+[31m-        format.html { redirect_to(consultar_aluno_path(@aluno), :notice => 'O aluno foi editado com sucesso.') }[m
+[31m-        format.xml  { head :ok }[m
+[31m-      else[m
+[31m-        format.html { render :action => "editar" }[m
+[31m-        format.xml  { render :xml => @aluno.errors, :status => :unprocessable_entity }[m
+[31m-      end[m
+[31m-    end[m
+[31m-  end[m
+[31m-[m
+[31m-  # DELETE /alunos/1[m
+[31m-  # DELETE /alunos/1.xml[m
+[31m-  def destroy[m
+[31m-    @aluno = Aluno.find(params[:id])[m
+[31m-    @aluno.destroy[m
+[31m-[m
+[31m-    respond_to do |format|[m
+[31m-      format.html { redirect_to(alunos_url) }[m
+[31m-      format.xml  { head :ok }[m
+[31m-    end[m
+[31m-  end[m
+[31m-[m
+[31m-  def pesquisar[m
+[31m-    if !params[:nome].nil? or !params[:matricula].nil? or !params[:curso_id].nil?[m
+[31m-      conditions = [""][m
+[31m-      sql = ""[m
+[31m-      if !params[:nome].empty?[m
+[31m-        sql = sql + "(UPPER(nome) LIKE UPPER(?)) AND "[m
+[31m-        conditions <<  "%#{params[:nome]}%"[m
+[31m-      end[m
+[31m-      if !params[:matricula].empty?[m
+[31m-        sql = sql + "(UPPER(matricula) LIKE UPPER(?)) AND "[m
+[31m-        conditions << "%#{params[:matricula]}%"[m
+[31m-      end[m
+[31m-      if !params[:curso_id].empty?[m
+[31m-        sql = sql + "curso_id = ? AND "[m
+[31m-        conditions << "#{params[:curso_id]}"[m
+[31m-      end[m
+[31m-      conditions[0] = sql[0..sql.length-5][m
+[31m-      @alunos = Aluno.find(:all, :select => ('id, nome, matricula'), :conditions => conditions)[m
+[31m-      if @alunos.empty?[m
+[31m-        redirect_to(alunos_path, :notice => 'Nenhum resultado encontrado.')[m
+[31m-      else[m
+[31m-        session[:alunos] = @alunos[m
+[31m-      end[m
+[31m-    else[m
+[31m-      @alunos = session[:alunos][m
+[31m-    end[m
+[31m-  end[m
+[31m-[m
+[31m-  def code_image[m
+[31m-    @aluno = Aluno.find(params[:id])[m
+[31m-    @image = @aluno.foto_bin_data[m
+[31m-    send_data(@image, :type => @aluno.foto_content_type, :filename => @aluno.foto_nome, :disposition => 'inline')[m
+[31m-  end[m
+[31m-[m
+[31m-end[m
+[1mdiff --git a/app/controllers/application_controller.rb b/app/controllers/application_controller.rb[m
+[1mindex 096112d..b51d200 100644[m
+[1m--- a/app/controllers/application_controller.rb[m
+[1m+++ b/app/controllers/application_controller.rb[m
+[36m@@ -37,4 +37,17 @@[m [mclass ApplicationController < ActionController::Base[m
+       session[:retorno] = request.request_uri[m
+     end[m
+   end[m
+[32m+[m
+[32m+[m[32m  protected[m
+[32m+[m[32m  def guarda_pesquisa_turma[m
+[32m+[m[32m    session[:pesquisa_turma] = request.request_uri[m
+[32m+[m[32m    session[:retorno] = session[:pesquisa_turma][m
+[32m+[m[32m  end[m
+[32m+[m
+[32m+[m[32m  protected[m
+[32m+[m[32m  def guarda_consulta_turma[m
+[32m+[m[32m    if session[:pesquisa_turma].nil?[m
+[32m+[m[32m      session[:retorno] = request.request_uri[m
+[32m+[m[32m    end[m
+[32m+[m[32m  end[m
+ end[m
+\ No newline at end of file[m
+[1mdiff --git a/app/controllers/turmas_controller.rb b/app/controllers/turmas_controller.rb[m
+[1mindex 6765879..8dfa104 100644[m
+[1m--- a/app/controllers/turmas_controller.rb[m
+[1m+++ b/app/controllers/turmas_controller.rb[m
+[36m@@ -1,4 +1,8 @@[m
+ class TurmasController < ApplicationController[m
+[32m+[m[32m  before_filter :limpar_sessao, :only => [:index][m
+[32m+[m[32m  before_filter :guarda_pesquisa_turma, :only => [:pesquisar][m
+[32m+[m[32m  before_filter :guarda_consulta_turma, :only => [:consultar][m
+[32m+[m
+   # GET /turmas[m
+   # GET /turmas.xml[m
+   def index[m
+[36m@@ -80,4 +84,32 @@[m [mclass TurmasController < ApplicationController[m
+       format.xml  { head :ok }[m
+     end[m
+   end[m
+[32m+[m
+[32m+[m[32m  def pesquisar[m
+[32m+[m[32m    if !params[:nome].nil? or !params[:ano].nil? or !params[:curso_id].nil?[m
+[32m+[m[32m      conditions = [""][m
+[32m+[m[32m      sql = ""[m
+[32m+[m[32m      if !params[:nome].empty?[m
+[32m+[m[32m        sql = sql + "(UPPER(nome) LIKE UPPER(?)) AND "[m
+[32m+[m[32m        conditions <<  "%#{params[:nome]}%"[m
+[32m+[m[32m      end[m
+[32m+[m[32m      if !params[:ano].empty?[m
+[32m+[m[32m        sql = sql + "ano = ? AND "[m
+[32m+[m[32m        conditions <<  "%#{params[:ano]}%"[m
+[32m+[m[32m      end[m
+[32m+[m[32m      if !params[:curso_id].empty?[m
+[32m+[m[32m        sql = sql + "curso_id = ? AND "[m
+[32m+[m[32m        conditions <<  "%#{params[:curso_id]}%"[m
+[32m+[m[32m      end[m
+[32m+[m[32m      conditions[0] = sql[0..sql.length-5][m
+[32m+[m[32m      @turmas = Turma.find(:all, :select => ('id, nome'), :conditions => conditions)[m
+[32m+[m[32m      if @turmas.empty?[m
+[32m+[m[32m        redirect_to(turmas_path, :notice => 'Nenhum resultado encontrado.')[m
+[32m+[m[32m      else[m
+[32m+[m[32m        session[:turmas] = @turmas[m
+[32m+[m[32m      end[m
+[32m+[m[32m    else[m
+[32m+[m[32m      @turmas = session[:turmas][m
+[32m+[m[32m    end[m
+[32m+[m[32m  end[m
+ end[m
+[1mdiff --git a/app/views/turmas/index.html.erb b/app/views/turmas/index.html.erb[m
+[1mindex a57bddc..99cbcf9 100644[m
+[1m--- a/app/views/turmas/index.html.erb[m
+[1m+++ b/app/views/turmas/index.html.erb[m
+[36m@@ -1,26 +1,32 @@[m
+[31m-<h1>Listing turmas</h1>[m
+[31m-[m
+[31m-<table>[m
+[31m-  <tr>[m
+[31m-    <th>Nome</th>[m
+[31m-    <th>Ano</th>[m
+[31m-    <th>Max alunos</th>[m
+[31m-    <th>Curso</th>[m
+[31m-  </tr>[m
+[31m-[m
+[31m-<% @turmas.each do |turma| %>[m
+[31m-  <tr>[m
+[31m-    <td><%=h turma.nome %></td>[m
+[31m-    <td><%=h turma.ano %></td>[m
+[31m-    <td><%=h turma.max_alunos %></td>[m
+[31m-    <td><%=h turma.curso.nome %></td>[m
+[31m-    <td><%= link_to 'Show', turma %></td>[m
+[31m-    <td><%= link_to 'Edit', edit_turma_path(turma) %></td>[m
+[31m-    <td><%= link_to 'Destroy', turma, :confirm => 'Are you sure?', :method => :delete %></td>[m
+[31m-  </tr>[m
+[31m-<% end %>[m
+[31m-</table>[m
+[31m-[m
+[31m-<br />[m
+[31m-[m
+[31m-<%= link_to 'New turma', new_turma_path %>[m
+\ No newline at end of file[m
+[32m+[m[32m<p>[m
+[32m+[m[32m<h1>Administra√ß√£o de Turmas</h1>[m
+[32m+[m[32m</p>[m
+[32m+[m[32m<p>[m
+[32m+[m[32m  <%= link_to 'Nova turma', novo_turma_path %>[m
+[32m+[m[32m</p>[m
+[32m+[m[32m<fieldset style="width: 250px">[m
+[32m+[m[32m  <legend>Pesquisa de turmas</legend>[m
+[32m+[m[32m  <p style="color: red"><%= notice %></p>[m
+[32m+[m[32m  <% form_tag '/turmas/pesquisar' do %>[m
+[32m+[m[32m  <table>[m
+[32m+[m[32m    <tr>[m
+[32m+[m[32m      <td align="right">Nome:</td>[m
+[32m+[m[32m      <td align="left"><%= text_field_tag :nome %></td>[m
+[32m+[m[32m    </tr>[m
+[32m+[m[32m    <tr>[m
+[32m+[m[32m      <td align="right">Ano:</td>[m
+[32m+[m[32m      <td align="left"><%= text_field_tag :ano %></td>[m
+[32m+[m[32m    </tr>[m
+[32m+[m[32m    <tr>[m
+[32m+[m[32m      <td align="right">Curso:</td>[m
+[32m+[m[32m      <td align="left"><%= collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") %></td>[m
+[32m+[m[32m    </tr>[m
+[32m+[m[32m    <tr>[m
+[32m+[m[32m      <td colspan="2" align="right">[m
+[32m+[m[32m        <%= token_tag %>[m
+[32m+[m[32m        <%= submit_tag "Pesquisar" %>[m
+[32m+[m[32m      </td>[m
+[32m+[m[32m    </tr>[m
+[32m+[m[32m  </table>[m
+[32m+[m[32m  <% end %>[m
+[32m+[m[32m</fieldset>[m
+\ No newline at end of file[m
+[1mdiff --git a/db/migrate/20100618005738_add_column.rb b/db/migrate/20100618005738_add_column.rb[m
+[1mdeleted file mode 100644[m
+[1mindex 78398e9..0000000[m
+[1m--- a/db/migrate/20100618005738_add_column.rb[m
+[1m+++ /dev/null[m
+[36m@@ -1,8 +0,0 @@[m
+[31m-class AddColumn < ActiveRecord::Migration[m
+[31m-  def self.up[m
+[31m-    add_column :alunos, :curso_id, :integer[m
+[31m-  end[m
+[31m-[m
+[31m-  def self.down[m
+[31m-  end[m
+[31m-end[m
+[1mdiff --git a/db/migrate/20100621012456_create_cursos.rb b/db/migrate/20100621012456_create_cursos.rb[m
+[1mdeleted file mode 100644[m
+[1mindex 8709c60..0000000[m
+[1m--- a/db/migrate/20100621012456_create_cursos.rb[m
+[1m+++ /dev/null[m
+[36m@@ -1,20 +0,0 @@[m
+[31m-class CreateCursos < ActiveRecord::Migration[m
+[31m-  def self.up[m
+[31m-    create_table :cursos do |t|[m
+[31m-      t.string :nome[m
+[31m-      t.string :descricao[m
+[31m-      t.string :ementa[m
+[31m-      t.string :coordenador[m
+[31m-      t.string :turno[m
+[31m-      t.integer :duracao[m
+[31m-      t.integer :total_horas[m
+[31m-      t.string :tipo[m
+[31m-[m
+[31m-      t.timestamps[m
+[31m-    end[m
+[31m-  end[m
+[31m-[m
+[31m-  def self.down[m
+[31m-    drop_table :cursos[m
+[31m-  end[m
+[31m-end[m
+[1mdiff --git a/log/development.log b/log/development.log[m
+[1mindex 2127bd0..d70b322 100644[m
+[1m--- a/log/development.log[m
+[1m+++ b/log/development.log[m
+[36m@@ -16767,3 +16767,71 @@[m [mActiveRecord::RecordNotFound (Couldn't find Aluno with ID=recarregar_turmas):[m
+ Rendered rescues/_trace (45.0ms)[m
+ Rendered rescues/_request_and_response (0.0ms)[m
+ Rendering rescues/layout (not_found)[m
+[32m+[m[32m/!\ FAILSAFE /!\  Fri Sep 17 02:53:38 -0300 2010[m[41m[m
+[32m+[m[32m  Status: 500 Internal Server Error[m[41m[m
+[32m+[m[32m  193: %1 n„o È um aplicativo Win32 v·lido.   - c:/ruby/lib/ruby/gems/1.8/gems/mysql-2.8.1-x86-mswin32/lib/1.8/mysql_api.so[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mysql-2.8.1-x86-mswin32/lib/1.8/mysql_api.so[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mysql-2.8.1-x86-mswin32/lib/mysql.rb:7[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:61:in `mysql_connection'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/1.8/monitor.rb:238:in `synchronize'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'[m[41m[m
+[32m+[m[32m    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'[m[41m[m
+[32m+[m[32m    script/server:3[m[41m[m
