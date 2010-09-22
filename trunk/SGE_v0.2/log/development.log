@@ -1,0 +1,418 @@
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at Wed Sep 22 19:17:20 -0300 2010
+  Processing by Rails::InfoController#properties as */*
+  [1m[36mSQL (79.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (7.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Rendered inline template (1.0ms)
+Completed 200 OK in 168ms (Views: 3.0ms | ActiveRecord: 87.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Wed Sep 22 19:17:24 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[35mTurma Load (1.0ms)[0m  SELECT `turmas`.* FROM `turmas`
+  [1m[36mCurso Load (21.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos`[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_53857884_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:10)
+Rendered turmas/index.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 335ms (Views: 68.0ms | ActiveRecord: 22.0ms)
+
+
+Started POST "/turmas/pesquisar" for 127.0.0.1 at Wed Sep 22 19:17:30 -0300 2010
+
+ActionController::RoutingError (No route matches "/turmas/pesquisar"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/turmas/pesquisar" for 127.0.0.1 at Wed Sep 22 19:25:07 -0300 2010
+  Processing by TurmasController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "ano"=>"", "nome"=>"s", "authenticity_token"=>"Kccb6NURavolYikFo62d0ZGNWRl0YJHOnY0iDWZBJ7I=", "utf8"=>"\342\234\223", "curso_id"=>""}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_turma at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:43)
+  [1m[35mTurma Load (0.0ms)[0m  SELECT id, nome, ano, curso_id FROM `turmas` WHERE ((UPPER(nome) LIKE UPPER('%s%')) )
+  [1m[36mCurso Load (20.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+Rendered turmas/pesquisar.erb within layouts/application (242.0ms)
+Completed 200 OK in 273ms (Views: 238.0ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/turmas/consultar/1" for 127.0.0.1 at Wed Sep 22 19:25:11 -0300 2010
+  Processing by TurmasController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas` WHERE (`turmas`.`id` = 1) LIMIT 1[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+Rendered turmas/consultar.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 55ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Wed Sep 22 19:25:14 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas`[0m
+Rendered turmas/index.html.erb within layouts/application (29.0ms)
+Completed   in 51ms
+
+ActionView::Template::Error (No route matches {:controller=>"turmas", :action=>"novo"}):
+    2: <h1>Administração de Turmas</h1>
+    3: </p>
+    4: <p>
+    5:   <%= link_to 'Nova turma', novo_turma_path %>
+    6: </p>
+    7: <fieldset style="width: 250px">
+    8:   <legend>Pesquisa de turmas</legend>
+  app/views/turmas/index.html.erb:5:in `_app_views_turmas_index_html_erb__168621911_54017616_0'
+  app/controllers/turmas_controller.rb:11:in `index'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Wed Sep 22 19:25:31 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[35mTurma Load (1.0ms)[0m  SELECT `turmas`.* FROM `turmas`
+Rendered turmas/index.html.erb within layouts/application (1.0ms)
+Completed   in 25ms
+
+ActionView::Template::Error (No route matches {:controller=>"turmas", :action=>"novo"}):
+    2: <h1>Administração de Turmas</h1>
+    3: </p>
+    4: <p>
+    5:   <%= link_to 'Nova turma', novo_turma_path %>
+    6: </p>
+    7: <fieldset style="width: 250px">
+    8:   <legend>Pesquisa de turmas</legend>
+  app/views/turmas/index.html.erb:5:in `_app_views_turmas_index_html_erb__168621911_54961596_0'
+  app/controllers/turmas_controller.rb:11:in `index'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Wed Sep 22 19:26:03 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[36mTurma Load (8.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas`[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_54103524_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:10)
+Rendered turmas/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 69ms (Views: 58.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Wed Sep 22 19:26:06 -0300 2010
+  Processing by TurmasController#novo as HTML
+DEPRECATION WARNING: f.error_messages was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from _app_views_turmas__turma_form_erb__288973697_54608988_1519284 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/_turma_form.erb:1)
+  [1m[36mCurso Load (0.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos`[0m
+Rendered turmas/_turma_form.erb (19.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_novo_html_erb__194922942_54692088_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/novo.html.erb:3)
+Rendered turmas/novo.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 56ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Wed Sep 22 19:29:41 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[36mSQL (34.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mTurma Load (0.0ms)[0m  SELECT `turmas`.* FROM `turmas`
+  [1m[36mCurso Load (1.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos`[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_53276580_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:10)
+Rendered turmas/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 173ms (Views: 60.0ms | ActiveRecord: 35.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Wed Sep 22 19:29:44 -0300 2010
+  Processing by TurmasController#novo as HTML
+ERROR: compiling _app_views_turmas_novo_html_erb__194922942_52824816_0 RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/novo.html.erb:8: syntax error, unexpected kEND
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                               ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/novo.html.erb:11: syntax error, unexpected kENSURE, expecting ')'
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/novo.html.erb:13: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_turmas_novo_html_erb__194922942_52824816_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "turmas/novo";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Nova turma</h1>
+
+');@output_buffer.append=  form_for(@turma) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( render :partial => 'turma_form', :locals => {:f => f} );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <p>
+    ');@output_buffer.append= ( f.submit 'Criar' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </p>
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Voltar', turmas_path );@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/novo.html.erb:13:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/template.rb:134:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:54:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/template.rb:127:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:59:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:56:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:26:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:114:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:92:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:17:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/mime_responds.rb:261
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/mime_responds.rb:192:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/turmas_controller.rb:33:in `novo'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:150:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:11:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:18:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:435:in `_run__1022051559__process_action__917826749__callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:409:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:93:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:93:in `run_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:119:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:40:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal.rb:133:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal.rb:173
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:27:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:492:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/flash.rb:182:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:32:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:12:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/rack/logger.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/static.rb:30:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:168:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `method_missing'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/rack/log_tailer.rb:14:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands/server.rb:65:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:30
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:27:in `tap'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered turmas/novo.html.erb within layouts/application (13.0ms)
+Completed   in 34ms
+
+ActionView::Template::Error (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/novo.html.erb:8: syntax error, unexpected kEND
+');@output_buffer.append= ( end );@output_buffer.safe_concat('
+                               ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/novo.html.erb:11: syntax error, unexpected kENSURE, expecting ')'
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/novo.html.erb:13: syntax error, unexpected kEND, expecting ')'):
+    5:   <p>
+    6:     <%= f.submit 'Criar' %>
+    7:   </p>
+    8: <%= end %>
+    9: 
+    10: <%= link_to 'Voltar', turmas_path %>
+  app/views/turmas/novo.html.erb:13:in `compile'
+  app/controllers/turmas_controller.rb:33:in `novo'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (56.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (71.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Wed Sep 22 19:30:13 -0300 2010
+  Processing by TurmasController#novo as HTML
+DEPRECATION WARNING: f.error_messages was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from _app_views_turmas__turma_form_erb__288973697_53822436_1488244 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/_turma_form.erb:1)
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+Rendered turmas/_turma_form.erb (21.0ms)
+Rendered turmas/novo.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 56ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Wed Sep 22 19:31:38 -0300 2010
+  Processing by TurmasController#novo as HTML
+DEPRECATION WARNING: f.error_messages was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from _app_views_turmas__turma_form_erb__288973697_52410516_2561428 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/_turma_form.erb:1)
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCurso Load (1.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+Rendered turmas/_turma_form.erb (95.0ms)
+Rendered turmas/novo.html.erb within layouts/application (114.0ms)
+Completed 200 OK in 140ms (Views: 134.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Wed Sep 22 19:40:21 -0300 2010
+  Processing by TurmasController#novo as HTML
+Rendered turmas/_turma_form.erb (24.0ms)
+Rendered turmas/novo.html.erb within layouts/application (34.0ms)
+Completed   in 58ms
+
+ActionView::Template::Error (undefined method `error_message' for #<ActionView::Helpers::FormBuilder:0x65057e8>):
+    1: <%= f.error_message %>
+    2: 
+    3:   <p>
+    4:     <%= f.label :nome %><br />
+  app/views/turmas/_turma_form.erb:1:in `_app_views_turmas__turma_form_erb__288973697_52962792_2561428'
+  app/views/turmas/novo.html.erb:4:in `_app_views_turmas_novo_html_erb__194922942_53020692_0'
+  app/views/turmas/novo.html.erb:3:in `_app_views_turmas_novo_html_erb__194922942_53020692_0'
+  app/controllers/turmas_controller.rb:33:in `novo'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Wed Sep 22 19:42:08 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mTurma Load (1.0ms)[0m  SELECT `turmas`.* FROM `turmas`
+  [1m[36mCurso Load (0.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos`[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_53616372_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:10)
+Rendered turmas/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 126ms (Views: 46.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Wed Sep 22 19:42:11 -0300 2010
+  Processing by TurmasController#novo as HTML
+Rendered turmas/_turma_form.erb (25.0ms)
+Rendered turmas/novo.html.erb within layouts/application (35.0ms)
+Completed   in 58ms
+
+ActionView::Template::Error (undefined method `error_message' for #<ActionView::Helpers::FormBuilder:0x67aadf8>):
+    1: <%= f.error_message %>
+    2: 
+    3:   <p>
+    4:     <%= f.label :nome %><br />
+  app/views/turmas/_turma_form.erb:1:in `_app_views_turmas__turma_form_erb__288973697_54350016_1485524'
+  app/views/turmas/novo.html.erb:4:in `_app_views_turmas_novo_html_erb__194922942_54426804_0'
+  app/views/turmas/novo.html.erb:3:in `_app_views_turmas_novo_html_erb__194922942_54426804_0'
+  app/controllers/turmas_controller.rb:33:in `novo'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Wed Sep 22 19:42:19 -0300 2010
+  Processing by TurmasController#novo as HTML
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+Rendered turmas/_turma_form.erb (24.0ms)
+Rendered turmas/novo.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 64ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/turmas" for 127.0.0.1 at Wed Sep 22 19:42:39 -0300 2010
+  Processing by TurmasController#create as HTML
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"Kccb6NURavolYikFo62d0ZGNWRl0YJHOnY0iDWZBJ7I=", "utf8"=>"\342\234\223", "turma"=>{"ano"=>"2010", "nome"=>"Teste", "max_alunos"=>"95", "curso_id"=>"1"}}
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  describe `turmas`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `turmas` (`ano`, `created_at`, `curso_id`, `max_alunos`, `nome`, `updated_at`) VALUES ('2010', '2010-09-22 22:42:39', 1, 95, 'Teste', '2010-09-22 22:42:39')[0m
+  [1m[35mSQL (54.0ms)[0m  COMMIT
+Redirected to http://localhost:3001/turmas/consultar/3
+Completed 302 Found in 107ms
+
+
+Started GET "/turmas/consultar/3" for 127.0.0.1 at Wed Sep 22 19:42:39 -0300 2010
+  Processing by TurmasController#consultar as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas` WHERE (`turmas`.`id` = 3) LIMIT 1[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+Rendered turmas/consultar.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 82ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Wed Sep 22 19:42:41 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[36mTurma Load (1.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas`[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_54080844_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:10)
+Rendered turmas/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 56ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/alunos" for 127.0.0.1 at Wed Sep 22 19:42:48 -0300 2010
+  Processing by AlunosController#index as HTML
+  [1m[36mAluno Load (52.0ms)[0m  [1mSELECT `alunos`.* FROM `alunos`[0m
+  [1m[35mCurso Load (1.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_alunos_index_html_erb___199800842_53406960_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/alunos/index.html.erb:10)
+Rendered alunos/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 134ms (Views: 67.0ms | ActiveRecord: 53.0ms)
+
+
+Started GET "/alunos" for 127.0.0.1 at Wed Sep 22 19:43:19 -0300 2010
+  Processing by AlunosController#index as HTML
+  [1m[36mAluno Load (0.0ms)[0m  [1mSELECT `alunos`.* FROM `alunos`[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_alunos_index_html_erb___199800842_52822680_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/alunos/index.html.erb:10)
+Rendered alunos/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 101ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alunos/novo" for 127.0.0.1 at Wed Sep 22 20:29:53 -0300 2010
+  Processing by AlunosController#novo as HTML
+Rendered shared/_pessoa_form.erb (6.0ms)
+Rendered alunos/_aluno_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_alunos_novo_html_erb__211222164_53739432_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/alunos/novo.html.erb:5)
+Rendered alunos/novo.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 91ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alunos" for 127.0.0.1 at Wed Sep 22 20:30:02 -0300 2010
+  Processing by AlunosController#index as HTML
+  [1m[36mAluno Load (0.0ms)[0m  [1mSELECT `alunos`.* FROM `alunos`[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_alunos_index_html_erb___199800842_54097752_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/alunos/index.html.erb:10)
+Rendered alunos/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 55ms (Views: 41.0ms | ActiveRecord: 0.0ms)

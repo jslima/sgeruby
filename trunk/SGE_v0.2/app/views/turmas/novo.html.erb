@@ -1,0 +1,10 @@
+<h1>Nova turma</h1>
+
+<%= form_for(@turma) do |f| %>
+  <%= render :partial => 'turma_form', :locals => {:f => f} %>
+  <p>
+    <%= f.submit 'Criar' %>
+  </p>
+<% end %>
+
+<%= link_to 'Voltar', turmas_path %>
