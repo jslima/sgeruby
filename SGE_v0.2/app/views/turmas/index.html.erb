@@ -1,0 +1,32 @@
+<p>
+<h1>Administração de Turmas</h1>
+</p>
+<p>
+  <%= link_to 'Nova turma', nova_turma_path %>
+</p>
+<fieldset style="width: 250px">
+  <legend>Pesquisa de turmas</legend>
+  <p style="color: red"><%= notice %></p>
+  <% form_tag '/turmas/pesquisar' do %>
+  <table>
+    <tr>
+      <td align="right">Nome:</td>
+      <td align="left"><%= text_field_tag :nome %></td>
+    </tr>
+    <tr>
+      <td align="right">Ano:</td>
+      <td align="left"><%= text_field_tag :ano %></td>
+    </tr>
+    <tr>
+      <td align="right">Curso:</td>
+      <td align="left"><%= collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") %></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">
+        <%= token_tag %>
+        <%= submit_tag "Pesquisar" %>
+      </td>
+    </tr>
+  </table>
+  <% end %>
+</fieldset>

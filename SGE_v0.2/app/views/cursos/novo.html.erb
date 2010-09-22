@@ -1,0 +1,14 @@
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td colspan="2" align="center"><h1>Novo curso</h1></td>
+  </tr>
+<% form_for(@curso) do |f| %>
+  <%= render :partial => 'curso_form', :locals => {:f => f} %>
+  <tr>
+    <td colspan="2" height="50" align="center"><%= f.submit 'Criar' %></td>
+  </tr>
+<% end %>
+<tr>
+  <td colspan="2" align="center"><%= link_to 'Voltar', cursos_path %></td>
+</tr>
+</table>
