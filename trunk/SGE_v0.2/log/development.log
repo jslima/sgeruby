@@ -416,3 +416,661 @@ Started GET "/alunos" for 127.0.0.1 at Wed Sep 22 20:30:02 -0300 2010
 DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_alunos_index_html_erb___199800842_54097752_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/alunos/index.html.erb:10)
 Rendered alunos/index.html.erb within layouts/application (20.0ms)
 Completed 200 OK in 55ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alunos" for 127.0.0.1 at Thu Sep 23 02:30:20 -0300 2010
+  Processing by AlunosController#index as HTML
+  [1m[36mAluno Load (22.0ms)[0m  [1mSELECT `alunos`.* FROM `alunos`[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_alunos_index_html_erb___199800842_53243292_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/alunos/index.html.erb:10)
+Rendered alunos/index.html.erb within layouts/application (142.0ms)
+Completed 200 OK in 428ms (Views: 188.0ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Sep 23 02:31:26 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Sep 23 02:38:20 -0300 2010
+  Processing by PrincipalController#index as HTML
+ERROR: compiling _app_views_layouts_application_html_erb___980739563_53630328_0 RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+            <li>');@output_buffer.append= (...
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:27: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:27: unmatched ): /li>
+            <li>');@output_buffer.append= ( link_to "Administrar Alunos", alunos_path );@output_buffer.safe_concat('</
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+            <li>');@output_buffer.append= (...
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:29: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+        </li>
+         ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:31: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+    </div>
+     ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:35: unknown regexp options - dv
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:35: unmatched ): /div>
+    <div id="corpo">
+      ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:36: syntax error, unexpected '<'
+  </body>
+   ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:37: unknown regexp options - htl
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:38: unterminated string meets end of file
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:38: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_layouts_application_html_erb___980739563_53630328_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+  <head>
+    <title>SGEV02</title>
+    ');@output_buffer.append= ( stylesheet_link_tag :all );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( javascript_include_tag  "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( javascript_include_tag  "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( javascript_include_tag "jquery-rails.js" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </head>
+  <body>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(\'#myMenuButton\').menu({
+          content: $(\'#myContent\').html(),
+          maxHeight: 180,
+          positionOpts: { offsetX: 10, offsetY: 20 },
+          showSpeed: 300
+        });
+      });
+    </script>
+    <div id="menu">
+      <ul>
+        <li>');@output_buffer.append= ( #link_to "Administração", # );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          <ul>
+            <li>');@output_buffer.append= ( link_to "Administrar Cursos", cursos_path );@output_buffer.safe_concat('</li>
+            <li>');@output_buffer.append= ( link_to "Administrar Alunos", alunos_path );@output_buffer.safe_concat('</li>
+            <li>');@output_buffer.append= ( link_to "Administrar Turmas", turmas_path );@output_buffer.safe_concat('</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="corpo">
+      ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+  </body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:38:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/template.rb:134:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:54:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/template.rb:127:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/layouts.rb:80:in `_render_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:62:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:56:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:26:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:114:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:92:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:17:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:150:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:11:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:18:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:435:in `_run__855337750__process_action__199225275__callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:409:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:93:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:93:in `run_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:119:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:40:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal.rb:133:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal.rb:173
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:27:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:492:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/flash.rb:182:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:32:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:12:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/rack/logger.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/static.rb:30:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:168:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `method_missing'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/rack/log_tailer.rb:14:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands/server.rb:65:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:30
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:27:in `tap'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered principal/index.html.erb within layouts/application (2.0ms)
+Completed   in 22ms
+
+ActionView::Template::Error (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+            <li>');@output_buffer.append= (...
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:27: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:27: unmatched ): /li>
+            <li>');@output_buffer.append= ( link_to "Administrar Alunos", alunos_path );@output_buffer.safe_concat('</
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+            <li>');@output_buffer.append= (...
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:29: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+        </li>
+         ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:31: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+    </div>
+     ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:35: unknown regexp options - dv
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:35: unmatched ): /div>
+    <div id="corpo">
+      ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:36: syntax error, unexpected '<'
+  </body>
+   ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:37: unknown regexp options - htl
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:38: unterminated string meets end of file
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:38: syntax error, unexpected $end, expecting ')'):
+    23:       <ul>
+    24:         <li><%= #link_to "Administração", # %>
+    25:           <ul>
+    26:             <li><%= link_to "Administrar Cursos", cursos_path %></li>
+    27:             <li><%= link_to "Administrar Alunos", alunos_path %></li>
+    28:             <li><%= link_to "Administrar Turmas", turmas_path %></li>
+    29:           </ul>
+  app/views/layouts/application.html.erb:38:in `compile'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (48.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (78.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Sep 23 02:39:00 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/jquery-rails.js" for 127.0.0.1 at Thu Sep 23 02:39:00 -0300 2010
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-rails.js"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/cursos" for 127.0.0.1 at Thu Sep 23 02:39:04 -0300 2010
+  Processing by CursosController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_cursos_index_html_erb__589693058_53687064_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/cursos/index.html.erb:10)
+Rendered cursos/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/jquery-rails.js" for 127.0.0.1 at Thu Sep 23 02:39:04 -0300 2010
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-rails.js"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/alunos" for 127.0.0.1 at Thu Sep 23 02:39:06 -0300 2010
+  Processing by AlunosController#index as HTML
+  [1m[36mAluno Load (1.0ms)[0m  [1mSELECT `alunos`.* FROM `alunos`[0m
+  [1m[35mCurso Load (1.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_alunos_index_html_erb___199800842_52754016_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/alunos/index.html.erb:10)
+Rendered alunos/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 60ms (Views: 39.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/javascripts/jquery-rails.js" for 127.0.0.1 at Thu Sep 23 02:39:06 -0300 2010
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-rails.js"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Thu Sep 23 02:39:06 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas`[0m
+  [1m[35mCurso Load (1.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_53607408_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:10)
+Rendered turmas/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 44ms (Views: 36.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/jquery-rails.js" for 127.0.0.1 at Thu Sep 23 02:39:06 -0300 2010
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-rails.js"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Thu Sep 23 02:43:03 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas`[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_52796940_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:10)
+ERROR: compiling _app_views_layouts_application_html_erb___980739563_52795260_0 RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+            <li>');@output_buffer.append= (...
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:27: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:27: unmatched ): /li>
+            <li>');@output_buffer.append= ( #link_to "Administrar Alunos", alunos_path );@output_buffer.safe_concat('</
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+            <li>');@output_buffer.append= (...
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:29: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+        </li>
+         ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:31: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:31: syntax error, unexpected '>'
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:33: syntax error, unexpected tCONSTANT, expecting ')'
+...wn_tags sort_criteria, 'Select Criteria', %w(Category Status...
+                              ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:37: unknown regexp options - dv
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:37: unmatched ): /div>
+    <div id="corpo">
+      ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:38: syntax error, unexpected '<'
+  </body>
+   ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:39: unknown regexp options - htl
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:40: unterminated string meets end of file
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:40: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_layouts_application_html_erb___980739563_52795260_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+  <head>
+    <title>SGEV02</title>
+    ');@output_buffer.append= ( stylesheet_link_tag :all );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( javascript_include_tag  "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( javascript_include_tag  "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( javascript_include_tag "jquery-rails.js" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </head>
+  <body>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(\'#myMenuButton\').menu({
+          content: $(\'#myContent\').html(),
+          maxHeight: 180,
+          positionOpts: { offsetX: 10, offsetY: 20 },
+          showSpeed: 300
+        });
+      });
+    </script>
+    <div id="menu">
+      <!--<ul>
+        <li>');@output_buffer.append= ( #link_to "Administração", '#' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('          <ul>
+            <li>');@output_buffer.append= ( #link_to "Administrar Cursos", cursos_path );@output_buffer.safe_concat('</li>
+            <li>');@output_buffer.append= ( #link_to "Administrar Alunos", alunos_path );@output_buffer.safe_concat('</li>
+            <li>');@output_buffer.append= ( #link_to "Administrar Turmas", turmas_path );@output_buffer.safe_concat('</li>
+          </ul>
+        </li>
+      </ul>-->
+      ');@output_buffer.append= ( hidden_field_tag sort_criteria );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('       ');@output_buffer.append= ( dropdown_tags sort_criteria, 'Select Criteria', %w(Category Status Amount-High Amount-Low) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+    <div id="corpo">
+      ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+  </body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:40:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/template.rb:134:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:54:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/template.rb:127:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/layouts.rb:80:in `_render_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:62:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:56:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:26:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:114:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:92:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:17:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/mime_responds.rb:261
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/mime_responds.rb:192:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/turmas_controller.rb:11:in `index'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:150:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:11:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:18:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:440:in `_run__1022051559__process_action__199225275__callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:409:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:93:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:93:in `run_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:119:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:40:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal.rb:133:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal.rb:173
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:27:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:492:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/flash.rb:182:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:32:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:12:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/rack/logger.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/static.rb:30:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:168:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `method_missing'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/rack/log_tailer.rb:14:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands/server.rb:65:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:30
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:27:in `tap'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered turmas/index.html.erb within layouts/application (17.0ms)
+Completed   in 42ms
+
+ActionView::Template::Error (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+            <li>');@output_buffer.append= (...
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:27: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:27: unmatched ): /li>
+            <li>');@output_buffer.append= ( #link_to "Administrar Alunos", alunos_path );@output_buffer.safe_concat('</
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+            <li>');@output_buffer.append= (...
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:29: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+        </li>
+         ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:31: unknown regexp option - l
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:31: syntax error, unexpected '>'
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:33: syntax error, unexpected tCONSTANT, expecting ')'
+...wn_tags sort_criteria, 'Select Criteria', %w(Category Status...
+                              ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:37: unknown regexp options - dv
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:37: unmatched ): /div>
+    <div id="corpo">
+      ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:38: syntax error, unexpected '<'
+  </body>
+   ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:39: unknown regexp options - htl
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:40: unterminated string meets end of file
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/layouts/application.html.erb:40: syntax error, unexpected $end, expecting ')'):
+    23:       <!--<ul>
+    24:         <li><%= #link_to "Administração", '#' %>
+    25:           <ul>
+    26:             <li><%= #link_to "Administrar Cursos", cursos_path %></li>
+    27:             <li><%= #link_to "Administrar Alunos", alunos_path %></li>
+    28:             <li><%= #link_to "Administrar Turmas", turmas_path %></li>
+    29:           </ul>
+  app/views/layouts/application.html.erb:40:in `compile'
+  app/controllers/turmas_controller.rb:11:in `index'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (72.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Thu Sep 23 02:43:23 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas`[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_53973852_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:10)
+Rendered turmas/index.html.erb within layouts/application (36.0ms)
+Completed   in 61ms
+
+ActionView::Template::Error (undefined local variable or method `sort_criteria' for #<#<Class:0x66f4818>:0x66f3618>):
+    21:     </script>
+    22:     <div id="menu">
+    23:       
+    24:       <%= hidden_field_tag sort_criteria %>
+    25:        <%= dropdown_tags sort_criteria, 'Select Criteria', %w(Category Status Amount-High Amount-Low) %>
+    26:     </div>
+    27:     <div id="corpo">
+  app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___980739563_53972340_0'
+  app/controllers/turmas_controller.rb:11:in `index'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (59.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (72.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Thu Sep 23 02:44:27 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas`[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_54032460_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:10)
+Rendered turmas/index.html.erb within layouts/application (24.0ms)
+Completed   in 41ms
+
+ActionView::Template::Error (undefined method `dropdown_tags' for #<#<Class:0x6711d08>:0x67109b8>):
+    21:     </script>
+    22:     <div id="menu">
+    23:       
+    24:        <%= dropdown_tags '', 'Select Criteria', %w(Category Status Amount-High Amount-Low) %>
+    25:     </div>
+    26:     <div id="corpo">
+    27:       <%= yield %>
+  app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___980739563_54021768_0'
+  app/controllers/turmas_controller.rb:11:in `index'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Thu Sep 23 02:44:48 -0300 2010
+
+LoadError (Expected C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/helpers/jquery_dropdown_helper.rb to define JqueryDropdownHelper):
+  app/controllers/application_controller.rb:4
+  app/controllers/turmas_controller.rb:1
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Thu Sep 23 02:45:13 -0300 2010
+
+LoadError (Expected C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/helpers/jquery_dropdown_helper.rb to define JqueryDropdownHelper):
+  app/controllers/application_controller.rb:4
+  app/controllers/turmas_controller.rb:1
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Thu Sep 23 02:45:15 -0300 2010
+
+LoadError (Expected C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/helpers/jquery_dropdown_helper.rb to define JqueryDropdownHelper):
+  app/controllers/application_controller.rb:4
+  app/controllers/turmas_controller.rb:1
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Sep 23 02:45:18 -0300 2010
+
+LoadError (Expected C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/helpers/jquery_dropdown_helper.rb to define JqueryDropdownHelper):
+  app/controllers/application_controller.rb:4
+  app/controllers/principal_controller.rb:1
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Sep 23 02:55:54 -0300 2010
+
+LoadError (Expected C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/helpers/jquery_dropdown_helper.rb to define JqueryDropdownHelper):
+  app/controllers/application_controller.rb:4
+  app/controllers/principal_controller.rb:1
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Sep 23 02:56:10 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/jquery-rails.js" for 127.0.0.1 at Thu Sep 23 02:56:10 -0300 2010
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-rails.js"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)

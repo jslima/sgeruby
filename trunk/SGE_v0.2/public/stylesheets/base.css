@@ -1,8 +1,8 @@
 #menu{
-    float: left;
+    vertical-align: top;
     width: 200px;
 }
 
 #corpo{
-    float: left;
+    vertical-align: bottom;
 }
