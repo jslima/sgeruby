@@ -1,0 +1,14 @@
+<table cellspacing="2" cellpadding="0" border="0">
+  <tr>
+    <td height="50" colspan="2" align="center"><h1>Novo aluno</h1></td>
+  </tr>
+<% form_for(@usuario, :html =>{:multipart => true}) do |f| %>
+  <%= render :partial => "usuario_form", :locals => {:f => f}   %>
+  <tr>
+    <td colspan="2" align="center"><%= f.submit 'Criar' %></td>
+  </tr>
+<% end %>
+<tr>
+  <td colspan="2" align="center"><%= link_to 'Voltar', usuarios_path %></td>
+</tr>
+</table>

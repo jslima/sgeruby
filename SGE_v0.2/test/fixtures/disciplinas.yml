@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  sigla: MyString
+  ementa: MyString
+  bibliografia: MyString
+  belongs_to: 
+
+two:
+  nome: MyString
+  sigla: MyString
+  ementa: MyString
+  bibliografia: MyString
+  belongs_to: 

@@ -4,6 +4,11 @@
 en:
   hello: "Hello world"
 
+  versao: "v0.2"
+
+  gilberto: "Gilberto Timotheo Junior"
+  ricardo: "Ricardo Cunha Vale"
+
   operacoes: "Operações"
   descricao: "Descrição"
   duracao: "Duração"

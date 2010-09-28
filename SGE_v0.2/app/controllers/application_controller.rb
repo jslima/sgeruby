@@ -4,6 +4,29 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  before_filter :logado
+  before_filter :get_salt
+
+  protected
+  def is_admin
+    unless session[:usuario]['admin'] == 1
+      flash[:notice] = "Você não tem permissão do administrador para acessar esta pagina"
+      redirect_to :root
+    end
+  end
+
+  def get_salt
+    session[:salt] = "Ae8nv021cYoa1346PoaEm"
+  end
+
+  protected
+  def logado
+    if session[:usuario].nil?
+      session[:return_to] = request.request_uri
+      flash[:notice] = 'Você deve estar logado para acessar esta pagina'
+      redirect_to login_path
+    end
+  end
 
   protected
   def limpar_sessao

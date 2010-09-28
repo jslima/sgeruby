@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SGEV02</title>
+    <title>Sistema de Gestão Escolar - SGE</title>
     <%= stylesheet_link_tag :all %>
-    <%= javascript_include_tag  "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" %>
-    <%= javascript_include_tag  "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" %>
-    <%= javascript_include_tag "jquery-rails.js" %>
+    <%= javascript_include_tag :all %>
     <%= csrf_meta_tag %>
   </head>
   <body>
-    <div id="menu">
-      <ul>
-        <li><%= link_to "Administrar Cursos", cursos_path %></li>
-        <li><%= link_to "Administrar Alunos", alunos_path %></li>
-        <li><%= link_to "Administrar Turmas", turmas_path %></li>
-      </ul>
-    </div>
-    <div id="corpo">
+    <span width="100%" align="center" id="menu">
+      <dl class="dropdown">
+        <dt id="one-ddheader" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)">Administração</dt>
+        <dd id="one-ddcontent" onmouseover="cancelHide('one')" onmouseout="ddMenu('one',-1)">
+          <ul>
+            <li>
+              <ul>
+                <li><%= link_to "Alunos", alunos_path, :class => 'underline' %></li>
+                <li><%= link_to "Cursos", cursos_path, :class => 'underline' %></li>
+                <li><%= link_to "Disciplinas", disciplinas_path, :class => 'underline' %></li>
+                <li><%= link_to "Turmas", turmas_path %></li>
+              </ul>
+            </li>            
+          </ul
+        </dd>
+      </dl>
+      <dl class="dropdown">
+        <dt id="relatorio-ddheader" onmouseover="ddMenu('relatorio',1)" onmouseout="ddMenu('relatorio',-1)">Relatorios</dt>
+        <dd id="relatorio-ddcontent" onmouseover="cancelHide('relatorio')" onmouseout="ddMenu('relatorio',-1)">
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#">Em breve</a></li>
+              </ul>
+            </li>
+          </ul>
+      </dl>
+      <dl class="dropdown">
+        <dt id="two-ddheader" onmouseover="ddMenu('two',1)" onmouseout="ddMenu('two',-1)">Ajuda</dt>
+        <dd id="two-ddcontent" onmouseover="cancelHide('two')" onmouseout="ddMenu('two',-1)">
+          <ul>
+            <li>
+              <ul>
+                <li><%= link_to "Sobre...", sobre_path %></li>
+              </ul>
+            </li>
+          </ul>
+      </dl>
+      <dl class="dropdown">
+        <dt id="logout-ddheader" onmouseover="ddMenu('logout',1)" onmouseout="ddMenu('logout',-1)">Usuário</dt>
+        <dd id="logout-ddcontent" onmouseover="cancelHide('logout')" onmouseout="ddMenu('logout',-1)">
+          <ul>
+            <li>
+              <ul>
+                <% if session[:usuario]['admin'] == 1 %>
+                  <li><%= link_to "Administrar Usuários", usuarios_path %></li>
+                <% end %>
+                <li><%= link_to "Logout", logout_path %></li>
+              </ul>
+            </li>
+          </ul>
+      </dl>
+    </span>
+    </ br>
+    <span width="100%" align="center" id="corpo">
       <%= yield %>
-    </div>
+    </span>
   </body>
 </html>
