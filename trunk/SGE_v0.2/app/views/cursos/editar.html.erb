@@ -1,14 +1,16 @@
-<table cellspacing="0" cellpadding="0" border="0">
-  <tr>
-    <td colspan="2" align="center"><h1>Editar curso</h1></td>
-  </tr>
-  <% form_for(@curso) do |f| %>
-    <%= render :partial => 'curso_form', :locals => {:f => f} %>
+<div align="center">
+  <table cellspacing="0" cellpadding="0" border="0">
     <tr>
-      <td colspan="2" height="50" align="center"><%= f.submit 'Editar' %></td>
+      <td colspan="2" align="center"><h1>Editar curso</h1></td>
     </tr>
-  <% end %>
-  <tr>
-    <td colspan="2" align="center"><%= link_to 'Voltar', session[:retorno] %></td>
-  </tr>
-</table>
+    <% form_for(@curso) do |f| %>
+      <%= render :partial => 'curso_form', :locals => {:f => f} %>
+      <tr>
+        <td colspan="2" height="50" align="center"><%= f.submit 'Editar' %></td>
+      </tr>
+    <% end %>
+    <tr>
+      <td colspan="2" align="center"><%= link_to 'Voltar', session[:retorno] %></td>
+    </tr>
+  </table>
+</div>

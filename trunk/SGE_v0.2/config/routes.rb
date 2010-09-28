@@ -1,5 +1,17 @@
 SGEV02::Application.routes.draw do
 
+  match 'disciplinas/pesquisar', :to => 'disciplinas#pesquisar', :as => 'pesquisar_disciplinas'
+  match 'disciplinas/consultar/:id', :to => 'disciplinas#consultar', :as => 'consultar_disciplina'
+  match 'disciplinas/editar/:id', :to => 'disciplinas#editar', :as => 'editar_disciplina'
+  match 'disciplinas/novo/', :to => 'disciplinas#novo', :as => 'nova_disciplina'
+
+  resources :disciplinas, :only => [:index, :create, :update, :destroy]
+
+  match 'usuarios/login', :to => 'usuarios#login', :as => 'login'
+  match 'usuarios/logout', :to => 'usuarios#logout', :as => 'logout'
+
+  resources :usuarios, :only => [:index]
+
   match 'matriculas/consultar/:id', :to => 'matriculas#consultar', :as => 'consultar_matricula'
   match 'matriculas/editar/:id', :to => 'matriculas#editar', :as => 'editar_matricula'
   match 'matriculas/matricular/:id', :to => 'matriculas#matricular', :as => 'matricular_aluno'
@@ -26,6 +38,10 @@ SGEV02::Application.routes.draw do
   match 'cursos/novo/', :to => 'cursos#novo', :as => 'novo_curso'
 
   resources :cursos, :only => [:index, :create, :update, :destroy]
+
+  match 'principal/sobre', :to => 'principal#sobre', :as => 'sobre'
+
+  resources :principal, :only => [:index]
 
   root :to => 'principal#index'
 

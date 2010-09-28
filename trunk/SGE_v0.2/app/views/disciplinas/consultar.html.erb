@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @disciplina.nome %>
+</p>
+
+<p>
+  <b>Sigla:</b>
+  <%= @disciplina.sigla %>
+</p>
+
+<p>
+  <b>Ementa:</b>
+  <%= @disciplina.ementa %>
+</p>
+
+<p>
+  <b>Bibliografia:</b>
+  <%= @disciplina.bibliografia %>
+</p>
+
+<p>
+  <b>Belongs to:</b>
+  <%= @disciplina.belongs_to %>
+</p>
+
+
+<%= link_to 'Edit', edit_disciplina_path(@disciplina) %> |
+<%= link_to 'Back', disciplinas_path %>

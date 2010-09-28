@@ -1,21 +1,21 @@
 <p>
-<h1>Administração de Turmas</h1>
+<h1>Administração de Alunos</h1>
 </p>
 <p>
-  <%= link_to 'Nova turma', nova_turma_path %>
+  <%= link_to 'Novo aluno', novo_aluno_path %>
 </p>
-<fieldset align="center" style="width: 250px">
-  <legend>Pesquisa de turmas</legend>
-  <p align="center" style="color: red"><%= notice %></p>
-  <% form_tag '/turmas/pesquisar' do %>
-  <table align="center">
+<fieldset style="width: 250px">
+  <legend>Pesquisa de alunos</legend>
+  <p style="color: red"><%= notice %></p>
+  <% form_tag '/alunos/pesquisar' do %>
+  <table>
     <tr>
       <td align="right">Nome:</td>
       <td align="left"><%= text_field_tag :nome %></td>
     </tr>
     <tr>
-      <td align="right">Ano:</td>
-      <td align="left"><%= text_field_tag :ano %></td>
+      <td align="right"><%=t :matricula %></td>
+      <td align="left"><%= text_field_tag :matricula %></td>
     </tr>
     <tr>
       <td align="right">Curso:</td>

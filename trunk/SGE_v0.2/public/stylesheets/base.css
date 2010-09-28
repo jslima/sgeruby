@@ -1,8 +1,21 @@
 #menu{
+    position: absolute;
     vertical-align: top;
-    width: 200px;
+    width: 100%;
 }
 
 #corpo{
+    position: absolute;
     vertical-align: bottom;
+    top: 100px;
+    left: 25px;
+    width: 100%;
+}
+
+body{
+    background-color: #CCFFCC;
+}
+
+h1,h2,h3,h4,h5,h6,label,legend,a,input,td,option{
+    font-family: sans-serif;
 }

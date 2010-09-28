@@ -1,44 +1,46 @@
-<table cellpadding="0" cellspacing="3" border="0">
-  <tr>
-    <td colspan="2" align="center"><h1>Consultar curso</h1></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" style="color: green"><%= notice %></td>
-  </tr>
-  <tr>
-    <td height="30" align="right"><strong>Nome:</strong></td>
-    <td align="left"><%=h @curso.nome %></td>
-  </tr>
-  <tr>
-    <td height="30" align="right"><strong><%=t :descricao %>:</strong></td>
-    <td align="left"><%=h @curso.descricao %></td>
-  </tr>
-  <tr>
-    <td height="30" align="right"><strong>Ementa:</strong></td>
-    <td align="left"><%=h @curso.ementa %></td>
-  </tr>
-  <tr>
-    <td height="30" align="right"><strong>Coordenador:</strong></td>
-    <td align="left"><%=h @curso.coordenador %></td>
-  </tr>
-  <tr>
-    <td height="30" align="right"><strong>Turno:</strong></td>
-    <td align="left"><%=h @curso.turno %></td>
-  </tr>
-  <tr>
-    <td height="30" align="right"><strong><%=t :duracao %>:</strong></td>
-    <td align="left"><%=h @curso.duracao %></td>
-  </tr>
-  <tr>
-    <td height="30" align="right"><strong><%=t :total_horas %>:</strong></td>
-    <td align="left"><%=h @curso.total_horas %></td>
-  </tr>
-  <tr>
-    <td height="30" align="right"><strong>Tipo:</strong></td>
-    <td align="left"><%=h @curso.tipo %></td>
-  </tr>
-  <tr>
-    <td colspan="2" height="50" align="center"><%= link_to 'Editar', editar_curso_path(@curso) %> |
-    <%= link_to 'Voltar', :back %></td>
-  </tr>
-</table>
+<div align="center">
+  <table cellpadding="0" cellspacing="3" border="0">
+    <tr>
+      <td colspan="2" align="center"><h1>Consultar curso</h1></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center" style="color: green"><%= notice %></td>
+    </tr>
+    <tr>
+      <td height="30" align="right"><strong>Nome:</strong></td>
+      <td align="left"><%=h @curso.nome %></td>
+    </tr>
+    <tr>
+      <td height="30" align="right"><strong><%=t :descricao %>:</strong></td>
+      <td align="left"><%=h @curso.descricao %></td>
+    </tr>
+    <tr>
+      <td height="30" align="right"><strong>Ementa:</strong></td>
+      <td align="left"><%=h @curso.ementa %></td>
+    </tr>
+    <tr>
+      <td height="30" align="right"><strong>Coordenador:</strong></td>
+      <td align="left"><%=h @curso.coordenador %></td>
+    </tr>
+    <tr>
+      <td height="30" align="right"><strong>Turno:</strong></td>
+      <td align="left"><%=h @curso.turno %></td>
+    </tr>
+    <tr>
+      <td height="30" align="right"><strong><%=t :duracao %>:</strong></td>
+      <td align="left"><%=h @curso.duracao %></td>
+    </tr>
+    <tr>
+      <td height="30" align="right"><strong><%=t :total_horas %>:</strong></td>
+      <td align="left"><%=h @curso.total_horas %></td>
+    </tr>
+    <tr>
+      <td height="30" align="right"><strong>Tipo:</strong></td>
+      <td align="left"><%=h @curso.tipo %></td>
+    </tr>
+    <tr>
+      <td colspan="2" height="50" align="center"><%= link_to 'Editar', editar_curso_path(@curso) %> |
+        <%= link_to 'Voltar', :back %></td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,26 @@
+<div align="center">
+  <table cellpadding="2" cellspacing="2">
+    <tr>
+      <td colspan="2"><h1 align="center">Login</h1></td>
+    </tr>
+    <% if flash[:notice] %>
+      <tr>
+        <td align="center" height="50" colspan="2"><a style="color: red; vertical-align: middle"><%= flash[:notice] %></a></td>
+      </tr>
+    <% end %>
+    <%= form_tag :action => :login do %>
+      <tr>
+        <td align="right">Usuário: </td>
+        <td><%= text_field :usuario, :nome %></td>
+      </tr>
+      <tr>
+        <td align="right">Senha: </td>
+        <td><%= password_field :usuario, :senha %></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><%= submit_tag 'Logar' %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+

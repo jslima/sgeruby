@@ -1,2 +1,11 @@
-<h1>P&aacute;gina Principal</h1>
+<div align="center">
+  <table>
+    <% if flash[:notice] %>
+      <tr>
+        <td align="center" height="50" colspan="2"><a style="color: red; vertical-align: middle"><%= flash[:notice] %></a></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
 
