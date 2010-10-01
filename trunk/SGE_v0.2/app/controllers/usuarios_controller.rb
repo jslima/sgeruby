@@ -2,39 +2,36 @@ class UsuariosController < ApplicationController
   before_filter :limpar_sessao, :only => [:index]
   before_filter :guarda_pesquisa_usuario, :only => [:pesquisar]
   before_filter :guarda_consulta_usuario, :only => [:consultar]
-  before_filter :is_admin, :except => [:login, :logout]
-
-  skip_before_filter :logado
-  
+  #before_filter :is_admin, :except => [:login, :logout]
+ 
   layout :usuario_layout
   require 'digest'
 
-  protected
+  def teste
+    
+  end
+
   def usuario_layout
     action_name == "login" ? "login" : "application"
   end
 
   def login
-    if !params[:usuario].nil?
-      session[:usuario] = params[:usuario]['nome']
-      senha = Digest::SHA1.hexdigest(session[:salt] + params[:usuario]['senha'])
-      @usuario = Usuario.find(:all, :select => ('id, administrador'),
-        :conditions => ["nome = ? AND senha = ?", params[:usuario]['nome'], senha])
-      if !@usuario.empty?
-        session[:usuario] = {'nome' => params[:usuario]['nome'], 'admin' => @usuario[0]['administrador']}
+    if !params[:nome].nil? or !params[:senha].nil?
+      senha = Digest::SHA1.hexdigest(session[:salt] + params[:senha])
+      @usuario = Usuario.find_by_nome(params[:nome])
+      if @usuario.senha == senha
+        session[:usuario] = {'nome' => params[:nome], 'admin' => @usuario.administrador}
         redirect_to session[:return_to]
       else
         flash[:notice] = "Usuario e/ou senha incorretos";
         redirect_to login_path
-      end
+      end      
     end
   end
 
   def logout
-    if !session[:usuario].nil?
       session[:usuario] = nil
       redirect_to login_path
-    end
   end
 
   def index

@@ -110,4 +110,17 @@ class CursosController < ApplicationController
       @cursos = session[:cursos]
     end
   end
+
+  protected
+  def guarda_pesquisa_curso
+    session[:pesquisa_curso] = request.request_uri
+    session[:retorno] = session[:pesquisa_curso]
+  end
+
+  protected
+  def guarda_consulta_curso
+    if session[:pesquisa_curso].nil?
+      session[:retorno] = request.request_uri
+    end
+  end
 end

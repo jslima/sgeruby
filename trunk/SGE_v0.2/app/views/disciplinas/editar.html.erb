@@ -1,6 +1,13 @@
-<h1>Editing disciplina</h1>
+<div align="center">
+  <table cellspacing="2" cellpadding="0" border="0">
+    <tr>
+      <td height="50" colspan="2" align="center"><h1>Editar disciplina</h1></td>
+    </tr>
 
-<%= render 'form' %>
+    <%= render 'disc_form' %>
 
-<%= link_to 'Show', @disciplina %> |
-<%= link_to 'Back', disciplinas_path %>
+    <tr>
+      <td colspan="2" align="center"><%= link_to 'Voltar', session[:retorno] %></td>
+    </tr>
+  </table>
+</div>

@@ -1,5 +1,6 @@
-<p>
-<h1>Administração de Alunos</h1>
+<div align="center">
+  <p>
+  <h1>Administração de Alunos</h1>
 </p>
 <p>
   <%= link_to 'Novo aluno', novo_aluno_path %>
@@ -7,26 +8,27 @@
 <fieldset style="width: 250px">
   <legend>Pesquisa de alunos</legend>
   <p style="color: red"><%= notice %></p>
-  <% form_tag '/alunos/pesquisar' do %>
-  <table>
-    <tr>
-      <td align="right">Nome:</td>
-      <td align="left"><%= text_field_tag :nome %></td>
-    </tr>
-    <tr>
-      <td align="right"><%=t :matricula %></td>
-      <td align="left"><%= text_field_tag :matricula %></td>
-    </tr>
-    <tr>
-      <td align="right">Curso:</td>
-      <td align="left"><%= collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") %></td>
-    </tr>
-    <tr>
-      <td colspan="2" align="right">
-        <%= token_tag %>
-        <%= submit_tag "Pesquisar" %>
-      </td>
-    </tr>
-  </table>
+  <%= form_tag '/alunos/pesquisar' do %>
+    <table>
+      <tr>
+        <td align="right">Nome:</td>
+        <td align="left"><%= text_field_tag :nome %></td>
+      </tr>
+      <tr>
+        <td align="right"><%=t :matricula %></td>
+        <td align="left"><%= text_field_tag :matricula %></td>
+      </tr>
+      <tr>
+        <td align="right">Curso:</td>
+        <td align="left"><%= collection_select('', :curso_id, lista_cursos, :id, :nome, :include_blank => "Selecione") %></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="right">
+          <%= token_tag %>
+          <%= submit_tag "Pesquisar" %>
+        </td>
+      </tr>
+    </table>
   <% end %>
 </fieldset>
+</div>
