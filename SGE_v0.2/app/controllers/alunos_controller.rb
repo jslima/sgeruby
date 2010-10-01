@@ -111,4 +111,16 @@ class AlunosController < ApplicationController
     send_data(@image, :type => @aluno.foto_content_type, :filename => @aluno.foto_nome, :disposition => 'inline')
   end
 
+  protected
+  def guarda_pesquisa_aluno
+    session[:pesquisa_aluno] = request.request_uri
+    session[:retorno] = session[:pesquisa_aluno]
+  end
+
+  protected
+  def guarda_consulta_aluno
+    if session[:pesquisa_aluno].nil?
+      session[:retorno] = request.request_uri
+    end
+  end
 end

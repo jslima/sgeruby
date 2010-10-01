@@ -1,0 +1,43 @@
+<%= form_for(@disciplina) do |f| %>
+  <% if @disciplina.errors.any? %>
+    <tr>
+      <td colspan="2" height="50" align="right">
+        <div id="error_explanation">
+          <h2><%= pluralize(@disciplina.errors.count, "error") %> prohibited this disciplina from being saved:</h2>
+
+          <ul>
+            <% @disciplina.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  <% end %>
+
+  <tr>
+    <td height="50" align="right"><%= f.label :nome %>:</td>
+    <td align="left"><%= f.text_field :nome %></td>
+  </tr>
+  <tr>
+    <td height="50" align="right"><%= f.label :sigla %>:</td>
+    <td align="left"><%= f.text_field :sigla %></td>
+  </tr>
+  <tr>
+    <td height="50" align="right"><%= f.label :ementa %>:</td>
+    <td align="left"><%= f.text_field :ementa %></td>
+  </tr>
+  <tr>
+    <td height="50" align="right"><%= f.label :bibliografia %>:</td>
+    <td align="left"><%= f.text_field :bibliografia %></td>
+  </tr>
+  <tr>
+    <td height="50" align="right"><%= f.label :curso_id %>:</td>
+    <td align="left"> <%= f.select :curso_id, lista_cursos.map {|r| [r.nome,r.id] }, :include_blank => 'Selecione' %></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="50" align="center"><%= f.submit 'Criar' %></td>
+  </tr>
+
+<% end %>
+<br />

@@ -11,11 +11,11 @@
     <%= form_tag :action => :login do %>
       <tr>
         <td align="right">Usuário: </td>
-        <td><%= text_field :usuario, :nome %></td>
+        <td><input type="text" name="nome"></input></td>
       </tr>
       <tr>
         <td align="right">Senha: </td>
-        <td><%= password_field :usuario, :senha %></td>
+        <td><input type="password" name="senha"></input></td>
       </tr>
       <tr>
         <td colspan="2" align="center"><%= submit_tag 'Logar' %></td>

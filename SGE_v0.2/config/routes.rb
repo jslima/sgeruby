@@ -9,8 +9,9 @@ SGEV02::Application.routes.draw do
 
   match 'usuarios/login', :to => 'usuarios#login', :as => 'login'
   match 'usuarios/logout', :to => 'usuarios#logout', :as => 'logout'
+  match 'usuarios/teste', :to => 'usuarios#teste', :as => 'teste_path'
 
-  resources :usuarios, :only => [:index]
+  resources :usuarios, :only => [:index, :create, :update, :destroy]
 
   match 'matriculas/consultar/:id', :to => 'matriculas#consultar', :as => 'consultar_matricula'
   match 'matriculas/editar/:id', :to => 'matriculas#editar', :as => 'editar_matricula'

@@ -4,7 +4,7 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
-  before_filter :logado
+  before_filter :logado, :except => [:login,:teste]
   before_filter :get_salt
 
   protected
@@ -21,10 +21,16 @@ class ApplicationController < ActionController::Base
 
   protected
   def logado
-    if session[:usuario].nil?
-      session[:return_to] = request.request_uri
-      flash[:notice] = 'Você deve estar logado para acessar esta pagina'
-      redirect_to login_path
+    if session[:usuario].nil? || session[:usuario].empty?
+      unless request.request_uri == '/usuarios/login'
+        session[:return_to] = request.request_uri
+        flash[:notice] = 'Você deve estar logado para acessar esta pagina'
+        redirect_to login_path
+      else
+        session[:return_to] = '/'
+        flash[:notice] = 'Você deve estar logado para acessar esta pagina'
+        redirect_to login_path
+      end      
     end
   end
 
@@ -32,45 +38,8 @@ class ApplicationController < ActionController::Base
   def limpar_sessao
     session[:pesquisa_curso] = nil
     session[:pesquisa_aluno] = nil
+    session[:pesquisa_turma] = nil
+    session[:pesquisa_disciplina] = nil
     session[:retorno] = nil
-  end
-
-  protected
-  def guarda_pesquisa_curso
-    session[:pesquisa_curso] = request.request_uri
-    session[:retorno] = session[:pesquisa_curso]
-  end
-
-  protected
-  def guarda_consulta_curso
-    if session[:pesquisa_curso].nil?
-      session[:retorno] = request.request_uri
-    end
-  end
-  
-  protected
-  def guarda_pesquisa_aluno
-    session[:pesquisa_aluno] = request.request_uri
-    session[:retorno] = session[:pesquisa_aluno]
-  end
-
-  protected
-  def guarda_consulta_aluno
-    if session[:pesquisa_aluno].nil?
-      session[:retorno] = request.request_uri
-    end
-  end
-
-  protected
-  def guarda_pesquisa_turma
-    session[:pesquisa_turma] = request.request_uri
-    session[:retorno] = session[:pesquisa_turma]
-  end
-
-  protected
-  def guarda_consulta_turma
-    if session[:pesquisa_turma].nil?
-      session[:retorno] = request.request_uri
-    end
-  end
+  end 
 end
