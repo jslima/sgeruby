@@ -1,6 +1,10 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
 
+  def admin
+    admin = [['Sim', 1],["Não", 0]]
+  end
+
   def tipo_cursos
     tipo_cursos = [["---------", ""],
       ["Graduação", "Graduação"],

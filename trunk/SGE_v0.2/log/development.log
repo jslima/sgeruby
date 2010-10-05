@@ -9766,3 +9766,1780 @@ Started GET "/matriculas/matricular/3" for 127.0.0.1 at Thu Sep 30 20:52:17 -030
 DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_matriculas_matricular_html_erb__1028754317_60108840_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/matriculas/matricular.html.erb:8)
 Rendered matriculas/matricular.html.erb within layouts/application (49.0ms)
 Completed 200 OK in 105ms (Views: 70.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Oct 01 02:31:17 -0300 2010
+  Processing by PrincipalController#index as HTML
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:25)
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:26)
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 9ms
+
+
+Started GET "/" for 127.0.0.1 at Fri Oct 01 02:31:17 -0300 2010
+  Processing by PrincipalController#index as HTML
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:25)
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:26)
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at Fri Oct 01 02:31:17 -0300 2010
+  Processing by PrincipalController#index as HTML
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:25)
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:26)
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 15ms
+
+
+Started GET "/" for 127.0.0.1 at Fri Oct 01 02:31:17 -0300 2010
+  Processing by PrincipalController#index as HTML
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:25)
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:26)
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 13ms
+
+
+Started GET "/" for 127.0.0.1 at Fri Oct 01 02:31:17 -0300 2010
+  Processing by PrincipalController#index as HTML
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:25)
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:26)
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 2ms
+
+
+Started GET "/stylesheets/jquery-jdMenu.css?1285309826" for 127.0.0.1 at Fri Oct 01 02:31:18 -0300 2010
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-jdMenu.css"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/stylesheets/jquery-jdMenu.css?1285309826" for 127.0.0.1 at Fri Oct 01 02:31:18 -0300 2010
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-jdMenu.css"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/stylesheets/jquery-jdMenu.css?1285309826" for 127.0.0.1 at Fri Oct 01 02:31:18 -0300 2010
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-jdMenu.css"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/stylesheets/jquery-jdMenu.css?1285309826" for 127.0.0.1 at Fri Oct 01 02:31:18 -0300 2010
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-jdMenu.css"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/stylesheets/jquery-jdMenu.css?1285309826" for 127.0.0.1 at Fri Oct 01 02:31:18 -0300 2010
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-jdMenu.css"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/jquery.js?1285298201" for 127.0.0.1 at Fri Oct 01 02:31:18 -0300 2010
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/jquery.js?1285298201" for 127.0.0.1 at Fri Oct 01 02:31:19 -0300 2010
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/javascripts/jquery.js?1285298201" for 127.0.0.1 at Fri Oct 01 02:31:19 -0300 2010
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.js"):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Oct 03 20:37:48 -0300 2010
+  Processing by PrincipalController#index as HTML
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:25)
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:26)
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 2ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Sun Oct 03 20:37:52 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (39.0ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Sun Oct 03 20:45:09 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"admin", "authenticity_token"=>"JZev1FounYR/Gw0IKpkRdsHjVhWFFc3z0W4NU5ofjIU=", "utf8"=>"\342\234\223", "senha"=>"teste"}
+  [1m[36mSQL (53.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUsuario Load (6.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'admin') LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 377ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Oct 03 20:45:10 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 16:01:30 -0300 2010
+  Processing by PrincipalController#index as HTML
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:25)
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from logado at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/application_controller.rb:26)
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 2ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 16:01:33 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (4.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 16:01:40 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"teste", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"teste"}
+  [1m[36mSQL (62.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'teste') LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 421ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 16:01:42 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (36.0ms)
+Completed   in 56ms
+
+ActionView::Template::Error (undefined local variable or method `mudar_senha_path' for #<#<Class:0x76396c8>:0x7638570>):
+    54:                 <% if session[:usuario]['admin'] == 1 %>
+    55:                   <li><%= link_to "Administrar Usuários", usuarios_path %></li>
+    56:                 <% end %>
+    57:                 <li><%= link_to "Alterar senha", mudar_senha_path %></li>
+    58:                 <li><%= link_to "Logout", logout_path %></li>
+    59:               </ul>
+    60:             </li>
+  app/views/layouts/application.html.erb:57:in `_app_views_layouts_application_html_erb___980739563_61977960_0'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (39.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 16:02:35 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:02:40 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+Completed   in 9ms
+
+ActiveRecord::RecordNotFound (Couldn't find Usuario without an ID):
+  app/controllers/usuarios_controller.rb:29:in `mudar_senha'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started GET "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:05:15 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'teste') LIMIT 1[0m
+Rendered usuarios/mudar_senha.erb within layouts/application (7.0ms)
+Completed 200 OK in 32ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:43:59 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+Rendered usuarios/mudar_senha.erb within layouts/application (6.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:44:52 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+  Parameters: {"commit"=>"Alterar", "nova_senha2"=>"teste2", "nova_senha"=>"teste2", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+  [1m[35mUsuario Load (1.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'teste') LIMIT 1
+  [1m[36mSQL (9.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (42.0ms)[0m  UPDATE `usuarios` SET `senha` = 'db5bd192f5a78af51600320cbe86782001188436', `updated_at` = '2010-10-04 19:44:52' WHERE (`usuarios`.`id` = 1)
+  [1m[36mSQL (58.0ms)[0m  [1mCOMMIT[0m
+Completed   in 160ms
+
+ArgumentError (too few arguments):
+  app/controllers/usuarios_controller.rb:34:in `format'
+  app/controllers/usuarios_controller.rb:34:in `mudar_senha'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started POST "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:46:01 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+  Parameters: {"commit"=>"Alterar", "nova_senha2"=>"teste2", "nova_senha"=>"teste2", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+  [1m[35mUsuario Load (1.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'teste') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  COMMIT
+Completed   in 19ms
+
+ArgumentError (too few arguments):
+  app/controllers/usuarios_controller.rb:34:in `format'
+  app/controllers/usuarios_controller.rb:34:in `mudar_senha'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:47:31 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+Rendered usuarios/mudar_senha.erb within layouts/application (6.0ms)
+Completed 200 OK in 62ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:47:39 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+  Parameters: {"commit"=>"Alterar", "nova_senha2"=>"teste2", "nova_senha"=>"teste2", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'teste') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT[0m
+Completed   in 19ms
+
+ArgumentError (too few arguments):
+  app/controllers/usuarios_controller.rb:34:in `format'
+  app/controllers/usuarios_controller.rb:34:in `mudar_senha'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started POST "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:50:06 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+  Parameters: {"commit"=>"Alterar", "nova_senha2"=>"teste2", "nova_senha"=>"teste2", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'teste') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  COMMIT
+Completed   in 27ms
+
+NoMethodError (undefined method `consultar_usuario_path' for #<UsuariosController:0x75f8730>):
+  app/controllers/usuarios_controller.rb:35
+  app/controllers/usuarios_controller.rb:30:in `mudar_senha'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started POST "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:50:59 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+  Parameters: {"commit"=>"Alterar", "nova_senha2"=>"teste2", "nova_senha"=>"teste2", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'teste') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 63ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 16:50:59 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/logout" for 127.0.0.1 at Mon Oct 04 16:51:19 -0300 2010
+  Processing by UsuariosController#logout as HTML
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 0ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 16:51:19 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (5.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 16:51:25 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"teste", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"teste2"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'teste') LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 16:51:26 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 27ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/logout" for 127.0.0.1 at Mon Oct 04 16:51:32 -0300 2010
+  Processing by UsuariosController#logout as HTML
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 1ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 16:51:32 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (5.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 16:51:39 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"teste", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"teste"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'teste') LIMIT 1[0m
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 18ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 16:51:40 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (5.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 16:55:00 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"admin", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"teste"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'admin') LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 16:55:00 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:55:05 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+Rendered usuarios/mudar_senha.erb within layouts/application (7.0ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:55:09 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+  Parameters: {"commit"=>"Alterar", "nova_senha2"=>"admin", "nova_senha"=>"admin", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'admin') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE `usuarios` SET `senha` = '3f3cbec21337d620a3764515d2c5c32d0213981d', `updated_at` = '2010-10-04 19:55:09' WHERE (`usuarios`.`id` = 2)[0m
+  [1m[35mSQL (73.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 94ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 16:55:10 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:57:03 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+Rendered usuarios/mudar_senha.erb within layouts/application (8.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:57:07 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+  Parameters: {"commit"=>"Alterar", "nova_senha2"=>"admin", "nova_senha"=>"admin", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'admin') LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/usuarios/mudar_senha
+Completed 302 Found in 20ms
+
+
+Started GET "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:57:08 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+Rendered usuarios/mudar_senha.erb within layouts/application (8.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 16:57:38 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+Rendered usuarios/mudar_senha.erb within layouts/application (7.0ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Mon Oct 04 16:57:49 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[35mTurma Load (21.0ms)[0m  SELECT `turmas`.* FROM `turmas`
+  [1m[36mCurso Load (10.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos`[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_61765680_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:10)
+Rendered turmas/index.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 138ms (Views: 55.0ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Mon Oct 04 16:58:23 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[35mTurma Load (1.0ms)[0m  SELECT `turmas`.* FROM `turmas`
+  [1m[36mCurso Load (0.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos`[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_62734536_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:11)
+Rendered turmas/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 68ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Mon Oct 04 16:58:27 -0300 2010
+  Processing by TurmasController#novo as HTML
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+Rendered turmas/_turma_form.erb (105.0ms)
+Rendered turmas/novo.html.erb within layouts/application (122.0ms)
+Completed 200 OK in 153ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Mon Oct 04 17:01:48 -0300 2010
+  Processing by TurmasController#novo as HTML
+  [1m[36mCurso Load (0.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos`[0m
+Rendered turmas/_turma_form.erb (30.0ms)
+Rendered turmas/novo.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Mon Oct 04 17:02:18 -0300 2010
+  Processing by TurmasController#novo as HTML
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+Rendered turmas/_turma_form.erb (31.0ms)
+Rendered turmas/novo.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 79ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Mon Oct 04 17:02:46 -0300 2010
+  Processing by TurmasController#novo as HTML
+  [1m[36mCurso Load (1.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos`[0m
+Rendered turmas/_turma_form.erb (30.0ms)
+Rendered turmas/novo.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 79ms (Views: 66.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/turmas/novo" for 127.0.0.1 at Mon Oct 04 17:03:03 -0300 2010
+  Processing by TurmasController#novo as HTML
+  [1m[35mCurso Load (1.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+Rendered turmas/_turma_form.erb (69.0ms)
+Rendered turmas/novo.html.erb within layouts/application (86.0ms)
+Completed 200 OK in 118ms (Views: 104.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/turmas" for 127.0.0.1 at Mon Oct 04 17:03:55 -0300 2010
+  Processing by TurmasController#index as HTML
+  [1m[36mTurma Load (1.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas`[0m
+  [1m[35mCurso Load (1.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_index_html_erb__168621911_62101608_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/index.html.erb:11)
+Rendered turmas/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 68ms (Views: 53.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/turmas/pesquisar" for 127.0.0.1 at Mon Oct 04 17:04:00 -0300 2010
+  Processing by TurmasController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "ano"=>"", "nome"=>"s", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "curso_id"=>""}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_turma at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/turmas_controller.rb:118)
+  [1m[36mTurma Load (69.0ms)[0m  [1mSELECT id, nome, ano, curso_id FROM `turmas` WHERE ((UPPER(nome) LIKE UPPER('%s%')) )[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+Rendered turmas/pesquisar.erb within layouts/application (117.0ms)
+Completed 200 OK in 220ms (Views: 136.0ms | ActiveRecord: 69.0ms)
+
+
+Started POST "/turmas/pesquisar" for 127.0.0.1 at Mon Oct 04 17:04:22 -0300 2010
+  Processing by TurmasController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "ano"=>"", "nome"=>"s", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "curso_id"=>""}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_turma at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/turmas_controller.rb:118)
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT id, nome, ano, curso_id FROM `turmas` WHERE ((UPPER(nome) LIKE UPPER('%s%')) )[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+Rendered turmas/pesquisar.erb within layouts/application (35.0ms)
+Completed 200 OK in 63ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas/consultar/1" for 127.0.0.1 at Mon Oct 04 17:04:29 -0300 2010
+  Processing by TurmasController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas` WHERE (`turmas`.`id` = 1) LIMIT 1[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+Rendered turmas/consultar.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 59ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas/consultar/1" for 127.0.0.1 at Mon Oct 04 17:04:57 -0300 2010
+  Processing by TurmasController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas` WHERE (`turmas`.`id` = 1) LIMIT 1[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+Rendered turmas/consultar.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 58ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas/consultar/1" for 127.0.0.1 at Mon Oct 04 17:05:46 -0300 2010
+  Processing by TurmasController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas` WHERE (`turmas`.`id` = 1) LIMIT 1[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+Rendered turmas/consultar.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 59ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas/consultar/1" for 127.0.0.1 at Mon Oct 04 17:05:55 -0300 2010
+  Processing by TurmasController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTurma Load (1.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas` WHERE (`turmas`.`id` = 1) LIMIT 1[0m
+  [1m[35mCurso Load (1.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+Rendered turmas/consultar.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 66ms (Views: 56.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/turmas/consultar/1" for 127.0.0.1 at Mon Oct 04 17:06:17 -0300 2010
+  Processing by TurmasController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas` WHERE (`turmas`.`id` = 1) LIMIT 1[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos` WHERE (`cursos`.`id` = 1) LIMIT 1
+Rendered turmas/consultar.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 59ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/turmas/editar/1" for 127.0.0.1 at Mon Oct 04 17:06:23 -0300 2010
+  Processing by TurmasController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas` WHERE (`turmas`.`id` = 1) LIMIT 1[0m
+  [1m[35mCurso Load (1.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+Rendered turmas/_turma_form.erb (17.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_editar_html_erb__539597612_60998568_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/editar.html.erb:3)
+Rendered turmas/editar.html.erb within layouts/application (80.0ms)
+Completed 200 OK in 108ms (Views: 99.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/turmas/editar/1" for 127.0.0.1 at Mon Oct 04 17:07:07 -0300 2010
+  Processing by TurmasController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTurma Load (0.0ms)[0m  [1mSELECT `turmas`.* FROM `turmas` WHERE (`turmas`.`id` = 1) LIMIT 1[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+Rendered turmas/_turma_form.erb (17.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_turmas_editar_html_erb__539597612_62086788_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/turmas/editar.html.erb:6)
+Rendered turmas/editar.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 64ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Mon Oct 04 17:07:31 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios`[0m
+  [1m[35mCurso Load (0.0ms)[0m  SELECT `cursos`.* FROM `cursos`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_index_html_erb___14180756_61085304_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/index.html.erb:10)
+Rendered usuarios/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 42ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Mon Oct 04 17:09:39 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios`[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_index_html_erb___14180756_61183080_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/index.html.erb:11)
+Rendered usuarios/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 28ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Mon Oct 04 17:10:00 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_index_html_erb___14180756_62767476_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/index.html.erb:11)
+Rendered usuarios/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 28ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/alunos/pesquisar" for 127.0.0.1 at Mon Oct 04 17:11:24 -0300 2010
+  Processing by AlunosController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"a", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_aluno at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/alunos_controller.rb:116)
+  [1m[36mAluno Load (19.0ms)[0m  [1mSELECT id, nome FROM `alunos` WHERE ((UPPER(nome) LIKE UPPER('%a%')) )[0m
+Rendered alunos/pesquisar.erb within layouts/application (26.0ms)
+Completed 200 OK in 78ms (Views: 46.0ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/alunos" for 127.0.0.1 at Mon Oct 04 17:11:52 -0300 2010
+  Processing by AlunosController#index as HTML
+  [1m[35mAluno Load (1.0ms)[0m  SELECT `alunos`.* FROM `alunos`
+  [1m[36mCurso Load (0.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos`[0m
+Rendered alunos/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 93ms (Views: 87.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Mon Oct 04 17:11:55 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_index_html_erb___14180756_61594740_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/index.html.erb:11)
+Rendered usuarios/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 27ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:12:00 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"a", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+Completed   in 11ms
+
+NameError (undefined local variable or method `guarda_pesquisa_usuario' for #<UsuariosController:0x73d99a0>):
+  
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (60.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.0ms)
+
+
+Started POST "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:13:58 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"a", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_usuario at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:152)
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT id, nome FROM `usuarios` WHERE ((UPPER(nome) LIKE UPPER('%a%')) )[0m
+Rendered usuarios/pesquisar.erb within layouts/application (30.0ms)
+Completed   in 51ms
+
+ActionView::Template::Error (undefined method `editar_usuario_path' for #<#<Class:0x760e828>:0x760cdd0>):
+    12:     <tr>
+    13:       <td style="width: 300px" align="center"><%=h usuario.nome %> </td>
+    14:       <td style="width: 90px" align="center"><%= link_to "Consultar", consultar_usuario_path(usuario) %></td>
+    15:       <td style="width: 70px" align="center"><%= link_to "Editar", editar_usuario_path(usuario) %></td>
+    16:     </tr>
+    17:   <% end %>
+    18: </table>
+  app/views/usuarios/pesquisar.erb:15:in `_app_views_usuarios_pesquisar_erb___388896241_61889064_0'
+  app/views/usuarios/pesquisar.erb:11:in `each'
+  app/views/usuarios/pesquisar.erb:11:in `_app_views_usuarios_pesquisar_erb___388896241_61889064_0'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (67.0ms)
+
+
+Started POST "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:14:34 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"a", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_usuario at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:152)
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT id, nome FROM `usuarios` WHERE ((UPPER(nome) LIKE UPPER('%a%')) )
+Rendered usuarios/pesquisar.erb within layouts/application (13.0ms)
+Completed 200 OK in 34ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:15:02 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"a", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_usuario at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:152)
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT id, nome FROM `usuarios` WHERE ((UPPER(nome) LIKE UPPER('%a%')) )[0m
+Rendered usuarios/pesquisar.erb within layouts/application (13.0ms)
+Completed 200 OK in 29ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/consultar/2" for 127.0.0.1 at Mon Oct 04 17:15:42 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+Rendered usuarios/consultar.html.erb within layouts/application (7.0ms)
+Completed   in 25ms
+
+ActionView::Template::Error (undefined method `cert_militar' for nil:NilClass):
+    15:   </tr>
+    16:   <tr>
+    17:     <td height="30" align="right"><b>Certificado de Conclus&atilde;o/Dispansa do Servi&ccedil;o Militar:</b></td>
+    18:     <td align="left"><%=h @aluno.cert_militar %></td>
+    19:   </tr>
+    20:   <tr>
+    21:     <td colspan="2" align="center" height="50"><%= link_to "Matricular Aluno", matricular_aluno_path(@aluno.id) %> |
+  app/views/usuarios/consultar.html.erb:18:in `_app_views_usuarios_consultar_html_erb___599415374_61315800_0'
+  app/controllers/usuarios_controller.rb:64:in `consultar'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (67.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (80.0ms)
+
+
+Started GET "/usuarios/consultar/2" for 127.0.0.1 at Mon Oct 04 17:18:55 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1[0m
+ERROR: compiling _app_views_usuarios_consultar_html_erb___599415374_62317068_0 RAISED compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:19: syntax error, unexpected ')', expecting kTHEN or ':' or '\n' or ';'
+... @usuario.administrador == 1 );@output_buffer.safe_concat('
+                              ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:21: syntax error, unexpected kEND, expecting ')'
+');       end 
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:22: syntax error, unexpected ')', expecting kTHEN or ':' or '\n' or ';'
+... @usuario.administrador == 0 );@output_buffer.safe_concat('
+                              ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:24: syntax error, unexpected kEND, expecting ')'
+');       end 
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:34: syntax error, unexpected kENSURE, expecting ')'
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:36: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_usuarios_consultar_html_erb___599415374_62317068_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "usuarios/consultar";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<table cellspacing="2" cellpadding="0" border="0">
+  <tr>
+    <td colspan="2" align="center" height="50"><h1>Consultar aluno</h1></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" style="color: green">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</td>
+  </tr>
+  <tr>
+    <td height="30" align="right"><b>Nome:</b></td>
+    <td align="left">');@output_buffer.append= (h @usuario.nome );@output_buffer.safe_concat('</td>
+  </tr>
+  <tr>
+    <td height="30" align="right"><b>Senha:</b></td>
+    <td align="left">');@output_buffer.append= (h @usuario.senha );@output_buffer.safe_concat('</td>
+  </tr>
+  <tr>
+    <td height="30" align="right"><b>Administrador:</b></td>
+    <td align="left">
+      ');@output_buffer.append= ( if @usuario.administrador == 1 );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        Sim
+');       end 
+@output_buffer.safe_concat('      ');@output_buffer.append= ( if @usuario.administrador == 0 );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        Não
+');       end 
+@output_buffer.safe_concat('    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" height="50">');@output_buffer.append= ( link_to "Matricular Aluno", matricular_aluno_path(@aluno.id) );@output_buffer.safe_concat(' |
+      ');@output_buffer.append= ( link_to "Editar", editar_aluno_path(@aluno) );@output_buffer.safe_concat(' | ');@output_buffer.append= ( link_to "Voltar", :back );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </td>
+  </tr>
+</table>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:36:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/template.rb:134:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:54:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/template.rb:127:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:59:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:56:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:26:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:114:in `_render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:92:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:17:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/mime_responds.rb:261
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/mime_responds.rb:192:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:64:in `consultar'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:150:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:11:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:18:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:450:in `_run__117818185__process_action__993371210__callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:409:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:93:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:93:in `run_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:119:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:40:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal.rb:133:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_controller/metal.rb:173
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:27:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:492:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/flash.rb:182:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:32:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:12:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/rack/logger.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/static.rb:30:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:168:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/application.rb:77:in `method_missing'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/rack/log_tailer.rb:14:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:159:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `process_client'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands/server.rb:65:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:30
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:27:in `tap'
+C:/Ruby187/lib/ruby/gems/1.8/gems/railties-3.0.0/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered usuarios/consultar.html.erb within layouts/application (2.0ms)
+Completed   in 19ms
+
+ActionView::Template::Error (compile error
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:19: syntax error, unexpected ')', expecting kTHEN or ':' or '\n' or ';'
+... @usuario.administrador == 1 );@output_buffer.safe_concat('
+                              ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:21: syntax error, unexpected kEND, expecting ')'
+');       end 
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:22: syntax error, unexpected ')', expecting kTHEN or ':' or '\n' or ';'
+... @usuario.administrador == 0 );@output_buffer.safe_concat('
+                              ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:24: syntax error, unexpected kEND, expecting ')'
+');       end 
+             ^
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:34: syntax error, unexpected kENSURE, expecting ')'
+C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/consultar.html.erb:36: syntax error, unexpected kEND, expecting ')'):
+    16:   <tr>
+    17:     <td height="30" align="right"><b>Administrador:</b></td>
+    18:     <td align="left">
+    19:       <%= if @usuario.administrador == 1 %>
+    20:         Sim
+    21:       <% end %>
+    22:       <%= if @usuario.administrador == 0 %>
+  app/views/usuarios/consultar.html.erb:36:in `compile'
+  app/controllers/usuarios_controller.rb:64:in `consultar'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (22.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/usuarios/consultar/2" for 127.0.0.1 at Mon Oct 04 17:19:17 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+Rendered usuarios/consultar.html.erb within layouts/application (6.0ms)
+Completed   in 24ms
+
+ActionView::Template::Error (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+    25:     </td>
+    26:   </tr>
+    27:   <tr>
+    28:     <td colspan="2" align="center" height="50"><%= link_to "Matricular Aluno", matricular_aluno_path(@aluno.id) %> |
+    29:       <%= link_to "Editar", editar_aluno_path(@aluno) %> | <%= link_to "Voltar", :back %>
+    30:     </td>
+    31:   </tr>
+  app/views/usuarios/consultar.html.erb:28:in `_app_views_usuarios_consultar_html_erb___599415374_61334952_0'
+  app/controllers/usuarios_controller.rb:64:in `consultar'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.0ms)
+
+
+Started GET "/usuarios/consultar/2" for 127.0.0.1 at Mon Oct 04 17:19:44 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1[0m
+Rendered usuarios/consultar.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 30ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/consultar/2" for 127.0.0.1 at Mon Oct 04 17:21:44 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUsuario Load (1.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+Rendered usuarios/consultar.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 31ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/usuarios/consultar/2" for 127.0.0.1 at Mon Oct 04 17:22:09 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1[0m
+Rendered usuarios/consultar.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 31ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/alunos/editar/2" for 127.0.0.1 at Mon Oct 04 17:22:59 -0300 2010
+  Processing by AlunosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAluno Load (0.0ms)[0m  SELECT `alunos`.* FROM `alunos` WHERE (`alunos`.`id` = 2) LIMIT 1
+Rendered shared/_pessoa_form.erb (5.0ms)
+Rendered alunos/_aluno_form.erb (1.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_alunos_editar_html_erb__558998042_62389620_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/alunos/editar.html.erb:6)
+Rendered alunos/editar.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 70ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alunos/editar/2" for 127.0.0.1 at Mon Oct 04 17:23:16 -0300 2010
+  Processing by AlunosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAluno Load (1.0ms)[0m  [1mSELECT `alunos`.* FROM `alunos` WHERE (`alunos`.`id` = 2) LIMIT 1[0m
+Rendered shared/_pessoa_form.erb (5.0ms)
+Rendered alunos/_aluno_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_alunos_editar_html_erb__558998042_61008780_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/alunos/editar.html.erb:6)
+Rendered alunos/editar.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 70ms (Views: 60.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/alunos/editar/2" for 127.0.0.1 at Mon Oct 04 17:23:18 -0300 2010
+  Processing by AlunosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAluno Load (1.0ms)[0m  SELECT `alunos`.* FROM `alunos` WHERE (`alunos`.`id` = 2) LIMIT 1
+Rendered shared/_pessoa_form.erb (5.0ms)
+Rendered alunos/_aluno_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_alunos_editar_html_erb__558998042_62346684_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/alunos/editar.html.erb:6)
+Rendered alunos/editar.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 70ms (Views: 60.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/usuarios/consultar/2" for 127.0.0.1 at Mon Oct 04 17:23:24 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1[0m
+Rendered usuarios/consultar.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 35ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/usuarios/editar/2" for 127.0.0.1 at Mon Oct 04 17:23:28 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+Rendered usuarios/_usuario_form.erb (2.0ms)
+Rendered usuarios/editar.html.erb within layouts/application (14.0ms)
+Completed   in 31ms
+
+ActionView::Template::Error (Model Usuario does not respond to conf_senha):
+    8: </tr>
+    9: <tr>
+    10:   <td height="50" align="right">Confirmar Senha:</td>
+    11:   <td align="left"><%= f.text_field :conf_senha %></td>
+    12: </tr>
+  app/views/usuarios/_usuario_form.erb:11:in `_app_views_usuarios__usuario_form_erb___128968551_62104500_1121044'
+  app/views/usuarios/editar.html.erb:7:in `_app_views_usuarios_editar_html_erb___926088918_62193264_0'
+  app/views/usuarios/editar.html.erb:6:in `_app_views_usuarios_editar_html_erb___926088918_62193264_0'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.0ms)
+
+
+Started GET "/usuarios/editar/2" for 127.0.0.1 at Mon Oct 04 17:26:30 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1[0m
+Rendered usuarios/_usuario_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_60878136_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:6)
+Rendered usuarios/editar.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 37ms (Views: 29.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/usuarios/editar/2" for 127.0.0.1 at Mon Oct 04 17:28:09 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUsuario Load (1.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+Rendered usuarios/_usuario_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_61887732_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:6)
+Rendered usuarios/editar.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 41ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/usuarios/editar/2" for 127.0.0.1 at Mon Oct 04 17:31:09 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1[0m
+Rendered usuarios/_usuario_form.erb (3.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_60877632_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:6)
+Rendered usuarios/editar.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 84ms (Views: 76.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/usuarios/2" for 127.0.0.1 at Mon Oct 04 17:31:29 -0300 2010
+  Processing by UsuariosController#update as HTML
+  Parameters: {"senha2"=>"teste", "commit"=>"Alterar", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "usuario"=>{"nome"=>"admin", "senha"=>"teste"}, "id"=>"2"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE `usuarios` SET `senha` = 'teste', `updated_at` = '2010-10-04 20:31:29' WHERE (`usuarios`.`id` = 2)
+  [1m[36mSQL (64.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/usuarios/consultar/2
+Completed 302 Found in 82ms
+
+
+Started GET "/usuarios/consultar/2" for 127.0.0.1 at Mon Oct 04 17:31:29 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+Rendered usuarios/consultar.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 82ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/logout" for 127.0.0.1 at Mon Oct 04 17:32:09 -0300 2010
+  Processing by UsuariosController#logout as HTML
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 1ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:32:09 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (5.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:32:14 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"admin", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"admin"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 14ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:32:16 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (4.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:32:22 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"admin", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"teste"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'admin') LIMIT 1
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 15ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:32:22 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (5.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:34:30 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"admin", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"teste"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 29ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:34:31 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (4.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:34:38 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"admin", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"teste2"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'admin') LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 17:34:39 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 27ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Mon Oct 04 17:34:45 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios`[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_index_html_erb___14180756_60173604_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/index.html.erb:11)
+Rendered usuarios/index.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 74ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:34:48 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"a", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_usuario at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:160)
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT id, nome FROM `usuarios` WHERE ((UPPER(nome) LIKE UPPER('%a%')) )
+Rendered usuarios/pesquisar.erb within layouts/application (13.0ms)
+Completed 200 OK in 29ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/editar/2" for 127.0.0.1 at Mon Oct 04 17:34:51 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1[0m
+Rendered usuarios/_usuario_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_60277068_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:6)
+Rendered usuarios/editar.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/2" for 127.0.0.1 at Mon Oct 04 17:34:59 -0300 2010
+  Processing by UsuariosController#update as HTML
+  Parameters: {"senha2"=>"admin2", "commit"=>"Alterar", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "usuario"=>{"nome"=>"admin", "senha"=>"admin"}, "id"=>"2"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+Rendered usuarios/_usuario_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_61800288_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:6)
+Rendered usuarios/editar.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/2" for 127.0.0.1 at Mon Oct 04 17:35:39 -0300 2010
+  Processing by UsuariosController#update as HTML
+  Parameters: {"senha2"=>"admin2", "commit"=>"Alterar", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "usuario"=>{"nome"=>"admin", "senha"=>"admin"}, "id"=>"2"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1[0m
+Rendered usuarios/_usuario_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_60688056_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:6)
+Rendered usuarios/editar.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/usuarios/2" for 127.0.0.1 at Mon Oct 04 17:36:02 -0300 2010
+  Processing by UsuariosController#update as HTML
+  Parameters: {"senha2"=>"admin2", "commit"=>"Alterar", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "usuario"=>{"nome"=>"admin", "senha"=>"admin"}, "id"=>"2"}
+  [1m[35mUsuario Load (1.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+Rendered usuarios/_usuario_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_62239356_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:6)
+Rendered usuarios/editar.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/usuarios/2" for 127.0.0.1 at Mon Oct 04 17:36:13 -0300 2010
+  Processing by UsuariosController#update as HTML
+  Parameters: {"senha2"=>"admin", "commit"=>"Alterar", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "usuario"=>{"nome"=>"admin", "senha"=>"admin"}, "id"=>"2"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1[0m
+Completed   in 8ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/usuarios_controller.rb:110
+  app/controllers/usuarios_controller.rb:107:in `update'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (46.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (81.0ms)
+
+
+Started POST "/usuarios/2" for 127.0.0.1 at Mon Oct 04 17:37:04 -0300 2010
+  Processing by UsuariosController#update as HTML
+  Parameters: {"senha2"=>"admin", "commit"=>"Alterar", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "usuario"=>{"nome"=>"admin", "senha"=>"admin"}, "id"=>"2"}
+  [1m[35mUsuario Load (1.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE `usuarios` SET `senha` = '3f3cbec21337d620a3764515d2c5c32d0213981d', `updated_at` = '2010-10-04 20:37:04' WHERE (`usuarios`.`id` = 2)
+  [1m[36mSQL (65.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/usuarios/consultar/2
+Completed 302 Found in 82ms
+
+
+Started GET "/usuarios/consultar/2" for 127.0.0.1 at Mon Oct 04 17:37:04 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+Rendered usuarios/consultar.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 72ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/logout" for 127.0.0.1 at Mon Oct 04 17:37:27 -0300 2010
+  Processing by UsuariosController#logout as HTML
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 1ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:37:28 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (5.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:37:41 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"admin", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"admion"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 14ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:37:42 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (5.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:37:58 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"admin", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"admin"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'admin') LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 17:37:58 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Mon Oct 04 17:38:57 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios`[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_index_html_erb___14180756_62471064_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/index.html.erb:11)
+Rendered usuarios/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 23ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/usuarios/novo" for 127.0.0.1 at Mon Oct 04 17:38:58 -0300 2010
+  Processing by UsuariosController#novo as HTML
+Rendered usuarios/_usuario_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_novo_html_erb__1008152856_61196748_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/novo.html.erb:6)
+Rendered usuarios/novo.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Mon Oct 04 17:39:01 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_index_html_erb___14180756_62646252_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/index.html.erb:11)
+Rendered usuarios/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:39:05 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_usuario at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:160)
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT id, nome FROM `usuarios`[0m
+Rendered usuarios/pesquisar.erb within layouts/application (14.0ms)
+Completed 200 OK in 29ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/editar/1" for 127.0.0.1 at Mon Oct 04 17:39:10 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1
+Rendered usuarios/_usuario_form.erb (53.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_60391296_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:7)
+Rendered usuarios/editar.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 88ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:39:11 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_usuario at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:160)
+Rendered usuarios/pesquisar.erb within layouts/application (14.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/consultar/1" for 127.0.0.1 at Mon Oct 04 17:39:14 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1[0m
+Rendered usuarios/consultar.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 30ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/editar/1" for 127.0.0.1 at Mon Oct 04 17:39:18 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1
+Rendered usuarios/_usuario_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_62029536_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:7)
+Rendered usuarios/editar.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:39:21 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_usuario at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:160)
+Rendered usuarios/pesquisar.erb within layouts/application (14.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/editar/1" for 127.0.0.1 at Mon Oct 04 17:42:15 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1[0m
+Rendered usuarios/_usuario_form.erb (3.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_62094204_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:7)
+Rendered usuarios/editar.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 39ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:42:19 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_usuario at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:160)
+Rendered usuarios/pesquisar.erb within layouts/application (14.0ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/editar/2" for 127.0.0.1 at Mon Oct 04 17:42:21 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 2) LIMIT 1
+Rendered usuarios/_usuario_form.erb (3.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_62328900_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:7)
+Rendered usuarios/editar.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:44:39 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_usuario at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:160)
+Rendered usuarios/pesquisar.erb within layouts/application (14.0ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/editar/1" for 127.0.0.1 at Mon Oct 04 17:44:42 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1[0m
+Rendered usuarios/_usuario_form.erb (3.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_62670108_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:7)
+Rendered usuarios/editar.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/1" for 127.0.0.1 at Mon Oct 04 17:44:46 -0300 2010
+  Processing by UsuariosController#update as HTML
+  Parameters: {"senha2"=>"", "commit"=>"Alterar", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "usuario"=>{"administrador"=>"1", "nome"=>"teste", "senha"=>"db5bd192f5a78af51600320cbe86782001188436"}, "id"=>"1"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1
+Rendered usuarios/_usuario_form.erb (3.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_60806100_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:7)
+Rendered usuarios/editar.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 39ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/1" for 127.0.0.1 at Mon Oct 04 17:44:56 -0300 2010
+  Processing by UsuariosController#update as HTML
+  Parameters: {"senha2"=>"teste", "commit"=>"Alterar", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "usuario"=>{"administrador"=>"0", "nome"=>"teste", "senha"=>"teste"}, "id"=>"1"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE `usuarios` SET `senha` = '7590398afbfc46cb023328636b81ea2c41387577', `updated_at` = '2010-10-04 20:44:56' WHERE (`usuarios`.`id` = 1)[0m
+  [1m[35mSQL (96.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/usuarios/consultar/1
+Completed 302 Found in 164ms
+
+
+Started GET "/usuarios/consultar/1" for 127.0.0.1 at Mon Oct 04 17:44:57 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1[0m
+Rendered usuarios/consultar.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 30ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/editar/1" for 127.0.0.1 at Mon Oct 04 17:45:21 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1
+Rendered usuarios/_usuario_form.erb (3.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_59995428_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:7)
+Rendered usuarios/editar.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 91ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/1" for 127.0.0.1 at Mon Oct 04 17:45:29 -0300 2010
+  Processing by UsuariosController#update as HTML
+  Parameters: {"senha2"=>"teste", "commit"=>"Alterar", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "usuario"=>{"administrador"=>"1", "nome"=>"teste", "senha"=>"teste"}, "id"=>"1"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE `usuarios` SET `administrador` = 1, `updated_at` = '2010-10-04 20:45:29' WHERE (`usuarios`.`id` = 1)[0m
+  [1m[35mSQL (57.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/usuarios/consultar/1
+Completed 302 Found in 75ms
+
+
+Started GET "/usuarios/consultar/1" for 127.0.0.1 at Mon Oct 04 17:45:30 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1[0m
+Rendered usuarios/consultar.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 30ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/editar/1" for 127.0.0.1 at Mon Oct 04 17:45:35 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1
+Rendered usuarios/_usuario_form.erb (3.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_62235516_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:7)
+Rendered usuarios/editar.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 39ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/logout" for 127.0.0.1 at Mon Oct 04 17:45:40 -0300 2010
+  Processing by UsuariosController#logout as HTML
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 1ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:45:41 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (5.0ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:45:45 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"teste", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"teste"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'teste') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 17:45:46 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Mon Oct 04 17:45:53 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_index_html_erb___14180756_61239408_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/index.html.erb:11)
+Rendered usuarios/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:45:57 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"t", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_usuario at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:160)
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT id, nome FROM `usuarios` WHERE ((UPPER(nome) LIKE UPPER('%t%')) )[0m
+Rendered usuarios/pesquisar.erb within layouts/application (14.0ms)
+Completed 200 OK in 29ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/usuarios/editar/1" for 127.0.0.1 at Mon Oct 04 17:46:00 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1
+Rendered usuarios/_usuario_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_61227696_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:7)
+Rendered usuarios/editar.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 39ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/1" for 127.0.0.1 at Mon Oct 04 17:46:10 -0300 2010
+  Processing by UsuariosController#update as HTML
+  Parameters: {"senha2"=>"teste", "commit"=>"Alterar", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "usuario"=>{"administrador"=>"0", "nome"=>"teste", "senha"=>"teste"}, "id"=>"1"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE `usuarios` SET `administrador` = 0, `updated_at` = '2010-10-04 20:46:10' WHERE (`usuarios`.`id` = 1)[0m
+  [1m[35mSQL (62.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/usuarios/consultar/1
+Completed 302 Found in 80ms
+
+
+Started GET "/usuarios/consultar/1" for 127.0.0.1 at Mon Oct 04 17:46:11 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1[0m
+Rendered usuarios/consultar.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 30ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/logout" for 127.0.0.1 at Mon Oct 04 17:46:17 -0300 2010
+  Processing by UsuariosController#logout as HTML
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 1ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:46:17 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (5.0ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:46:22 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"teste", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"teste"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'teste') LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 17:46:24 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/principal/sobre" for 127.0.0.1 at Mon Oct 04 17:46:33 -0300 2010
+  Processing by PrincipalController#sobre as HTML
+Rendered principal/sobre.erb within layouts/application (7.0ms)
+Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/logout" for 127.0.0.1 at Mon Oct 04 17:47:18 -0300 2010
+  Processing by UsuariosController#logout as HTML
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 1ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:47:18 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (5.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 17:47:50 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"admin", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"admin"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 17:47:50 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/mudar_senha" for 127.0.0.1 at Mon Oct 04 17:47:55 -0300 2010
+  Processing by UsuariosController#mudar_senha as HTML
+Rendered usuarios/mudar_senha.erb within layouts/application (7.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Mon Oct 04 17:47:57 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios`
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_index_html_erb___14180756_62306280_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/index.html.erb:11)
+Rendered usuarios/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/pesquisar" for 127.0.0.1 at Mon Oct 04 17:47:59 -0300 2010
+  Processing by UsuariosController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223"}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_usuario at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/usuarios_controller.rb:160)
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT id, nome FROM `usuarios`[0m
+Rendered usuarios/pesquisar.erb within layouts/application (13.0ms)
+Completed 200 OK in 30ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/editar/1" for 127.0.0.1 at Mon Oct 04 17:48:01 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1
+Rendered usuarios/_usuario_form.erb (2.0ms)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_usuarios_editar_html_erb___926088918_62568912_0 at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/views/usuarios/editar.html.erb:7)
+Rendered usuarios/editar.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/editar/1" for 127.0.0.1 at Mon Oct 04 18:01:15 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1[0m
+Rendered usuarios/_usuario_form.erb (3.0ms)
+Rendered usuarios/editar.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 39ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/editar/1" for 127.0.0.1 at Mon Oct 04 18:06:24 -0300 2010
+  Processing by UsuariosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 1) LIMIT 1
+Rendered usuarios/_usuario_form.erb (3.0ms)
+Rendered usuarios/editar.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 38ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Mon Oct 04 20:07:47 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios`[0m
+Rendered usuarios/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 24ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/usuarios/novo" for 127.0.0.1 at Mon Oct 04 20:07:48 -0300 2010
+  Processing by UsuariosController#novo as HTML
+Rendered usuarios/_usuario_form.erb (3.0ms)
+Rendered usuarios/novo.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios" for 127.0.0.1 at Mon Oct 04 20:07:59 -0300 2010
+  Processing by UsuariosController#create as HTML
+  Parameters: {"senha2"=>"mestre", "commit"=>"Criar", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "usuario"=>{"administrador"=>"1", "nome"=>"barbafh", "senha"=>"mestre"}}
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mdescribe `usuarios`[0m
+  [1m[35mSQL (28.0ms)[0m  INSERT INTO `usuarios` (`administrador`, `created_at`, `nome`, `senha`, `updated_at`) VALUES (1, '2010-10-04 23:07:59', 'barbafh', '1106b9ee381bfafaed28004819c0e192cbb9212f', '2010-10-04 23:07:59')
+  [1m[36mSQL (55.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/usuarios/consultar/3
+Completed 302 Found in 103ms
+
+
+Started GET "/usuarios/consultar/3" for 127.0.0.1 at Mon Oct 04 20:07:59 -0300 2010
+  Processing by UsuariosController#consultar as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUsuario Load (1.0ms)[0m  SELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`id` = 3) LIMIT 1
+Rendered usuarios/consultar.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 80ms (Views: 71.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/usuarios/logout" for 127.0.0.1 at Mon Oct 04 20:08:06 -0300 2010
+  Processing by UsuariosController#logout as HTML
+Redirected to http://localhost:3000/usuarios/login
+Completed 302 Found in 1ms
+
+
+Started GET "/usuarios/login" for 127.0.0.1 at Mon Oct 04 20:08:07 -0300 2010
+  Processing by UsuariosController#login as HTML
+Rendered usuarios/login.erb within layouts/login (5.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios/login" for 127.0.0.1 at Mon Oct 04 20:08:11 -0300 2010
+  Processing by UsuariosController#login as HTML
+  Parameters: {"commit"=>"Logar", "nome"=>"barbafh", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "senha"=>"mestre"}
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios` WHERE (`usuarios`.`nome` = 'barbafh') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Oct 04 20:08:13 -0300 2010
+  Processing by PrincipalController#index as HTML
+Rendered principal/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 27ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alunos" for 127.0.0.1 at Tue Oct 05 02:05:59 -0300 2010
+  Processing by AlunosController#index as HTML
+  [1m[36mSQL (62.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mAluno Load (15.0ms)[0m  SELECT `alunos`.* FROM `alunos`
+  [1m[36mCurso Load (1.0ms)[0m  [1mSELECT `cursos`.* FROM `cursos`[0m
+Rendered alunos/index.html.erb within layouts/application (138.0ms)
+Completed 200 OK in 387ms (Views: 170.0ms | ActiveRecord: 78.0ms)
+
+
+Started POST "/alunos/pesquisar" for 127.0.0.1 at Tue Oct 05 02:06:07 -0300 2010
+  Processing by AlunosController#pesquisar as HTML
+  Parameters: {"commit"=>"Pesquisar", "nome"=>"a", "authenticity_token"=>"M0EVcG85kX5ee15ieU4thaYHQBmhTPMwtvh15fXwXDQ=", "utf8"=>"\342\234\223", "curso_id"=>"", "matricula"=>""}
+DEPRECATION WARNING: Using #request_uri is deprecated. Use fullpath instead. (called from guarda_pesquisa_aluno at C:/Users/Barbafh/Documents/NetBeansProjects/SGE_v0.2/app/controllers/alunos_controller.rb:116)
+  [1m[35mAluno Load (1.0ms)[0m  SELECT id, nome FROM `alunos` WHERE ((UPPER(nome) LIKE UPPER('%a%')) )
+Rendered alunos/pesquisar.erb within layouts/application (26.0ms)
+Completed 200 OK in 55ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/alunos/consultar/1" for 127.0.0.1 at Tue Oct 05 02:06:11 -0300 2010
+  Processing by AlunosController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAluno Load (0.0ms)[0m  [1mSELECT `alunos`.* FROM `alunos` WHERE (`alunos`.`id` = 1) LIMIT 1[0m
+Rendered shared/_pessoa_consulta_form.erb (19.0ms)
+Rendered alunos/consultar.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 104ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alunos/code_image/1" for 127.0.0.1 at Tue Oct 05 02:06:12 -0300 2010
+  Processing by AlunosController#code_image as */*
+  Parameters: {"id"=>"1"}
+  [1m[35mAluno Load (0.0ms)[0m  SELECT `alunos`.* FROM `alunos` WHERE (`alunos`.`id` = 1) LIMIT 1
+Sent data  (0.0ms)
+Completed   in 29ms
+
+ArgumentError (:type option required):
+  app/controllers/alunos_controller.rb:111:in `code_image'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (69.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (84.0ms)
+
+
+Started GET "/alunos/consultar/1" for 127.0.0.1 at Tue Oct 05 02:44:12 -0300 2010
+  Processing by AlunosController#consultar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAluno Load (0.0ms)[0m  [1mSELECT `alunos`.* FROM `alunos` WHERE (`alunos`.`id` = 1) LIMIT 1[0m
+Rendered shared/_pessoa_consulta_form.erb (19.0ms)
+Rendered alunos/consultar.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 62ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alunos/code_image/1" for 127.0.0.1 at Tue Oct 05 02:44:16 -0300 2010
+  Processing by AlunosController#code_image as */*
+  Parameters: {"id"=>"1"}
+  [1m[35mAluno Load (0.0ms)[0m  SELECT `alunos`.* FROM `alunos` WHERE (`alunos`.`id` = 1) LIMIT 1
+Sent data  (0.0ms)
+Completed   in 28ms
+
+ArgumentError (:type option required):
+  app/controllers/alunos_controller.rb:111:in `code_image'
+
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.0ms)
+Rendered C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Tue Oct 05 02:44:17 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT `usuarios`.* FROM `usuarios`[0m
+Rendered usuarios/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/novo" for 127.0.0.1 at Tue Oct 05 02:44:23 -0300 2010
+  Processing by UsuariosController#novo as HTML
+Rendered usuarios/_usuario_form.erb (3.0ms)
+Rendered usuarios/novo.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at Tue Oct 05 02:44:35 -0300 2010
+  Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (1.0ms)[0m  SELECT `usuarios`.* FROM `usuarios`
+Rendered usuarios/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 23ms (Views: 18.0ms | ActiveRecord: 1.0ms)
