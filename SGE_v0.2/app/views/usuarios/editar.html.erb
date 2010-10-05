@@ -1,15 +1,30 @@
-<table cellspacing="2" cellpadding="0" border="0">
-  <tr>
-    <td height="50" colspan="2" align="center"><h1>Editar usuario</h1></td>
-  </tr>
+<div align="center">
+  <table cellspacing="2" cellpadding="0" border="0">
+    <tr>
+      <td height="50" colspan="2" align="center"><h1>Editar usuario</h1></td>
+    </tr>
 
-<% form_for(@usuario, :html => {:multipart => true}) do |f| %>
-  <%= render :partial => "usuario_form", :locals => {:f => f}   %>
-  <tr>
-    <td colspan="2" align="center"><%= f.submit 'Alterar' %></td>
-  </tr>
-<% end %>
-<tr>
-  <td colspan="2" align="center"><%= link_to 'Voltar', session[:retorno] %></td>
-</tr>
-</table>
+    <%= form_for(@usuario, :html => {:multipart => true}) do |f| %>
+      <% if flash[:notice] %>
+        <tr>
+          <td align="center" height="50" colspan="2"><a style="color: red; vertical-align: middle"><%= flash[:notice] %></a></td>
+        </tr>
+      <% end %>
+      <tr>
+        <td height="50" align="right"><%= f.label :nome %>:</td>
+        <td align="left"><%= f.text_field :nome %></td>
+      </tr>
+      <tr>
+        <td height="50" align="right">Administrador?</td>
+        <td align="left"><%= f.select(:administrador, options_for_select(admin, @usuario.administrador)) %></td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center"><%= f.submit 'Alterar' %></td>
+      </tr>
+    <% end %>
+    <tr>
+      <td colspan="2" align="center"><%= link_to 'Voltar', session[:retorno] %></td>
+    </tr>
+  </table>
+</div>

@@ -1,24 +1,26 @@
-<table cellspacing="2" cellpadding="0" border="0">
-  <tr>
-    <td colspan="2" align="center" height="50"><h1>Consultar turma</h1></td>
-  </tr>
-  <tr>
-    <td align="right" height="30">Nome:</td>
-    <td align="left"><%=h @turma.nome %></td>
-  </tr>
-  <tr>
-    <td align="right" height="30">Ano:</td>
-    <td align="left"><%=h @turma.ano %></td>
-  </tr>
-  <tr>
-    <td align="right" height="30">Max alunos:</td>
-    <td align="left"><%=h @turma.max_alunos %></td>
-  </tr>
-  <tr>
-    <td align="right" height="30">Curso:</td>
-    <td align="left"><%=h @turma.curso.nome %></td>
-  </tr>
-</table>
+<div align="center">
+  <table cellspacing="4" cellpadding="0" border="0">
+    <tr>
+      <td colspan="2" align="center" height="50"><h1>Consulta de turma</h1></td>
+    </tr>
+    <tr>
+      <td align="right" height="30"><strong>Nome:</strong></td>
+      <td align="left"><%=h @turma.nome %></td>
+    </tr>
+    <tr>
+      <td align="right" height="30"><strong>Ano:</strong></td>
+      <td align="left"><%=h @turma.ano %></td>
+    </tr>
+    <tr>
+      <td align="right" height="30"><strong>Max alunos:</strong></td>
+      <td align="left"><%=h @turma.max_alunos %></td>
+    </tr>
+    <tr>
+      <td align="right" height="30"><strong>Curso:</strong></td>
+      <td align="left"><%=h @turma.curso.nome %></td>
+    </tr>
+  </table>
 
-<%= link_to 'Editar', editar_turma_path(@turma) %> |
-<%= link_to 'Voltar', turmas_path %>
+  <%= link_to 'Editar', editar_turma_path(@turma) %> |
+  <%= link_to 'Voltar', turmas_path %>
+</div>

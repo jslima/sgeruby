@@ -54,6 +54,7 @@
                 <% if session[:usuario]['admin'] == 1 %>
                   <li><%= link_to "Administrar Usuários", usuarios_path %></li>
                 <% end %>
+                <li><%= link_to "Alterar senha", mudar_senha_path %></li>
                 <li><%= link_to "Logout", logout_path %></li>
               </ul>
             </li>

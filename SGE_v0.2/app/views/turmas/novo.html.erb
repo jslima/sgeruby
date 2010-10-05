@@ -1,10 +1,17 @@
-<h1>Nova turma</h1>
+<div align="center">
+  <table cellspacing="2" cellpadding="0" border="0">
+    <tr>
+      <td height="50" colspan="2" align="center"><h1>Nova turma</h1></td>
+    </tr>
 
-<%= form_for(@turma) do |f| %>
-  <%= render :partial => 'turma_form', :locals => {:f => f} %>
-  <p>
-    <%= f.submit 'Criar' %>
-  </p>
-<% end %>
-
-<%= link_to 'Voltar', turmas_path %>
+    <%= form_for(@turma) do |f| %>
+      <%= render :partial => 'turma_form', :locals => {:f => f} %>
+      <tr>
+        <td colspan="2" align="center"><%= f.submit 'Criar' %></td>
+      </tr>
+    <% end %>
+    <tr>
+      <td colspan="2" align="center"><%= link_to 'Voltar', turmas_path %></td>
+    </tr>
+  </table>
+</div>

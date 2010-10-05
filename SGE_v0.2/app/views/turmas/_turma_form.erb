@@ -1,18 +1,20 @@
-<%= f.error_messages %>
-
-  <p>
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
-  </p>
-  <p>
-    <%= f.label :ano %><br />
-    <%= f.text_field :ano %>
-  </p>
-  <p>
-    <%= f.label :max_alunos %><br />
-    <%= f.text_field :max_alunos %>
-  </p>
-  <p>
-    <%= f.label :curso_id %><br />
-    <%= f.select :curso_id, lista_cursos.map {|r| [r.nome,r.id] }, :include_blank => 'Selecione' %>
-  </p>
+<tr>
+      <td colspan="2" align="center"><%= f.error_messages %></td>
+</tr>
+<tr>
+      <td height="50" align="right"><%= f.label :nome %>:</td>
+      <td align="left"><%= f.text_field :nome %></td>
+</tr>
+<tr>
+      <td height="50" align="right"><%= f.label :ano %>:</td>
+      <td align="left"><%= f.text_field :ano %></td>
+</tr>
+<tr>
+      <td height="50" align="right"><%= f.label :max_alunos %>:</td>
+      <td align="left"><%= f.text_field :max_alunos %></td>
+</tr>
+<tr>
+      <td height="50" align="right"><%= f.label :curso_id %>:</td>
+      <td align="left"><%= f.select :curso_id, lista_cursos.map {|r| [r.nome,r.id] },
+                                      :include_blank => 'Selecione' %></td>
+</tr>
