@@ -2,9 +2,10 @@ class UsuariosController < ApplicationController
   before_filter :limpar_sessao, :only => [:index]
   before_filter :guarda_pesquisa_usuario, :only => [:pesquisar]
   before_filter :guarda_consulta_usuario, :only => [:consultar]
-  #before_filter :is_admin, :except => [:login, :logout]
- 
+  before_filter :is_admin, :except => [:login, :logout]
+
   layout :usuario_layout
+  layout 'report', :only => :reports
   require 'digest'
 
   def usuario_layout
@@ -153,6 +154,14 @@ class UsuariosController < ApplicationController
       end
     else
       @usuarios = session[:usuarios]
+    end
+  end
+
+  def reports
+    @table = Usuario.report_table(:all)
+    unless @table.empty?
+      @table.rename_column("usuario.nome", "Usuario")
+      @table.rename_columns { |c| c.titleize }
     end
   end
 

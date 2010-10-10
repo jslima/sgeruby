@@ -3,11 +3,15 @@
     <tr>
       <td colspan="2" height="50" align="right">
         <div id="error_explanation">
-          <h2><%= pluralize(@disciplina.errors.count, "error") %> prohibited this disciplina from being saved:</h2>
-
+          <h1>Ocorreram problemas durante a operação</h1>
+          <% if @disciplina.errors.count == 1 %>
+            <h2>Um erro impediu que os dados fossem salvos:</h2>
+          <% else %>
+            <h2><%= pluralize(@disciplina.errors.count, "erros") %> impediram que os dados fossem salvos:</h2>
+          <% end %>
           <ul>
             <% @disciplina.errors.full_messages.each do |msg| %>
-              <li><%= msg %></li>
+              <li align="left"><%= "O campo " + msg %></li>
             <% end %>
           </ul>
         </div>
@@ -16,23 +20,23 @@
   <% end %>
 
   <tr>
-    <td height="50" align="right"><%= f.label :nome %>:</td>
+    <td height="50" align="right">Nome:</td>
     <td align="left"><%= f.text_field :nome %></td>
   </tr>
   <tr>
-    <td height="50" align="right"><%= f.label :sigla %>:</td>
+    <td height="50" align="right">Sigla:</td>
     <td align="left"><%= f.text_field :sigla %></td>
   </tr>
   <tr>
-    <td height="50" align="right"><%= f.label :ementa %>:</td>
+    <td height="50" align="right">Ementa:</td>
     <td align="left"><%= f.text_field :ementa %></td>
   </tr>
   <tr>
-    <td height="50" align="right"><%= f.label :bibliografia %>:</td>
+    <td height="50" align="right">Bibliografia:</td>
     <td align="left"><%= f.text_field :bibliografia %></td>
   </tr>
   <tr>
-    <td height="50" align="right"><%= f.label :curso_id %>:</td>
+    <td height="50" align="right">Curso:</td>
     <td align="left"> <%= f.select :curso_id, lista_cursos.map {|r| [r.nome,r.id] }, :include_blank => 'Selecione' %></td>
   </tr>
   <tr>

@@ -1,37 +1,39 @@
-<table cellpadding="0" cellspacing="10" border="0">
-  <tr>
-    <td colspan="2" align="center"><h2>Matr&iacute;cula de aluno</h2></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" style="color: red"><%= notice %></td>
-  </tr>
-  <% form_for(@matricula, [:action => 'matricular']) do |f| %>
+<div align="center">
+  <table cellpadding="0" cellspacing="10" border="0">
     <tr>
-      <td height="50" align="right"><strong>Matr&iacute;ula:</strong></td>
-      <td align="left"></td>
+      <td colspan="2" align="center"><h2>Matr&iacute;cula de aluno</h2></td>
     </tr>
     <tr>
-      <td height="50" align="right"><strong>Aluno:</strong></td>
-      <td align="left"><%=h @aluno.nome %>
-        <%= f.hidden_field :aluno_id, :value => session[:aluno_id] %> </td>
+      <td colspan="2" align="center" style="color: red"><%= notice %></td>
     </tr>
-    <tr>
-      <td height="50" align="right"><strong>Curso:</strong></td>
-      <td align="left"><%= collection_select('', :curso_id, lista_cursos, :id, :nome, 
-                          {:prompt => "Selectione"},
-                          {:onchange => "#{remote_function(:url => "recarregar_turmas",
-                                                           :with => "'curso_id='+value")}"}) %></td>
-    </tr>
-    <tr>
-      <td height="50" align="right"><strong>Turma:</strong></td>
-      <td align="left">
-        <div id="lista"><%= f.collection_select(:turma_id, @lista, :id, :nome, {:prompt => "Selectione"}) %></div>
-      </td>
-    </tr>
-    <tr>
-      <td><%= f.submit "Matricular"  %></td>
-    </tr>
-  <% end %>
-  <tr></tr>
-  <tr></tr>
-</table>
+    <% form_for(@matricula, [:action => 'matricular']) do |f| %>
+      <tr>
+        <td height="50" align="right"><strong>Matr&iacute;ula:</strong></td>
+        <td align="left"></td>
+      </tr>
+      <tr>
+        <td height="50" align="right"><strong>Aluno:</strong></td>
+        <td align="left"><%=h @aluno.nome %>
+          <%= f.hidden_field :aluno_id, :value => session[:aluno_id] %> </td>
+      </tr>
+      <tr>
+        <td height="50" align="right"><strong>Curso:</strong></td>
+        <td align="left"><%= collection_select('', :curso_id, lista_cursos, :id, :nome,
+            {:prompt => "Selectione"},
+            {:onchange => "#{remote_function(:url => "recarregar_turmas",
+              :with => "'curso_id='+value")}"}) %></td>
+      </tr>
+      <tr>
+        <td height="50" align="right"><strong>Turma:</strong></td>
+        <td align="left">
+          <div id="lista"><%= f.collection_select(:turma_id, @lista, :id, :nome, {:prompt => "Selectione"}) %></div>
+        </td>
+      </tr>
+      <tr>
+        <td><%= f.submit "Matricular"  %></td>
+      </tr>
+    <% end %>
+    <tr></tr>
+    <tr></tr>
+  </table>
+</div>

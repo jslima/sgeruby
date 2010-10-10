@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
   <head>
     <title>Sistema de Gestão Escolar - SGE</title>
@@ -7,6 +7,9 @@
     <%= csrf_meta_tag %>
   </head>
   <body>
+    <div>
+      <h1>Sistema de Gestão Escolar - SGE</h1>
+    </div>
     <span width="100%" align="center" id="menu">
       <dl class="dropdown">
         <dt id="one-ddheader" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)">Administração</dt>
@@ -17,7 +20,10 @@
                 <li><%= link_to "Alunos", alunos_path, :class => 'underline' %></li>
                 <li><%= link_to "Cursos", cursos_path, :class => 'underline' %></li>
                 <li><%= link_to "Disciplinas", disciplinas_path, :class => 'underline' %></li>
-                <li><%= link_to "Turmas", turmas_path %></li>
+                <li><%= link_to "Turmas", turmas_path, :class => 'underline' %></li>
+                <% if session[:usuario]['admin'] == 1 %>
+                  <li><%= link_to "Usuários", usuarios_path %></li>
+                <% end %>
               </ul>
             </li>            
           </ul
@@ -29,7 +35,7 @@
           <ul>
             <li>
               <ul>
-                <li><a href="#">Em breve</a></li>
+                <li><%= link_to "Lista de Usuários", user_report_path %></li>
               </ul>
             </li>
           </ul>
@@ -46,14 +52,11 @@
           </ul>
       </dl>
       <dl class="dropdown">
-        <dt id="logout-ddheader" onmouseover="ddMenu('logout',1)" onmouseout="ddMenu('logout',-1)">Usuário</dt>
+        <dt id="logout-ddheader" onmouseover="ddMenu('logout',1)" onmouseout="ddMenu('logout',-1)"><%= session[:usuario]['nome'] %></dt>
         <dd id="logout-ddcontent" onmouseover="cancelHide('logout')" onmouseout="ddMenu('logout',-1)">
           <ul>
             <li>
               <ul>
-                <% if session[:usuario]['admin'] == 1 %>
-                  <li><%= link_to "Administrar Usuários", usuarios_path %></li>
-                <% end %>
                 <li><%= link_to "Alterar senha", mudar_senha_path %></li>
                 <li><%= link_to "Logout", logout_path %></li>
               </ul>
@@ -63,6 +66,7 @@
     </span>
     </ br>
     <span width="100%" align="center" id="corpo">
+      <br></br><br></br><br></br>
       <%= yield %>
     </span>
   </body>

@@ -27,10 +27,10 @@
       <td align="left"><%= @disciplina.curso.nome %></td>
     </tr>
     <tr>
-      <td height="60" colspan="2" align="center"><%= link_to 'Editar', editar_disciplina_path(@disciplina) %></td>
-    </tr>
-    <tr>
-      <td height="10" colspan="2" align="center"><%= link_to 'Voltar', :back %></td>
+      <td height="60" colspan="2" align="center">
+        <%= link_to 'Editar', editar_disciplina_path(@disciplina) %> | 
+        <%= link_to 'Voltar', :back %>
+      </td>
     </tr>
   </table>
 </div>

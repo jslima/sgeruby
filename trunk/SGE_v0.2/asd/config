@@ -1,0 +1,23 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	hideDotFiles = dotGitOnly
+[remote "trybamboo"]
+	url = git@heroku.com:quiet-beach-91.git
+	fetch = +refs/heads/*:refs/remotes/trybamboo/*
+[gui]
+	wmstate = normal
+	geometry = 887x427+343+295 171 192
+[remote "sge"]
+	url = git@heroku.com:sge.git
+	fetch = +refs/heads/*:refs/remotes/sge/*
+[remote "heroku"]
+	url = git@heroku.com:sge2.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*
+[remote "teste"]
+	url = git@heroku.com:quiet-beach-91.git
+	fetch = +refs/heads/*:refs/remotes/teste/*
