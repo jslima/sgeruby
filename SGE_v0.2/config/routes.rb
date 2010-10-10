@@ -7,7 +7,6 @@ SGEV02::Application.routes.draw do
 
   resources :disciplinas, :only => [:index, :create, :update, :destroy]
 
-
   match 'usuarios/pesquisar', :to => 'usuarios#pesquisar', :as => 'pesquisar_usuarios'
   match 'usuarios/consultar/:id', :to => 'usuarios#consultar', :as => 'consultar_usuario'
   match 'usuarios/editar/:id', :to => 'usuarios#editar', :as => 'editar_usuario'
@@ -16,6 +15,7 @@ SGEV02::Application.routes.draw do
   match 'usuarios/logout', :to => 'usuarios#logout', :as => 'logout'
   match 'usuarios/mudar_senha', :to => 'usuarios#mudar_senha', :as => 'mudar_senha'
   match 'usuarios/teste', :to => 'usuarios#teste', :as => 'teste'
+  match 'usuarios/reports', :to => 'usuarios#reports', :as => 'user_report'
 
   resources :usuarios, :only => [:index, :create, :update, :destroy]
 
@@ -55,6 +55,4 @@ SGEV02::Application.routes.draw do
   match ':controller/:action/:id'
   match ':controller/:action/:id.:format'
 
-  #map.connect ':controller/:action/:id'
-  #map.connect ':controller/:action/:id.:format'
 end

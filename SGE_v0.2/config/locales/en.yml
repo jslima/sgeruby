@@ -18,8 +18,8 @@ en:
   activerecord:
     errors:
       messages:
-        blank: "O campo {{attribute}} é obrigatório"
-        not_a_number: "O campo {{attribute}} deve ser numérico"
+        blank: "é obrigatório"
+        not_a_number: " deve ser numérico"
     attributes:
       curso:
         descricao: "Descrição"
@@ -31,4 +31,4 @@ en:
         historico_escolar: "Histórico Escolar"
         historico_medico: "Histórico Médico"
         profissao: "Profissão"
-        cert_militar: "Certificado de Conclusão/Dispansa do Serviço Militar"
+        cert_militar: "Certificado de Conclusão/Dispensa do Serviço Militar"

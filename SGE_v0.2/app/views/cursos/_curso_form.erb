@@ -1,37 +1,53 @@
-<tr>
-  <td colspan="2" align="center"><%= error_messages_for :curso, :header_message => 'Ocorreram problemas durante a operação', :message => "Os seguintes problemas foram detectados:" %></td>
-</tr>
+<% if @curso.errors.any? %>
   <tr>
-    <td height="50" align="right">Nome:</td>
-    <td align="left"><%= f.text_field :nome %></td>
-  </tr>
-  <tr>
-    <td height="50" align="right"><%=t :descricao %>:</td>
-    <td align="left"><%= f.text_field :descricao %></td>
-  </tr>
-  <tr>
-    <td height="50" align="right">Ementa:</td>
-    <td align="left"><%= f.text_field :ementa %></td>
-  </tr>
-  <tr>
-    <td height="50" align="right">Coordenador:</td>
-    <td align="left"><%= f.text_field :coordenador %></td>
-  </tr>
-  <tr>
-    <td height="50" align="right">Turno:</td>
-    <td align="left"><%= f.select(:turno, options_for_select(lista_turnos, @curso.turno)) %></td>
-  </tr>
-  <tr>
-    <td height="50" align="right"><%=t :duracao %>:</td>
-    <td align="left"><%= f.text_field :duracao %></td>
-  </tr>
-  <tr>
-    <td height="50" align="right"><%=t :total_horas %>:</td>
-    <td align="left"><%= f.text_field :total_horas %></td>
-  </tr>
-  <tr>
-    <td height="50" align="right">Tipo:</td>
-    <td align="left">
-      <%= f.select(:tipo, options_for_select(tipo_cursos, @curso.tipo)) %>
+    <td colspan="2" height="50" align="right">
+      <div id="error_explanation">
+        <h1>Ocorreram problemas durante a operação</h1>
+        <% if @curso.errors.count == 1 %>
+          <h2>Um erro impediu que os dados fossem salvos:</h2>
+        <% else %>
+          <h2><%= pluralize(@curso.errors.count, "erros") %> impediram que os dados fossem salvos:</h2>
+        <% end %>
+        <ul>
+          <% @curso.errors.full_messages.each do |msg| %>
+            <li align="left"><%= "O campo " + msg %></li>
+          <% end %>
+        </ul>
+      </div>
     </td>
   </tr>
+<% end %>
+<tr>
+  <td height="50" align="right">Nome:</td>
+  <td align="left"><%= f.text_field :nome %></td>
+</tr>
+<tr>
+  <td height="50" align="right"><%=t :descricao %>:</td>
+  <td align="left"><%= f.text_field :descricao %></td>
+</tr>
+<tr>
+  <td height="50" align="right">Ementa:</td>
+  <td align="left"><%= f.text_field :ementa %></td>
+</tr>
+<tr>
+  <td height="50" align="right">Coordenador:</td>
+  <td align="left"><%= f.text_field :coordenador %></td>
+</tr>
+<tr>
+  <td height="50" align="right">Turno:</td>
+  <td align="left"><%= f.select(:turno, options_for_select(lista_turnos, @curso.turno)) %></td>
+</tr>
+<tr>
+  <td height="50" align="right"><%=t :duracao %>:</td>
+  <td align="left"><%= f.text_field :duracao %></td>
+</tr>
+<tr>
+  <td height="50" align="right"><%=t :total_horas %>:</td>
+  <td align="left"><%= f.text_field :total_horas %></td>
+</tr>
+<tr>
+  <td height="50" align="right">Tipo:</td>
+  <td align="left">
+    <%= f.select(:tipo, options_for_select(tipo_cursos, @curso.tipo)) %>
+  </td>
+</tr>

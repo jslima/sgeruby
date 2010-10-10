@@ -1,0 +1,122 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+	modified:   .svn/all-wcprops
+	modified:   .svn/dir-prop-base
+	deleted:    .svn/dir-props
+	modified:   .svn/entries
+	modified:   app/.svn/all-wcprops
+	modified:   app/.svn/entries
+	modified:   app/controllers/.svn/all-wcprops
+	modified:   app/controllers/.svn/entries
+	modified:   app/controllers/.svn/text-base/usuarios_controller.rb.svn-base
+	modified:   app/controllers/usuarios_controller.rb
+	modified:   app/helpers/.svn/all-wcprops
+	modified:   app/helpers/.svn/entries
+	modified:   app/helpers/.svn/text-base/application_helper.rb.svn-base
+	modified:   app/helpers/application_helper.rb
+	modified:   app/mailers/.svn/entries
+	modified:   app/models/.svn/all-wcprops
+	modified:   app/models/.svn/entries
+	modified:   app/views/.svn/all-wcprops
+	modified:   app/views/.svn/entries
+	modified:   app/views/alunos/.svn/all-wcprops
+	modified:   app/views/alunos/.svn/entries
+	modified:   app/views/cursos/.svn/all-wcprops
+	modified:   app/views/cursos/.svn/entries
+	modified:   app/views/disciplinas/.svn/all-wcprops
+	modified:   app/views/disciplinas/.svn/entries
+	modified:   app/views/layouts/.svn/all-wcprops
+	modified:   app/views/layouts/.svn/entries
+	modified:   app/views/layouts/.svn/text-base/application.html.erb.svn-base
+	modified:   app/views/layouts/application.html.erb
+	modified:   app/views/matriculas/.svn/entries
+	modified:   app/views/principal/.svn/all-wcprops
+	modified:   app/views/principal/.svn/entries
+	modified:   app/views/shared/.svn/entries
+	modified:   app/views/turmas/.svn/all-wcprops
+	modified:   app/views/turmas/.svn/entries
+	modified:   app/views/turmas/.svn/text-base/_turma_form.erb.svn-base
+	modified:   app/views/turmas/.svn/text-base/consultar.html.erb.svn-base
+	modified:   app/views/turmas/.svn/text-base/editar.html.erb.svn-base
+	modified:   app/views/turmas/.svn/text-base/index.html.erb.svn-base
+#	modified:   app/views/turmas/.svn/text-base/novo.html.erb.svn-base
+#	modified:   app/views/turmas/.svn/text-base/pesquisar.erb.svn-base
+	modified:   app/views/turmas/_turma_form.erb
+	modified:   app/views/turmas/consultar.html.erb
+	modified:   app/views/turmas/editar.html.erb
+	modified:   app/views/turmas/index.html.erb
+	modified:   app/views/turmas/novo.html.erb
+	modified:   app/views/turmas/pesquisar.erb
+#	modified:   app/views/usuarios/.svn/all-wcprops
+#	modified:   app/views/usuarios/.svn/entries
+#	modified:   app/views/usuarios/.svn/text-base/_usuario_form.erb.svn-base
+#	modified:   app/views/usuarios/.svn/text-base/consultar.html.erb.svn-base
+#	modified:   app/views/usuarios/.svn/text-base/editar.html.erb.svn-base
+#	modified:   app/views/usuarios/.svn/text-base/index.html.erb.svn-base
+#	modified:   app/views/usuarios/.svn/text-base/novo.html.erb.svn-base
+#	modified:   app/views/usuarios/.svn/text-base/pesquisar.erb.svn-base
+	modified:   app/views/usuarios/_usuario_form.erb
+	modified:   app/views/usuarios/consultar.html.erb
+	modified:   app/views/usuarios/editar.html.erb
+	modified:   app/views/usuarios/index.html.erb
+	modified:   app/views/usuarios/novo.html.erb
+	modified:   app/views/usuarios/pesquisar.erb
+#	modified:   config/.svn/all-wcprops
+#	modified:   config/.svn/entries
+#	modified:   config/.svn/text-base/routes.rb.svn-base
+#	modified:   config/environments/.svn/entries
+#	modified:   config/initializers/.svn/entries
+#	modified:   config/locales/.svn/all-wcprops
+#	modified:   config/locales/.svn/entries
+	modified:   config/routes.rb
+#	modified:   db/.svn/all-wcprops
+#	modified:   db/.svn/entries
+#	modified:   db/migrate/.svn/all-wcprops
+#	modified:   db/migrate/.svn/entries
+#	modified:   doc/.svn/entries
+#	modified:   lib/.svn/all-wcprops
+#	modified:   lib/.svn/entries
+#	modified:   lib/tasks/.svn/entries
+#	modified:   log/.svn/all-wcprops
+#	modified:   log/.svn/entries
+#	modified:   log/.svn/text-base/development.log.svn-base
+#	modified:   nbproject/.svn/all-wcprops
+#	modified:   nbproject/.svn/entries
+#	modified:   nbproject/.svn/text-base/project.xml.svn-base
+#	modified:   nbproject/project.xml
+#	modified:   public/.svn/all-wcprops
+#	modified:   public/.svn/entries
+#	modified:   public/images/.svn/all-wcprops
+#	modified:   public/images/.svn/entries
+#	modified:   public/javascripts/.svn/all-wcprops
+#	modified:   public/javascripts/.svn/entries
+#	modified:   public/stylesheets/.svn/all-wcprops
+#	modified:   public/stylesheets/.svn/entries
+#	modified:   script/.svn/entries
+#	modified:   test/.svn/all-wcprops
+#	modified:   test/.svn/entries
+#	modified:   test/fixtures/.svn/all-wcprops
+#	modified:   test/fixtures/.svn/entries
+#	modified:   test/functional/.svn/all-wcprops
+#	modified:   test/functional/.svn/entries
+#	modified:   test/integration/.svn/entries
+#	modified:   test/performance/.svn/entries
+#	modified:   test/unit/.svn/all-wcprops
+#	modified:   test/unit/.svn/entries
+#	modified:   test/unit/helpers/.svn/entries
+#	modified:   vendor/.svn/entries
+#	modified:   vendor/plugins/.svn/entries
+#	modified:   vendor/plugins/dynamic_form/.svn/entries
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.svn/text-base/id_rsa.pub.svn-base
+#	.svn/text-base/id_rsa.svn-base
+#	app/views/usuarios/.svn/text-base/mudar_senha.erb.svn-base
+#	app/views/usuarios/mudar_senha.erb

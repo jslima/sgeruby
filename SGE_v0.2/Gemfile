@@ -7,6 +7,10 @@ gem 'rails', '3.0.0'
 
 gem 'mysql'
 
+gem 'ruport'
+
+gem 'acts_as_reportable'
+
 gem 'mongrel'
 
 gem 'dynamic_form'
