@@ -5,7 +5,6 @@ class UsuariosController < ApplicationController
   before_filter :is_admin, :except => [:login, :logout]
 
   layout :usuario_layout
-  layout 'report', :only => :reports
   require 'digest'
 
   def usuario_layout
