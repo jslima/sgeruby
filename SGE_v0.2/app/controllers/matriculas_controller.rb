@@ -1,5 +1,9 @@
 class MatriculasController < ApplicationController
 
+  def index
+    
+  end
+
   def nao_esta_matriculado?
     @turma = Turma.find(session[:turma_id])
       sql = "select a.nome, c.nome from matriculas m, cursos c, turmas t, alunos a
@@ -68,6 +72,8 @@ class MatriculasController < ApplicationController
     end
   end
 
-  
+  def pesquisa
+    @matriculas = Matricula.all
+  end
 
 end

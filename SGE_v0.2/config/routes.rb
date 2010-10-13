@@ -22,6 +22,7 @@ SGEV02::Application.routes.draw do
   match 'matriculas/consultar/:id', :to => 'matriculas#consultar', :as => 'consultar_matricula'
   match 'matriculas/editar/:id', :to => 'matriculas#editar', :as => 'editar_matricula'
   match 'matriculas/matricular/:id', :to => 'matriculas#matricular', :as => 'matricular_aluno'
+  match 'matriculas/pesquisa', :to => 'matriculas#pesquisa', :as => 'pesquisa_matricula'
 
   resources :matriculas, :only => [:create, :update]
 

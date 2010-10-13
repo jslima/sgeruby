@@ -1,0 +1,28 @@
+<div align="center">
+  <p>
+  <h1>Alunos Matriculados</h1>
+</p>
+<br></br>
+<p>
+<table align="center" cellpadding="0" cellspacing="0" border="1">
+  <tr>
+    <th align="center">Matricula</th>
+    <th align="center">Nome</th>
+    <th align="center">Curso</th>
+    <th align="center">Turma</th>
+  </tr>
+  <% @matriculas.each do |m| %>
+    <tr>
+      <td style="width: 300px" align="center"><%=h m.matricula %> </td>
+      <td style="width: 300px" align="center"><%=h m.aluno.nome %> </td>
+      <td style="width: 300px" align="center"><%=h m.turma.curso.nome %> </td>
+      <td style="width: 300px" align="center"><%=h m.turma.nome %> </td>
+    </tr>
+  <% end %>
+</table>
+</p>
+<br></br>
+<p>
+  <%= link_to "Voltar", :root %>
+</p>
+</div>

@@ -19,10 +19,12 @@
               <ul>
                 <li><%= link_to "Alunos", alunos_path, :class => 'underline' %></li>
                 <li><%= link_to "Cursos", cursos_path, :class => 'underline' %></li>
-                <li><%= link_to "Disciplinas", disciplinas_path, :class => 'underline' %></li>
-                <li><%= link_to "Turmas", turmas_path, :class => 'underline' %></li>
+                <li><%= link_to "Disciplinas", disciplinas_path, :class => 'underline' %></li>                
                 <% if session[:usuario]['admin'] == 1 %>
+                  <li><%= link_to "Turmas", turmas_path, :class => 'underline' %></li>
                   <li><%= link_to "Usuários", usuarios_path %></li>
+                <% else %>
+                  <li><%= link_to "Turmas", turmas_path %></li>
                 <% end %>
               </ul>
             </li>            
@@ -35,7 +37,8 @@
           <ul>
             <li>
               <ul>
-                <li><%= link_to "Lista de Usuários", user_report_path %></li>
+                <li><%= link_to "Lista de Usuários", user_report_path, :class => 'underline' %></li>
+                <li><%= link_to "Alunos Matriculados", pesquisa_matricula_path %></li>
               </ul>
             </li>
           </ul>
@@ -57,7 +60,7 @@
           <ul>
             <li>
               <ul>
-                <li><%= link_to "Alterar senha", mudar_senha_path %></li>
+                <li><%= link_to "Alterar senha", mudar_senha_path, :class => 'underline' %></li>
                 <li><%= link_to "Logout", logout_path %></li>
               </ul>
             </li>
